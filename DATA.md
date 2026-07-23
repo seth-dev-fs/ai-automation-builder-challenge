@@ -1,12 +1,12 @@
-# Dados — o que injetar e como usar
+# Dados - o que injetar e como usar
 
 ## 1. Cria a conta e o projeto PostHog
 
 1. Regista-te em [posthog.com](https://posthog.com) (o plano grátis chega).
 2. Cria um **projeto novo**. Em *Settings → Project* copia a **Project API Key**
-   (`phc_...`) — é a chave de *escrita*, usada pela LP e pelo loader.
+   (`phc_...`) - é a chave de *escrita*, usada pela LP e pelo loader.
 3. Em *Settings → Personal API Keys* cria uma **Personal API Key** (`phx_...`)
-   com scopes de *leitura* (`query:read`, `event:read`, `insight:read`) — é a que
+   com scopes de *leitura* (`query:read`, `event:read`, `insight:read`) - é a que
    os teus agentes usam para *ler* eventos.
 
 ## 2. Injeta os dados semeados
@@ -18,7 +18,7 @@ python3 scripts/load_data.py                       # EU cloud por defeito
 ```
 
 Só stdlib, sem `pip install`. Usa `--dry-run` para ver as contagens sem enviar.
-Corre **uma vez** — correr de novo duplica os eventos. Podem demorar 1-2 min a
+Corre **uma vez** - correr de novo duplica os eventos. Podem demorar 1-2 min a
 aparecer no PostHog (*Activity*).
 
 ## 3. O que fica no PostHog
@@ -35,7 +35,7 @@ Feedback de clientes, em texto (PT). Input do teu **Agente de análise**.
 | `text` | string | "Marcar uma sessão é sempre uma confusão..." |
 | `channel` | string | `web`, `mobile`, `email_survey` |
 
-> O **tema** de cada feedback **não** vem nas propriedades — é isso que o teu
+> O **tema** de cada feedback **não** vem nas propriedades - é isso que o teu
 > agente tem de inferir a partir do `text`.
 
 ### `creative_view` (2000) e `cta_click` (77)

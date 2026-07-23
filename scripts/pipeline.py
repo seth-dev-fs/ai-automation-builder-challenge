@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-Pipeline dos 3 agentes — corre no GitHub Actions e escreve os resultados no repo.
+Pipeline dos 3 agentes - corre no GitHub Actions e escreve os resultados no repo.
 
 Isto é um ESQUELETO. A ligação de leitura ao PostHog já está feita (função
 `posthog_query`); a inteligência (classificar, agrupar, gerar criativos, tirar
 conclusões) é contigo. Implementa os três TODO e faz o script escrever para:
 
-  analysis/feedback_clusters.json   (Agente 1 — análise de feedback)
-  analysis/results_report.md        (Agente 3 — leitura de resultados)
-  creatives/<id>.md                 (Agente 2 — ângulo + copy + prompt de imagem)
+  analysis/feedback_clusters.json   (Agente 1 - análise de feedback)
+  analysis/results_report.md        (Agente 3 - leitura de resultados)
+  creatives/<id>.md                 (Agente 2 - ângulo + copy + prompt de imagem)
 
 O workflow `.github/workflows/generate.yml` corre este ficheiro e faz commit do
 que mudar em analysis/ e creatives/.

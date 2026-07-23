@@ -1,7 +1,7 @@
-# Desafio prático — AI Automation Builder
+# Desafio prático - AI Automation Builder
 
 Parabéns por passares à fase seguinte. Este é um desafio prático, para fazeres ao
-teu ritmo. Aponta a **cerca de 4 horas** de trabalho — não é para ficar perfeito,
+teu ritmo. Aponta a **cerca de 4 horas** de trabalho - não é para ficar perfeito,
 é para vermos como pensas e constróis. Avaliamos a entrega tal como a envias, por
 isso o teu texto explicativo conta muito.
 
@@ -9,7 +9,7 @@ isso o teu texto explicativo conta muito.
 
 Uma empresa recolhe feedback de clientes (elogios e reclamações) e quer
 transformar isso, de forma automática, em **ideias de anúncios** que atraiam
-novos clientes — resolvendo as dores mais reportadas e amplificando o que já
+novos clientes - resolvendo as dores mais reportadas e amplificando o que já
 encanta. Queremos ver-te construir o **ciclo completo**:
 
 ```
@@ -18,9 +18,9 @@ recolha de feedback → análise → geração de criativos → medição → co
 
 ## As ferramentas (e porquê)
 
-- **PostHog** é a camada de dados — captura o feedback da LP e guarda os
+- **PostHog** é a camada de dados - captura o feedback da LP e guarda os
   resultados da campanha. É onde os teus agentes vão *ler* e *escrever* eventos.
-- **GitHub Actions** é a camada de automação — o pipeline dos agentes corre lá e
+- **GitHub Actions** é a camada de automação - o pipeline dos agentes corre lá e
   faz commit dos resultados no próprio repo. Nada corre "só na tua máquina".
 - **GitHub Pages** (ou Vercel/Netlify) hospeda a LP.
 - **O LLM à tua escolha** (Gemini, Claude, …) faz a inteligência: classificar,
@@ -39,7 +39,7 @@ alguma peça, explica porquê.
   dados no teu PostHog.
 - Uma **LP de arranque** ([starter/](./starter/)) com o PostHog já ligado.
 - Um **esqueleto de pipeline** ([scripts/pipeline.py](./scripts/pipeline.py)) com
-  a leitura do PostHog já feita — a inteligência é tua.
+  a leitura do PostHog já feita - a inteligência é tua.
 - **Workflows** de deploy da LP e de geração de criativos.
 
 ## O que tu montas
@@ -66,20 +66,20 @@ campanha anterior, e um **agente que escreve as conclusões**: que ângulo funci
 melhor, que dor é prioritária, e o que recomendas a seguir. Escreve para
 `analysis/results_report.md`.
 
-> Os eventos de resultado que te damos são de uma campanha *anterior* — é o que o
+> Os eventos de resultado que te damos são de uma campanha *anterior* - é o que o
 > agente de leitura (passo 4) analisa. Os criativos *novos* que geras (passo 3)
 > são para a próxima ronda. Não precisas de gerar tráfego real.
 
 Os passos 2, 3 e 4 devem correr no **GitHub Actions** (workflow `generate.yml`) e
 os resultados ficam commitados no repo.
 
-## Entregáveis — tudo hospedado
+## Entregáveis - tudo hospedado
 
 Responde ao nosso email com **links**, não anexos:
 
 - 🔗 **Repo público** (o teu fork) com todo o código e os resultados commitados
   em `analysis/` e `creatives/`.
-- 🔗 **LP a funcionar** (GitHub Pages/Vercel) — conseguimos abrir e submeter.
+- 🔗 **LP a funcionar** (GitHub Pages/Vercel) - conseguimos abrir e submeter.
 - 🔗 **Dashboard público do PostHog** (Share → Enable public link).
 - 🔗 A **run do GitHub Actions** que gerou os criativos (link para o workflow).
 - 📝 **Texto de ~1 página** (no email ou no repo): que decisões tomaste, que
@@ -102,17 +102,17 @@ Em *Settings → Secrets and variables → Actions*:
 
 Não procuramos acabamento visual nem cobertura total. Procuramos:
 
-- **Raciocínio de automação** — o ciclo fecha? o criativo é rastreável até ao
+- **Raciocínio de automação** - o ciclo fecha? o criativo é rastreável até ao
   resultado? corre mesmo no Actions?
-- **Rigor com o output do LLM** — validação, contrato de output, o que acontece
+- **Rigor com o output do LLM** - validação, contrato de output, o que acontece
   quando vem malformado.
-- **Qualidade das conclusões** — o que o teu agente *conclui* dos dados, não só o
+- **Qualidade das conclusões** - o que o teu agente *conclui* dos dados, não só o
   que mostra. Há um padrão real nos dados à espera de ser encontrado.
 
 Preferimos um ciclo **estreito e sólido** a um largo e frágil.
 
 ## Stack
 
-**Livre.** Script, n8n, o que preferires — usa a ferramenta certa e diz porquê.
-**Podes usar IA à vontade** — é o trabalho; queremos ver *como* a diriges e
+**Livre.** Script, n8n, o que preferires - usa a ferramenta certa e diz porquê.
+**Podes usar IA à vontade** - é o trabalho; queremos ver *como* a diriges e
 validas. Qualquer dúvida sobre o enunciado, pergunta.

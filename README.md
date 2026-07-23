@@ -1,8 +1,8 @@
-# Desafio — AI Automation Builder
+# Desafio - AI Automation Builder
 
 Faz **fork** deste repositório e trabalha a partir do teu fork.
 
-O enunciado completo está em **[BRIEF.md](./BRIEF.md)** — começa por aí.
+O enunciado completo está em **[BRIEF.md](./BRIEF.md)** - começa por aí.
 
 ## O que vais construir
 
@@ -38,5 +38,5 @@ LP de feedback → PostHog → análise (IA) → criativos (IA) → dashboard �
 4. Configura os **GitHub Secrets** do teu fork (ver [BRIEF.md](./BRIEF.md)).
 5. Constrói o ciclo. Stack livre. Usa IA à vontade.
 
-Tudo o que entregas deve ficar **hospedado** — links, não zips. Ver os
+Tudo o que entregas deve ficar **hospedado** - links, não zips. Ver os
 entregáveis em [BRIEF.md](./BRIEF.md).

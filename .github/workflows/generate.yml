@@ -6,7 +6,7 @@ name: Gerar análise e criativos
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 6 * * *" # 06:00 UTC diariamente (opcional — muda ou remove)
+    - cron: "0 6 * * *" # 06:00 UTC diariamente (opcional - muda ou remove)
 
 permissions:
   contents: write

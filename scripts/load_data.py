@@ -13,7 +13,7 @@ Uso:
   python3 scripts/load_data.py --dry-run             # conta e valida, não envia
 
 Só stdlib. Corre uma vez após criares o projeto. Correr duas vezes duplica os
-eventos — se te enganares, cria um projeto novo (é mais limpo).
+eventos - se te enganares, cria um projeto novo (é mais limpo).
 """
 
 import argparse
@@ -67,7 +67,7 @@ def main():
         print("  %-20s %d" % (name, counts[name]))
 
     if args.dry_run:
-        print("\nDry run — nada enviado.")
+        print("\nDry run - nada enviado.")
         return
 
     if not args.api_key:
