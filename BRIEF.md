@@ -98,6 +98,14 @@ Em *Settings → Secrets and variables → Actions*:
 | `POSTHOG_PERSONAL_API_KEY` | Personal API Key (leitura de eventos) |
 | `GEMINI_API_KEY` / `ANTHROPIC_API_KEY` | a(s) chave(s) de LLM que usares |
 
+### Permissões do workflow
+
+O `generate.yml` faz commit dos resultados no repo, por isso precisa de escrita.
+Em *Settings → Actions → General → Workflow permissions*, escolhe **Read and
+write**. Se a tua conta/org bloquear essa opção, cria um Personal Access Token
+com scope `repo`, guarda-o como secret (ex. `GH_PAT`) e usa-o no checkout:
+`actions/checkout@v4` com `token: ${{ secrets.GH_PAT }}`.
+
 ## Como avaliamos
 
 Não procuramos acabamento visual nem cobertura total. Procuramos:
