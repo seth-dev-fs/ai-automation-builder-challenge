@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A tua opinião conta</title>
+
+  <!-- ── PostHog: já ligado. Substitui KEY/HOST pelos que te demos. ────────── -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording capturePageview capturePageleave debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+
+    // ⬇️ SUBSTITUI estes dois valores:
+    posthog.init('__POSTHOG_PROJECT_KEY__', { api_host: 'https://eu.i.posthog.com' });
+  </script>
+  <!-- ─────────────────────────────────────────────────────────────────────── -->
+
+  <style>
+    :root { --bg:#0f1115; --card:#1a1d24; --fg:#e8eaed; --muted:#9aa0a6; --brand:#6c8cff; --ok:#3ecf8e; --warn:#ff7a7a; --line:#2a2e37; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--fg); min-height:100vh; display:grid; place-items:center; padding:24px; }
+    .card { width:100%; max-width:520px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:32px; }
+    h1 { margin:0 0 8px; font-size:1.5rem; }
+    p.lead { margin:0 0 24px; color:var(--muted); }
+    .toggle { display:flex; gap:8px; margin-bottom:16px; }
+    .toggle button { flex:1; padding:12px; border:1px solid var(--line); background:transparent; color:var(--fg); border-radius:10px; cursor:pointer; font-size:.95rem; }
+    .toggle button.active { border-color:var(--brand); background:rgba(108,140,255,.12); }
+    textarea { width:100%; min-height:120px; resize:vertical; padding:12px; border-radius:10px; border:1px solid var(--line); background:var(--bg); color:var(--fg); font:inherit; }
+    .submit { margin-top:16px; width:100%; padding:14px; border:none; border-radius:10px; background:var(--brand); color:#fff; font-size:1rem; font-weight:600; cursor:pointer; }
+    .submit:disabled { opacity:.5; cursor:not-allowed; }
+    .status { margin-top:14px; min-height:20px; font-size:.9rem; }
+    .status.ok { color:var(--ok); } .status.err { color:var(--warn); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>A tua opinião conta</h1>
+    <p class="lead">Conta-nos o que correu bem ou o que podemos melhorar.</p>
+
+    <div class="toggle" id="toggle">
+      <button data-type="praise" class="active">👏 Elogio</button>
+      <button data-type="complaint">🛠️ Reclamação</button>
+    </div>
+
+    <textarea id="text" placeholder="Escreve aqui o teu feedback..."></textarea>
+    <button class="submit" id="submit">Enviar feedback</button>
+    <div class="status" id="status"></div>
+  </main>
+
+  <script>
+    let feedbackType = 'praise';
+    const toggle = document.getElementById('toggle');
+    const textEl = document.getElementById('text');
+    const submitEl = document.getElementById('submit');
+    const statusEl = document.getElementById('status');
+
+    toggle.addEventListener('click', (e) => {
+      const btn = e.target.closest('button'); if (!btn) return;
+      feedbackType = btn.dataset.type;
+      [...toggle.children].forEach(b => b.classList.toggle('active', b === btn));
+    });
+
+    submitEl.addEventListener('click', () => {
+      const text = textEl.value.trim();
+      if (!text) { statusEl.textContent = 'Escreve algo primeiro.'; statusEl.className = 'status err'; return; }
+
+      // ── LEG 1: capturar o feedback no PostHog. ───────────────────────────
+      // Baseline mínimo abaixo. Decide TU que propriedades os teus agentes a
+      // jusante vão precisar (tema? só o texto? algo mais?). O que capturas
+      // aqui condiciona a análise no Agente 1.
+      posthog.capture('feedback_submitted', {
+        feedback_type: feedbackType,
+        text: text,
+      });
+      // ─────────────────────────────────────────────────────────────────────
+
+      statusEl.textContent = 'Obrigado pelo teu feedback! 🙌';
+      statusEl.className = 'status ok';
+      textEl.value = '';
+    });
+  </script>
+</body>
+</html>

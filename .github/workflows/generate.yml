@@ -1,0 +1,42 @@
+name: Gerar análise e criativos
+
+# Corre o pipeline dos 3 agentes e faz commit dos resultados em analysis/ e creatives/.
+# Dispara manualmente (Run workflow) ou todas as manhãs.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *" # 06:00 UTC diariamente (opcional — muda ou remove)
+
+permissions:
+  contents: write
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Correr pipeline
+        env:
+          POSTHOG_HOST: ${{ secrets.POSTHOG_HOST }}
+          POSTHOG_PROJECT_ID: ${{ secrets.POSTHOG_PROJECT_ID }}
+          POSTHOG_PERSONAL_API_KEY: ${{ secrets.POSTHOG_PERSONAL_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/pipeline.py
+
+      - name: Commit dos resultados
+        run: |
+          git config user.name "challenge-bot"
+          git config user.email "challenge-bot@users.noreply.github.com"
+          git add analysis/ creatives/
+          git diff --staged --quiet || git commit -m "chore: atualizar análise e criativos [skip ci]"
+          git push

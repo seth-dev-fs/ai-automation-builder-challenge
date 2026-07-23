@@ -1,0 +1,4 @@
+# O loader e o esqueleto do pipeline só usam a stdlib.
+# Acrescenta aqui o SDK do LLM que escolheres, por exemplo:
+# anthropic
+# google-genai
