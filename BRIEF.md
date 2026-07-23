@@ -42,11 +42,23 @@ alguma peça, explica porquê.
   a leitura do PostHog já feita - a inteligência é tua.
 - **Workflows** de deploy da LP e de geração de criativos.
 
-## O que tu montas
+## Setup (checklist)
 
-1. Cria uma **conta PostHog** (grátis) e um projeto. Injeta os dados com o loader.
-2. Faz **fork** deste repo e define os **GitHub Secrets** (ver mais abaixo).
-3. Usa as **tuas** chaves de LLM.
+O fork copia os ficheiros, mas o GitHub, por segurança, não transporta várias
+coisas para forks. Trata destes passos antes de começar (uma vez só):
+
+1. **Fork** deste repo, para a tua conta.
+2. **Ativa os Actions** no fork: separador *Actions* → "I understand my workflows,
+   go ahead and enable them". Em forks os workflows vêm desativados por defeito.
+3. **Workflow permissions:** *Settings → Actions → General → Workflow permissions*
+   → **Read and write** (o `generate.yml` faz commit dos resultados).
+4. **Pages:** *Settings → Pages → Source: GitHub Actions* (a LP publica por aí).
+5. Cria uma **conta PostHog** (grátis) e um projeto. Segue o [DATA.md](./DATA.md)
+   para injetar os dados com o loader e obter as chaves.
+6. **GitHub Secrets** (ver a tabela mais abaixo) e as **tuas** chaves de LLM.
+
+> Na primeira vez, o deploy do Pages pode precisar de uma segunda execução do
+> workflow para o site "assentar". É normal.
 
 ## O que queremos que construas
 
