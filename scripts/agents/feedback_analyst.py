@@ -27,7 +27,11 @@ from collections import defaultdict
 import llm
 import taxonomy
 
-BATCH_SIZE = 25
+# 50 e não 25: cada lote é uma chamada, e os limites por minuto do plano
+# gratuito são o recurso escasso, não os tokens. Com 50, os 150 feedbacks
+# passam em três chamadas em vez de seis. Acima disto o modelo começa a perder
+# itens no fim do lote — a validação apanha, mas força um retry que sai caro.
+BATCH_SIZE = 50
 MAX_QUOTES = 4
 
 SYSTEM = """És um analista de feedback de clientes de um produto SaaS português.

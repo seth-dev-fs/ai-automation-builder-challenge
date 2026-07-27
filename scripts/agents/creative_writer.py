@@ -151,6 +151,9 @@ REGRAS DE OUTPUT:
   enquadramento e a luz. Sem texto dentro da imagem.
 - `evidence_indices`: os números das citações acima que sustentam este anúncio.
   Pelo menos um. Só podes usar índices de 0 a {len(quotes) - 1}.
+- `angle`: a tese do anúncio numa frase — o argumento que ele faz ao leitor.
+  NÃO repitas aqui o rótulo `{cluster['angle_type']}`, isso já está registado
+  noutro campo; escreve a ideia.
 - `why_this_works`: uma frase, a ligar o anúncio ao que os dados mostram.
 
 PROIBIDO: percentagens, "o melhor", "número 1", "garantido", promessas absolutas,

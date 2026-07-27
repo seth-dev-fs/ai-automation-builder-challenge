@@ -27,6 +27,7 @@ já era stdlib-only.
 """
 
 import json
+import re
 import os
 import time
 import urllib.error
@@ -35,6 +36,13 @@ import urllib.request
 MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
 API_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
 MAX_ATTEMPTS = 3
+
+# O plano gratuito do Gemini permite 10 pedidos por minuto. O pipeline faz 10 a
+# 14 chamadas seguidas, portanto sem espaçamento bate no limite a meio e degrada
+# criativos que não tinham nada de errado. Seis segundos e meio entre chamadas
+# mantém-nos dentro do limite; num plano pago, põe-se a zero pela variável.
+MIN_INTERVAL = float(os.environ.get("GEMINI_MIN_INTERVAL", "6.5"))
+_last_call_at = 0.0
 
 # Registo de tudo o que aconteceu — vai para analysis/run_log.json.
 TRACE = {
@@ -54,10 +62,26 @@ class ContractError(ValueError):
     """A resposta veio bem formada mas violou o contrato de negócio."""
 
 
+def _retry_delay_from(detail):
+    """O 429 do Gemini traz o tempo de espera sugerido. Vale mais do que adivinhar."""
+    match = re.search(r'"retryDelay"\s*:\s*"(\d+)s"', detail)
+    return min(int(match.group(1)) + 1, 60) if match else None
+
+
+def _throttle():
+    global _last_call_at
+    wait = MIN_INTERVAL - (time.time() - _last_call_at)
+    if wait > 0:
+        time.sleep(wait)
+    _last_call_at = time.time()
+
+
 def _request(prompt, system, schema, temperature):
     key = os.environ.get("GEMINI_API_KEY", "")
     if not key:
         raise LLMUnavailable("GEMINI_API_KEY não definida")
+
+    _throttle()
 
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
@@ -143,7 +167,9 @@ def call_json(name, prompt, schema, validator=None, system=None, temperature=0.2
 
         except urllib.error.HTTPError as exc:
             TRACE["transport_errors"] += 1
-            detail = exc.read().decode("utf-8", "replace")[:300]
+            # 800 e não 300: o `retryDelay` do 429 aparece no fim do corpo, e
+            # truncar cedo de mais deitava fora justamente a parte útil.
+            detail = exc.read().decode("utf-8", "replace")[:800]
             last_error = f"HTTP {exc.code}: {detail}"
             TRACE["calls"].append({
                 "agent": name, "attempt": attempt, "status": "erro_http",
@@ -151,7 +177,9 @@ def call_json(name, prompt, schema, validator=None, system=None, temperature=0.2
             })
             if exc.code in (400, 401, 403):
                 break  # chave/pedido inválidos — retentar não resolve
-            time.sleep(min(2 ** attempt * 2, 30))
+            # Num 429, o próprio erro diz quanto esperar. Ignorar isso e usar o
+            # backoff genérico é bater na porta outra vez cedo de mais.
+            time.sleep(_retry_delay_from(detail) or min(2 ** attempt * 2, 30))
 
         except LLMUnavailable:
             # Erro de configuração (chave em falta), não transitório. Esperar

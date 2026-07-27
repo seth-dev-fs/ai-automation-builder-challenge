@@ -48,7 +48,9 @@ def two_proportion_z(clicks_a, views_a, clicks_b, views_b):
     p_value = math.erfc(abs(z) / math.sqrt(2))  # bilateral
     return {
         "z": round(z, 3),
-        "p_value": round(p_value, 5),
+        # Sem arredondar a poucas casas: um p de 2,7e-07 arredondado a cinco
+        # casas vira "0.0", que se lê como impossível em vez de muito improvável.
+        "p_value": float(f"{p_value:.3g}"),
         "lift": round((p_a / p_b - 1), 4) if p_b else 0.0,
         "significant": p_value < 0.05,
     }
