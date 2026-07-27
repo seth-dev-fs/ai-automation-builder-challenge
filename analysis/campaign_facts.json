@@ -1,0 +1,456 @@
+{
+  "totals": {
+    "views": 2000,
+    "clicks": 77,
+    "cvr_pct": 3.85,
+    "creatives": 6
+  },
+  "by_creative": [
+    {
+      "key": "cr_A",
+      "views": 380,
+      "clicks": 32,
+      "cvr": 0.08421,
+      "cvr_pct": 8.42,
+      "ci95_low_pct": 6.03,
+      "ci95_high_pct": 11.65,
+      "headline": "Nunca mais percas uma marcacao",
+      "angle_type": "pain_resolution",
+      "theme": "agendamento"
+    },
+    {
+      "key": "cr_C",
+      "views": 360,
+      "clicks": 15,
+      "cvr": 0.04167,
+      "cvr_pct": 4.17,
+      "ci95_low_pct": 2.54,
+      "ci95_high_pct": 6.76,
+      "headline": "Poupa 5h por semana",
+      "angle_type": "praise_amplification",
+      "theme": "poupanca_tempo"
+    },
+    {
+      "key": "cr_B",
+      "views": 340,
+      "clicks": 11,
+      "cvr": 0.03235,
+      "cvr_pct": 3.24,
+      "ci95_low_pct": 1.82,
+      "ci95_high_pct": 5.7,
+      "headline": "Suporte que responde em minutos",
+      "angle_type": "pain_resolution",
+      "theme": "suporte_lento"
+    },
+    {
+      "key": "cr_D",
+      "views": 320,
+      "clicks": 8,
+      "cvr": 0.025,
+      "cvr_pct": 2.5,
+      "ci95_low_pct": 1.27,
+      "ci95_high_pct": 4.85,
+      "headline": "A app que a tua equipa adora",
+      "angle_type": "praise_amplification",
+      "theme": "facilidade"
+    },
+    {
+      "key": "cr_E",
+      "views": 300,
+      "clicks": 6,
+      "cvr": 0.02,
+      "cvr_pct": 2.0,
+      "ci95_low_pct": 0.92,
+      "ci95_high_pct": 4.29,
+      "headline": "Relatorios que impressionam a chefia",
+      "angle_type": "praise_amplification",
+      "theme": "relatorios"
+    },
+    {
+      "key": "cr_F",
+      "views": 300,
+      "clicks": 5,
+      "cvr": 0.01667,
+      "cvr_pct": 1.67,
+      "ci95_low_pct": 0.71,
+      "ci95_high_pct": 3.84,
+      "headline": "Integra tudo num so lugar",
+      "angle_type": "pain_resolution",
+      "theme": "integracoes"
+    }
+  ],
+  "by_angle": [
+    {
+      "key": "pain_resolution",
+      "views": 1020,
+      "clicks": 48,
+      "cvr": 0.04706,
+      "cvr_pct": 4.71,
+      "ci95_low_pct": 3.57,
+      "ci95_high_pct": 6.18
+    },
+    {
+      "key": "praise_amplification",
+      "views": 980,
+      "clicks": 29,
+      "cvr": 0.02959,
+      "cvr_pct": 2.96,
+      "ci95_low_pct": 2.07,
+      "ci95_high_pct": 4.22
+    }
+  ],
+  "by_theme": [
+    {
+      "key": "agendamento",
+      "views": 380,
+      "clicks": 32,
+      "cvr": 0.08421,
+      "cvr_pct": 8.42,
+      "ci95_low_pct": 6.03,
+      "ci95_high_pct": 11.65
+    },
+    {
+      "key": "poupanca_tempo",
+      "views": 360,
+      "clicks": 15,
+      "cvr": 0.04167,
+      "cvr_pct": 4.17,
+      "ci95_low_pct": 2.54,
+      "ci95_high_pct": 6.76
+    },
+    {
+      "key": "suporte_lento",
+      "views": 340,
+      "clicks": 11,
+      "cvr": 0.03235,
+      "cvr_pct": 3.24,
+      "ci95_low_pct": 1.82,
+      "ci95_high_pct": 5.7
+    },
+    {
+      "key": "facilidade",
+      "views": 320,
+      "clicks": 8,
+      "cvr": 0.025,
+      "cvr_pct": 2.5,
+      "ci95_low_pct": 1.27,
+      "ci95_high_pct": 4.85
+    },
+    {
+      "key": "relatorios",
+      "views": 300,
+      "clicks": 6,
+      "cvr": 0.02,
+      "cvr_pct": 2.0,
+      "ci95_low_pct": 0.92,
+      "ci95_high_pct": 4.29
+    },
+    {
+      "key": "integracoes",
+      "views": 300,
+      "clicks": 5,
+      "cvr": 0.01667,
+      "cvr_pct": 1.67,
+      "ci95_low_pct": 0.71,
+      "ci95_high_pct": 3.84
+    }
+  ],
+  "by_source": [
+    {
+      "key": "google",
+      "views": 420,
+      "clicks": 21,
+      "cvr": 0.05,
+      "cvr_pct": 5.0,
+      "ci95_low_pct": 3.29,
+      "ci95_high_pct": 7.52
+    },
+    {
+      "key": "instagram",
+      "views": 806,
+      "clicks": 31,
+      "cvr": 0.03846,
+      "cvr_pct": 3.85,
+      "ci95_low_pct": 2.72,
+      "ci95_high_pct": 5.41
+    },
+    {
+      "key": "facebook",
+      "views": 774,
+      "clicks": 25,
+      "cvr": 0.0323,
+      "cvr_pct": 3.23,
+      "ci95_low_pct": 2.2,
+      "ci95_high_pct": 4.72
+    }
+  ],
+  "by_device": [
+    {
+      "key": "mobile",
+      "views": 1487,
+      "clicks": 62,
+      "cvr": 0.04169,
+      "cvr_pct": 4.17,
+      "ci95_low_pct": 3.27,
+      "ci95_high_pct": 5.31
+    },
+    {
+      "key": "desktop",
+      "views": 513,
+      "clicks": 15,
+      "cvr": 0.02924,
+      "cvr_pct": 2.92,
+      "ci95_low_pct": 1.78,
+      "ci95_high_pct": 4.77
+    }
+  ],
+  "by_creative_device": [
+    {
+      "key": [
+        "cr_A",
+        "mobile"
+      ],
+      "views": 282,
+      "clicks": 28,
+      "cvr": 0.09929,
+      "cvr_pct": 9.93,
+      "ci95_low_pct": 6.96,
+      "ci95_high_pct": 13.98
+    },
+    {
+      "key": [
+        "cr_C",
+        "desktop"
+      ],
+      "views": 105,
+      "clicks": 5,
+      "cvr": 0.04762,
+      "cvr_pct": 4.76,
+      "ci95_low_pct": 2.05,
+      "ci95_high_pct": 10.67
+    },
+    {
+      "key": [
+        "cr_A",
+        "desktop"
+      ],
+      "views": 98,
+      "clicks": 4,
+      "cvr": 0.04082,
+      "cvr_pct": 4.08,
+      "ci95_low_pct": 1.6,
+      "ci95_high_pct": 10.03
+    },
+    {
+      "key": [
+        "cr_C",
+        "mobile"
+      ],
+      "views": 255,
+      "clicks": 10,
+      "cvr": 0.03922,
+      "cvr_pct": 3.92,
+      "ci95_low_pct": 2.14,
+      "ci95_high_pct": 7.07
+    },
+    {
+      "key": [
+        "cr_B",
+        "desktop"
+      ],
+      "views": 81,
+      "clicks": 3,
+      "cvr": 0.03704,
+      "cvr_pct": 3.7,
+      "ci95_low_pct": 1.27,
+      "ci95_high_pct": 10.33
+    },
+    {
+      "key": [
+        "cr_B",
+        "mobile"
+      ],
+      "views": 259,
+      "clicks": 8,
+      "cvr": 0.03089,
+      "cvr_pct": 3.09,
+      "ci95_low_pct": 1.57,
+      "ci95_high_pct": 5.98
+    },
+    {
+      "key": [
+        "cr_E",
+        "mobile"
+      ],
+      "views": 225,
+      "clicks": 6,
+      "cvr": 0.02667,
+      "cvr_pct": 2.67,
+      "ci95_low_pct": 1.23,
+      "ci95_high_pct": 5.69
+    },
+    {
+      "key": [
+        "cr_D",
+        "mobile"
+      ],
+      "views": 236,
+      "clicks": 6,
+      "cvr": 0.02542,
+      "cvr_pct": 2.54,
+      "ci95_low_pct": 1.17,
+      "ci95_high_pct": 5.43
+    },
+    {
+      "key": [
+        "cr_D",
+        "desktop"
+      ],
+      "views": 84,
+      "clicks": 2,
+      "cvr": 0.02381,
+      "cvr_pct": 2.38,
+      "ci95_low_pct": 0.66,
+      "ci95_high_pct": 8.27
+    },
+    {
+      "key": [
+        "cr_F",
+        "mobile"
+      ],
+      "views": 230,
+      "clicks": 4,
+      "cvr": 0.01739,
+      "cvr_pct": 1.74,
+      "ci95_low_pct": 0.68,
+      "ci95_high_pct": 4.39
+    },
+    {
+      "key": [
+        "cr_F",
+        "desktop"
+      ],
+      "views": 70,
+      "clicks": 1,
+      "cvr": 0.01429,
+      "cvr_pct": 1.43,
+      "ci95_low_pct": 0.25,
+      "ci95_high_pct": 7.66
+    },
+    {
+      "key": [
+        "cr_E",
+        "desktop"
+      ],
+      "views": 75,
+      "clicks": 0,
+      "cvr": 0.0,
+      "cvr_pct": 0.0,
+      "ci95_low_pct": 0.0,
+      "ci95_high_pct": 4.87
+    }
+  ],
+  "tests": {
+    "pain_vs_praise": {
+      "z": 2.03,
+      "p_value": 0.0424,
+      "lift": 0.5903,
+      "significant": true
+    },
+    "mobile_vs_desktop": {
+      "z": 1.264,
+      "p_value": 0.206,
+      "lift": 0.426,
+      "significant": false
+    },
+    "best_vs_rest": {
+      "z": 5.146,
+      "p_value": 2.66e-07,
+      "lift": 2.0316,
+      "significant": true,
+      "baseline_cvr_pct": 2.78
+    }
+  },
+  "feedback_vs_cvr": {
+    "rows": [
+      {
+        "creative_id": "cr_A",
+        "theme": "agendamento",
+        "angle_type": "pain_resolution",
+        "feedback_signal": 30,
+        "avg_urgency": 4.17,
+        "cvr_pct": 8.42
+      },
+      {
+        "creative_id": "cr_C",
+        "theme": "poupanca_tempo",
+        "angle_type": "praise_amplification",
+        "feedback_signal": 20,
+        "avg_urgency": 0.0,
+        "cvr_pct": 4.17
+      },
+      {
+        "creative_id": "cr_B",
+        "theme": "suporte_lento",
+        "angle_type": "pain_resolution",
+        "feedback_signal": 15,
+        "avg_urgency": 3.27,
+        "cvr_pct": 3.24
+      },
+      {
+        "creative_id": "cr_D",
+        "theme": "facilidade",
+        "angle_type": "praise_amplification",
+        "feedback_signal": 20,
+        "avg_urgency": 0.0,
+        "cvr_pct": 2.5
+      },
+      {
+        "creative_id": "cr_E",
+        "theme": "relatorios",
+        "angle_type": "praise_amplification",
+        "feedback_signal": 14,
+        "avg_urgency": 0.0,
+        "cvr_pct": 2.0
+      },
+      {
+        "creative_id": "cr_F",
+        "theme": "integracoes",
+        "angle_type": "pain_resolution",
+        "feedback_signal": 8,
+        "avg_urgency": 3.12,
+        "cvr_pct": 1.67
+      }
+    ],
+    "correlation": {
+      "global": {
+        "rho": 0.943,
+        "n": 6
+      },
+      "pain_resolution": {
+        "rho": 1.0,
+        "n": 3
+      },
+      "praise_amplification": {
+        "rho": 1.0,
+        "n": 3
+      }
+    }
+  },
+  "coverage_gaps": [
+    {
+      "theme": "faturacao",
+      "label": "Faturação e subscrição",
+      "complaints": 14,
+      "avg_pain_urgency": 4.07,
+      "quote": "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque."
+    },
+    {
+      "theme": "estabilidade",
+      "label": "Estabilidade e desempenho",
+      "complaints": 12,
+      "avg_pain_urgency": 3.92,
+      "quote": "Crashou tres vezes esta semana e perdi trabalho."
+    }
+  ]
+}

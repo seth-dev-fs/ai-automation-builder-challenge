@@ -1,0 +1,194 @@
+{
+  "finished_at": "2026-07-27T10:10:48Z",
+  "duration_seconds": 237.5,
+  "mode": "posthog",
+  "model": "gemini-2.5-flash",
+  "inputs": {
+    "feedback": 151,
+    "views": 2000,
+    "clicks": 77
+  },
+  "outputs": {
+    "clusters": 9,
+    "creatives": 3,
+    "posthog_events_written": 154
+  },
+  "llm": {
+    "attempts": 23,
+    "schema_rejections": 0,
+    "transport_errors": 22,
+    "calls": [
+      {
+        "agent": "feedback_analyst[0:50]",
+        "attempt": 1,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "feedback_analyst[0:50]",
+        "attempt": 2,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "feedback_analyst[0:50]",
+        "attempt": 3,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "feedback_analyst[50:100]",
+        "attempt": 1,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "feedback_analyst[50:100]",
+        "attempt": 2,
+        "status": "ok",
+        "seconds": 14.55,
+        "tokens_in": 1538,
+        "tokens_out": 3129
+      },
+      {
+        "agent": "feedback_analyst[100:150]",
+        "attempt": 1,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "feedback_analyst[100:150]",
+        "attempt": 2,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "feedback_analyst[100:150]",
+        "attempt": 3,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "feedback_analyst[150:151]",
+        "attempt": 1,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "feedback_analyst[150:151]",
+        "attempt": 2,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "feedback_analyst[150:151]",
+        "attempt": 3,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "results_reader",
+        "attempt": 1,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "results_reader",
+        "attempt": 2,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "results_reader",
+        "attempt": 3,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[agendamento]",
+        "attempt": 1,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[agendamento]",
+        "attempt": 2,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[agendamento]",
+        "attempt": 3,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[faturacao]",
+        "attempt": 1,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[faturacao]",
+        "attempt": 2,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[faturacao]",
+        "attempt": 3,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[estabilidade]",
+        "attempt": 1,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[estabilidade]",
+        "attempt": 2,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[estabilidade]",
+        "attempt": 3,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      }
+    ]
+  },
+  "degraded": true,
+  "degradations": [
+    {
+      "agent": "feedback_analyst[0:50]",
+      "reason": "[feedback_analyst[0:50]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your curren"
+    },
+    {
+      "agent": "feedback_analyst[100:150]",
+      "reason": "[feedback_analyst[100:150]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your cur"
+    },
+    {
+      "agent": "feedback_analyst[150:151]",
+      "reason": "[feedback_analyst[150:151]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your cur"
+    },
+    {
+      "agent": "results_reader",
+      "reason": "[results_reader] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage,"
+    },
+    {
+      "agent": "creative_writer[agendamento]",
+      "reason": "[creative_writer[agendamento]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your "
+    },
+    {
+      "agent": "creative_writer[faturacao]",
+      "reason": "[creative_writer[faturacao]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your cu"
+    },
+    {
+      "agent": "creative_writer[estabilidade]",
+      "reason": "[creative_writer[estabilidade]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your"
+    }
+  ]
+}
