@@ -109,7 +109,8 @@ e há uma dor com queixas graves que a campanha anterior nunca abordou.
 
 E há um resultado que **decidi não usar**: mobile converte melhor do que desktop
 (4,17% vs 2,92%), mas com p = 0,21 aquilo é ruído. Pedi explicitamente ao agente
-de leitura que apontasse uma diferença que parece padrão e não passa no teste.
+de leitura que apontasse uma diferença que parece padrão e não passa no teste —
+e ele apanhou-a, com a recomendação de não agir sobre ela.
 Distinguir as duas coisas é a diferença entre reafectar orçamento com fundamento
 e reafectá-lo por acaso.
 
@@ -140,10 +141,28 @@ guarda: passei a **pedir 35 e a validar a 40**. A folga é para ele errar sem qu
 o resultado deixe de servir. Na mesma execução, a validação apanhou também um
 copy com uma promessa absoluta — e nessa o retry resolveu à primeira.
 
+**Um secret vazio devolve verde.** A meio, uma chave foi para o GitHub como
+string vazia (o comando que a extraía falhou em silêncio). O pipeline correu,
+degradou os oito agentes para o caminho determinístico, commitou os resultados e
+o Actions deu ✅. Ou seja: o mecanismo de degradação funcionou tão bem que
+escondeu uma avaria de configuração. Acrescentei um passo no workflow que falha
+se algum secret vier vazio — degradar é para quando o modelo falha, não para
+quando falta configuração.
+
 **Dirigir bem é sobretudo saber o que verificar.** A parte que eu não posso
 delegar é decidir o que conta como estar feito. Por isso é que o caminho de falha
 foi testado antes do caminho de sucesso, e é por isso que os números do relatório
 não passam pelo modelo.
+
+**E uma que só se vê nos dados.** Depois de algumas execuções, o dashboard
+mostrava 754 classificações para 151 feedbacks — cada execução reclassificava
+tudo e voltava a escrever. Pior: o mesmo feedback aparecia em dois temas
+diferentes, porque o modelo nem sempre decide o mesmo. Corrigi nas duas pontas,
+porque uma só não chegava: o write-back passou a usar um `uuid` determinístico
+(o PostHog descarta reenvios), e as queries do dashboard passaram a tirar **uma
+linha por feedback com a classificação mais recente**, para não dependerem de os
+dados históricos estarem limpos. Nenhum teste apanharia isto — só olhar para o
+número e achá-lo estranho.
 
 ## O que cortei
 
