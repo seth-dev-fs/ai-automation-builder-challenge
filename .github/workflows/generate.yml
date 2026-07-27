@@ -57,6 +57,11 @@ jobs:
           POSTHOG_PERSONAL_API_KEY: ${{ secrets.POSTHOG_PERSONAL_API_KEY }}
           POSTHOG_PROJECT_KEY: ${{ secrets.POSTHOG_PROJECT_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Modelo e ritmo configuráveis sem tocar no código: os limites do
+          # plano gratuito mudam, e quando mudam não se quer estar a abrir um
+          # Pull Request para trocar uma constante.
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+          GEMINI_MIN_INTERVAL: ${{ vars.GEMINI_MIN_INTERVAL || '6.5' }}
         run: |
           python scripts/pipeline.py \
             ${{ inputs.writeback == false && '--no-writeback' || '' }}
