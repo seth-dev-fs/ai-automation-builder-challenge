@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-07-27T10:20:54Z",
-  "duration_seconds": 10.6,
+  "finished_at": "2026-07-27T10:33:04Z",
+  "duration_seconds": 4.1,
   "mode": "posthog",
   "model": "gemini-2.5-flash",
   "inputs": {
@@ -16,91 +16,42 @@
   "llm": {
     "attempts": 8,
     "schema_rejections": 0,
-    "transport_errors": 8,
-    "calls": [
-      {
-        "agent": "feedback_analyst[0:50]",
-        "attempt": 1,
-        "status": "erro_http",
-        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
-      },
-      {
-        "agent": "feedback_analyst[50:100]",
-        "attempt": 1,
-        "status": "erro_http",
-        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
-      },
-      {
-        "agent": "feedback_analyst[100:150]",
-        "attempt": 1,
-        "status": "erro_http",
-        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
-      },
-      {
-        "agent": "feedback_analyst[150:151]",
-        "attempt": 1,
-        "status": "erro_http",
-        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
-      },
-      {
-        "agent": "results_reader",
-        "attempt": 1,
-        "status": "erro_http",
-        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
-      },
-      {
-        "agent": "creative_writer[agendamento]",
-        "attempt": 1,
-        "status": "erro_http",
-        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
-      },
-      {
-        "agent": "creative_writer[faturacao]",
-        "attempt": 1,
-        "status": "erro_http",
-        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
-      },
-      {
-        "agent": "creative_writer[estabilidade]",
-        "attempt": 1,
-        "status": "erro_http",
-        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
-      }
-    ]
+    "transport_errors": 0,
+    "calls": []
   },
   "degraded": true,
   "degradations": [
     {
       "agent": "feedback_analyst[0:50]",
-      "reason": "[feedback_analyst[0:50]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KE"
+      "reason": "GEMINI_API_KEY não definida"
     },
     {
       "agent": "feedback_analyst[50:100]",
-      "reason": "[feedback_analyst[50:100]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_"
+      "reason": "GEMINI_API_KEY não definida"
     },
     {
       "agent": "feedback_analyst[100:150]",
-      "reason": "[feedback_analyst[100:150]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API"
+      "reason": "GEMINI_API_KEY não definida"
     },
     {
       "agent": "feedback_analyst[150:151]",
-      "reason": "[feedback_analyst[150:151]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API"
+      "reason": "GEMINI_API_KEY não definida"
     },
     {
       "agent": "results_reader",
-      "reason": "[results_reader] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALI"
+      "reason": "GEMINI_API_KEY não definida"
     },
     {
       "agent": "creative_writer[agendamento]",
-      "reason": "[creative_writer[agendamento]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \""
+      "reason": "GEMINI_API_KEY não definida"
     },
     {
       "agent": "creative_writer[faturacao]",
-      "reason": "[creative_writer[faturacao]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"AP"
+      "reason": "GEMINI_API_KEY não definida"
     },
     {
       "agent": "creative_writer[estabilidade]",
-      "reason": "[creative_writer[estabilidade]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": "
+      "reason": "GEMINI_API_KEY não definida"
     }
   ]
 }

@@ -1,6 +1,6 @@
 # Leitura dos resultados — `prev_campaign_q1`
 
-_Gerado automaticamente em 2026-07-27 10:20 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash` e foi revista por um humano antes de qualquer decisão de orçamento._
+_Gerado automaticamente em 2026-07-27 10:33 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash` e foi revista por um humano antes de qualquer decisão de orçamento._
 
 ## Conclusões
 
