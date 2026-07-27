@@ -78,20 +78,28 @@ ORDER BY cvr_pct DESC
             "PostHog como `feedback_classified`. É isto que torna as dores "
             "consultáveis ao lado dos resultados."
         ),
-        # `uniqExact` sobre o feedback_ref e não `count()`: cada execução do
-        # pipeline reclassifica os mesmos feedbacks, e contar eventos contaria
-        # a mesma queixa uma vez por execução. O write-back já é idempotente
-        # (uuid determinístico), mas a query não deve depender disso — os
-        # eventos das execuções anteriores à correção continuam na base.
+        # `argMax(..., timestamp)` agrupado por feedback_ref: uma linha por
+        # feedback, com a classificação mais recente. Cada execução reclassifica
+        # os mesmos textos e o modelo nem sempre decide o mesmo — contar eventos
+        # dava 193 classificações para 151 feedbacks, com o mesmo feedback a
+        # aparecer em dois temas. O write-back já é idempotente (uuid5 sobre o
+        # feedback_ref), mas a query não deve depender disso: os eventos das
+        # execuções anteriores à correção continuam na base.
         "query": """
 SELECT
-  properties.theme_label AS tema,
-  uniqExactIf(properties.feedback_ref, properties.sentiment = 'negative') AS queixas,
-  uniqExactIf(properties.feedback_ref, properties.sentiment = 'positive') AS elogios,
-  uniqExact(properties.feedback_ref) AS total,
-  round(avg(toFloat(properties.urgency)), 2) AS urgencia_media
-FROM events
-WHERE event = 'feedback_classified'
+  tema,
+  countIf(sentimento = 'negative') AS queixas,
+  countIf(sentimento = 'positive') AS elogios,
+  count() AS total,
+  round(avg(urgencia), 2) AS urgencia_media
+FROM (
+  SELECT
+    properties.feedback_ref AS ref,
+    argMax(properties.theme_label, timestamp) AS tema,
+    argMax(properties.sentiment, timestamp) AS sentimento,
+    argMax(toFloat(properties.urgency), timestamp) AS urgencia
+  FROM events WHERE event = 'feedback_classified' GROUP BY ref
+)
 GROUP BY tema
 ORDER BY queixas DESC
 """,
@@ -111,11 +119,17 @@ SELECT
   round(100.0 * sum(cliques) / nullIf(sum(impressoes), 0), 2) AS cvr_pct
 FROM (
   SELECT
-    properties.theme AS tema,
-    uniqExactIf(properties.feedback_ref, properties.sentiment = 'negative') AS queixas,
-    uniqExactIf(properties.feedback_ref, properties.sentiment = 'positive') AS elogios,
+    tema,
+    countIf(sentimento = 'negative') AS queixas,
+    countIf(sentimento = 'positive') AS elogios,
     0 AS impressoes, 0 AS cliques
-  FROM events WHERE event = 'feedback_classified' GROUP BY tema
+  FROM (
+    SELECT properties.feedback_ref AS ref,
+           argMax(properties.theme, timestamp) AS tema,
+           argMax(properties.sentiment, timestamp) AS sentimento
+    FROM events WHERE event = 'feedback_classified' GROUP BY ref
+  )
+  GROUP BY tema
   UNION ALL
   SELECT
     properties.theme AS tema,
@@ -136,12 +150,18 @@ ORDER BY queixas_no_feedback DESC
         "description": "Volume não é gravidade. Um tema com poucas queixas mas urgentes merece atenção diferente.",
         "query": """
 SELECT
-  properties.theme_label AS tema,
-  round(avg(toFloat(properties.urgency)), 2) AS urgencia_media,
-  uniqExactIf(properties.feedback_ref, toFloat(properties.urgency) = 5) AS criticas,
-  uniqExact(properties.feedback_ref) AS queixas
-FROM events
-WHERE event = 'feedback_classified' AND properties.sentiment = 'negative'
+  tema,
+  round(avg(urgencia), 2) AS urgencia_media,
+  countIf(urgencia = 5) AS criticas,
+  count() AS queixas
+FROM (
+  SELECT properties.feedback_ref AS ref,
+         argMax(properties.theme_label, timestamp) AS tema,
+         argMax(properties.sentiment, timestamp) AS sentimento,
+         argMax(toFloat(properties.urgency), timestamp) AS urgencia
+  FROM events WHERE event = 'feedback_classified' GROUP BY ref
+)
+WHERE sentimento = 'negative'
 GROUP BY tema
 ORDER BY urgencia_media DESC
 """,
