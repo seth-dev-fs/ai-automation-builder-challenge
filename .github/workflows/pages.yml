@@ -31,6 +31,31 @@ jobs:
       - uses: actions/configure-pages@v5
         with:
           enablement: true # cria/ativa o site Pages via API se ainda não existir
+
+      # A chave `phc_` é pública por natureza (vive no browser de quem abre a
+      # página), mas mesmo assim não fica no repositório: entra aqui, a partir
+      # do mesmo Secret que o pipeline usa. Uma fonte de verdade só.
+      - name: Injetar configuração do PostHog
+        env:
+          PROJECT_KEY: ${{ secrets.POSTHOG_PROJECT_KEY }}
+          POSTHOG_HOST: ${{ secrets.POSTHOG_HOST }}
+        run: |
+          if [ -z "$PROJECT_KEY" ]; then
+            echo "::error::Falta o secret POSTHOG_PROJECT_KEY — a LP publicada não capturaria nada."
+            exit 1
+          fi
+          python3 - <<'PY'
+          import os, pathlib
+          page = pathlib.Path("starter/index.html")
+          html = page.read_text(encoding="utf-8")
+          html = html.replace("__POSTHOG_PROJECT_KEY__", os.environ["PROJECT_KEY"])
+          html = html.replace("__POSTHOG_HOST__",
+                              os.environ.get("POSTHOG_HOST") or "https://eu.i.posthog.com")
+          assert "__POSTHOG_" not in html, "sobrou um marcador por substituir"
+          page.write_text(html, encoding="utf-8")
+          print("✓ configuração injetada")
+          PY
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: starter

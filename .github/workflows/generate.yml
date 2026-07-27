@@ -1,15 +1,34 @@
 name: Gerar análise e criativos
 
-# Corre o pipeline dos 3 agentes e faz commit dos resultados em analysis/ e creatives/.
-# Dispara manualmente (Run workflow) ou todas as manhãs.
+# O ciclo completo dos três agentes. Corre à mão ou de madrugada.
+#
+# Nota sobre onde os resultados aterram, que é uma decisão deliberada:
+#
+#   analysis/   → commit direto em main. São factos: contagens, CVRs, valores-p.
+#                 Calculados em código, reproduzíveis, sem juízo de valor.
+#                 Não faz sentido pedir a um humano que aprove uma soma.
+#
+#   creatives/  → Pull Request. É texto que vai aparecer em nome da empresa a
+#                 pessoas reais, escrito por um modelo. O merge do PR é a
+#                 assinatura humana, e fica registada com nome e data.
 
 on:
   workflow_dispatch:
+    inputs:
+      writeback:
+        description: "Escrever eventos de volta no PostHog"
+        type: boolean
+        default: true
   schedule:
-    - cron: "0 6 * * *" # 06:00 UTC diariamente (opcional - muda ou remove)
+    - cron: "0 6 * * 1" # segundas às 06:00 UTC — a tempo da reunião de semana
 
 permissions:
   contents: write
+  pull-requests: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
 
 jobs:
   pipeline:
@@ -21,22 +40,78 @@ jobs:
         with:
           python-version: "3.12"
 
+      # O pipeline é stdlib pura. O passo fica cá na mesma para o dia em que
+      # deixar de ser — e custa dois segundos com o requirements.txt vazio.
       - name: Instalar dependências
         run: pip install -r requirements.txt
+
+      - name: Verificar sintaxe
+        run: |
+          python -m compileall -q scripts/
+          echo "✓ scripts compilam"
 
       - name: Correr pipeline
         env:
           POSTHOG_HOST: ${{ secrets.POSTHOG_HOST }}
           POSTHOG_PROJECT_ID: ${{ secrets.POSTHOG_PROJECT_ID }}
           POSTHOG_PERSONAL_API_KEY: ${{ secrets.POSTHOG_PERSONAL_API_KEY }}
+          POSTHOG_PROJECT_KEY: ${{ secrets.POSTHOG_PROJECT_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/pipeline.py
-
-      - name: Commit dos resultados
         run: |
-          git config user.name "challenge-bot"
-          git config user.email "challenge-bot@users.noreply.github.com"
-          git add analysis/ creatives/
-          git diff --staged --quiet || git commit -m "chore: atualizar análise e criativos [skip ci]"
+          python scripts/pipeline.py \
+            ${{ inputs.writeback == false && '--no-writeback' || '' }}
+
+      - name: Ler estado da execução
+        id: status
+        run: |
+          STATUS=$(cat .pipeline_status 2>/dev/null || echo "ok")
+          if [ "$STATUS" = "degraded" ]; then
+            echo "degraded=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "degraded=false" >> "$GITHUB_OUTPUT"
+          fi
+          {
+            echo "### Pipeline: \`$STATUS\`"
+            echo ""
+            echo '```json'
+            python -c "import json;d=json.load(open('analysis/run_log.json'));d.pop('llm',None);print(json.dumps(d,ensure_ascii=False,indent=2))"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          rm -f .pipeline_status
+
+      # ── Factos: commit direto ─────────────────────────────────────────────
+      - name: Commit da análise
+        run: |
+          git config user.name "pipeline-bot"
+          git config user.email "pipeline-bot@users.noreply.github.com"
+          git add analysis/
+          git diff --staged --quiet || git commit -m "chore(analysis): atualizar leitura de resultados [skip ci]"
           git push
+
+      # ── Criativos: Pull Request, para revisão humana ──────────────────────
+      - name: Abrir PR com os criativos
+        uses: peter-evans/create-pull-request@v6
+        with:
+          add-paths: creatives/
+          branch: pipeline/creatives
+          delete-branch: true
+          commit-message: "feat(creatives): nova ronda gerada a partir do feedback"
+          title: "Criativos para revisão — ronda #${{ github.run_number }}"
+          labels: |
+            criativos
+            ${{ steps.status.outputs.degraded == 'true' && 'needs-human-review' || 'gerado-pelo-modelo' }}
+          body: |
+            Criativos gerados pelo pipeline a partir do feedback no PostHog.
+            **Nada disto está publicado.** Os ficheiros estão todos em `status: draft`;
+            o merge deste PR é a aprovação humana e fica registada com nome e data.
+
+            ${{ steps.status.outputs.degraded == 'true' && '> ⚠️ **Execução degradada.** Pelo menos um agente caiu no caminho determinístico porque o modelo não respondeu. Os criativos marcados `incomplete` são esboços e NÃO devem ser publicados sem reescrita. Ver `analysis/run_log.json`.' || '✅ Execução limpa — todos os agentes responderam dentro do contrato.' }}
+
+            **Antes de aprovar, confirmar:**
+            - [ ] O copy diz a verdade sobre o produto
+            - [ ] As citações em "Evidência" sustentam mesmo o ângulo
+            - [ ] Nenhuma promessa que não consigamos cumprir
+            - [ ] `utm_content` corresponde ao `creative_id`
+
+            Leitura que motivou esta ronda: [`analysis/results_report.md`](../blob/main/analysis/results_report.md)
+            Execução: [run #${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})

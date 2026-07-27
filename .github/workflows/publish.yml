@@ -1,0 +1,36 @@
+name: Registar criativos aprovados
+
+# Fecha o ciclo do lado humano.
+#
+# Quando um criativo entra em `main` (ou seja: quando alguém fez merge do PR
+# aberto pelo pipeline), este workflow envia `creative_approved` para o PostHog.
+# A partir daí, o dashboard consegue mostrar quantos criativos o pipeline propôs
+# contra quantos um humano deixou passar — que é a métrica que diz se a
+# automação está a ser útil ou a dar trabalho.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "creatives/*.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Enviar creative_approved para o PostHog
+        env:
+          POSTHOG_HOST: ${{ secrets.POSTHOG_HOST }}
+          POSTHOG_PROJECT_KEY: ${{ secrets.POSTHOG_PROJECT_KEY }}
+          APPROVED_BY: ${{ github.actor }}
+        run: python scripts/register_approval.py

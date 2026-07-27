@@ -3,79 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de recolha de feedback — desafio AI Automation Builder." />
   <title>A tua opinião conta</title>
 
-  <!-- ── PostHog: já ligado. Substitui KEY/HOST pelos que te demos. ────────── -->
   <script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording capturePageview capturePageleave debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
 
-    // ⬇️ SUBSTITUI estes dois valores:
-    posthog.init('__POSTHOG_PROJECT_KEY__', { api_host: 'https://eu.i.posthog.com' });
+    // A Project API Key (phc_) é pública por natureza — vai no browser de quem
+    // abre a página. Mesmo assim é injetada pelo workflow de deploy a partir de
+    // um GitHub Secret, para o repositório não ser a fonte de verdade de
+    // nenhuma chave, nem sequer das inócuas.
+    posthog.init('__POSTHOG_PROJECT_KEY__', {
+      api_host: '__POSTHOG_HOST__',
+      persistence: 'localStorage',
+      autocapture: true,
+    });
   </script>
-  <!-- ─────────────────────────────────────────────────────────────────────── -->
 
   <style>
-    :root { --bg:#0f1115; --card:#1a1d24; --fg:#e8eaed; --muted:#9aa0a6; --brand:#6c8cff; --ok:#3ecf8e; --warn:#ff7a7a; --line:#2a2e37; }
+    :root {
+      --bg:#0d0f14; --card:#171a21; --fg:#e8eaed; --muted:#9aa0a6;
+      --brand:#6c8cff; --brand-soft:rgba(108,140,255,.12);
+      --ok:#3ecf8e; --warn:#ff8686; --line:#282c36;
+    }
     * { box-sizing: border-box; }
-    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--fg); min-height:100vh; display:grid; place-items:center; padding:24px; }
-    .card { width:100%; max-width:520px; background:var(--card); border:1px solid var(--line); border-radius:16px; padding:32px; }
-    h1 { margin:0 0 8px; font-size:1.5rem; }
-    p.lead { margin:0 0 24px; color:var(--muted); }
-    .toggle { display:flex; gap:8px; margin-bottom:16px; }
-    .toggle button { flex:1; padding:12px; border:1px solid var(--line); background:transparent; color:var(--fg); border-radius:10px; cursor:pointer; font-size:.95rem; }
-    .toggle button.active { border-color:var(--brand); background:rgba(108,140,255,.12); }
-    textarea { width:100%; min-height:120px; resize:vertical; padding:12px; border-radius:10px; border:1px solid var(--line); background:var(--bg); color:var(--fg); font:inherit; }
-    .submit { margin-top:16px; width:100%; padding:14px; border:none; border-radius:10px; background:var(--brand); color:#fff; font-size:1rem; font-weight:600; cursor:pointer; }
-    .submit:disabled { opacity:.5; cursor:not-allowed; }
-    .status { margin-top:14px; min-height:20px; font-size:.9rem; }
+    body {
+      margin:0; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+      background:radial-gradient(120% 90% at 50% 0%, #1a1f2e 0%, var(--bg) 55%);
+      color:var(--fg); min-height:100vh; display:grid; place-items:center; padding:24px;
+      line-height:1.55;
+    }
+    .card {
+      width:100%; max-width:560px; background:var(--card); border:1px solid var(--line);
+      border-radius:18px; padding:clamp(24px,5vw,36px);
+      box-shadow:0 24px 60px -30px rgba(0,0,0,.9);
+    }
+    h1 { margin:0 0 8px; font-size:clamp(1.35rem,4vw,1.6rem); letter-spacing:-.02em; }
+    p.lead { margin:0 0 26px; color:var(--muted); font-size:.97rem; }
+    fieldset { border:0; padding:0; margin:0 0 18px; }
+    legend { font-size:.82rem; color:var(--muted); margin-bottom:8px; padding:0; }
+    .toggle { display:flex; gap:8px; }
+    .toggle button {
+      flex:1; padding:12px; border:1px solid var(--line); background:transparent;
+      color:var(--fg); border-radius:11px; cursor:pointer; font-size:.95rem;
+      transition:border-color .15s, background .15s;
+    }
+    .toggle button:hover { border-color:#3a4050; }
+    .toggle button[aria-pressed="true"] { border-color:var(--brand); background:var(--brand-soft); }
+    label.field { display:block; font-size:.82rem; color:var(--muted); margin-bottom:8px; }
+    textarea {
+      width:100%; min-height:130px; resize:vertical; padding:13px; border-radius:11px;
+      border:1px solid var(--line); background:#10131a; color:var(--fg); font:inherit;
+    }
+    textarea:focus-visible { outline:2px solid var(--brand); outline-offset:1px; }
+    .counter { margin-top:6px; font-size:.78rem; color:var(--muted); text-align:right; }
+    .counter.short { color:var(--warn); }
+    .submit {
+      margin-top:18px; width:100%; padding:14px; border:none; border-radius:11px;
+      background:var(--brand); color:#fff; font-size:1rem; font-weight:600; cursor:pointer;
+    }
+    .submit:disabled { opacity:.45; cursor:not-allowed; }
+    .status { margin-top:14px; min-height:22px; font-size:.9rem; }
     .status.ok { color:var(--ok); } .status.err { color:var(--warn); }
+    .foot {
+      margin-top:26px; padding-top:18px; border-top:1px solid var(--line);
+      font-size:.78rem; color:var(--muted);
+    }
+    .foot code { color:#b9c0cc; }
   </style>
 </head>
 <body>
   <main class="card">
     <h1>A tua opinião conta</h1>
-    <p class="lead">Conta-nos o que correu bem ou o que podemos melhorar.</p>
+    <p class="lead">Conta-nos o que correu bem ou o que podemos melhorar. Lemos tudo — e é a partir daqui que decidimos o que construir a seguir.</p>
 
-    <div class="toggle" id="toggle">
-      <button data-type="praise" class="active">👏 Elogio</button>
-      <button data-type="complaint">🛠️ Reclamação</button>
-    </div>
+    <form id="form" novalidate>
+      <fieldset>
+        <legend>Que tipo de feedback é?</legend>
+        <div class="toggle" id="toggle">
+          <button type="button" data-type="praise" aria-pressed="true">👏 Elogio</button>
+          <button type="button" data-type="complaint" aria-pressed="false">🛠️ Reclamação</button>
+        </div>
+      </fieldset>
 
-    <textarea id="text" placeholder="Escreve aqui o teu feedback..."></textarea>
-    <button class="submit" id="submit">Enviar feedback</button>
-    <div class="status" id="status"></div>
+      <label class="field" for="text">O teu feedback</label>
+      <textarea id="text" required minlength="10" maxlength="1000"
+                placeholder="Ex.: marcar uma sessão dá sempre trabalho a mais — o calendário não deixa perceber o que já está ocupado."></textarea>
+      <div class="counter" id="counter">mínimo 10 caracteres</div>
+
+      <button class="submit" id="submit" type="submit">Enviar feedback</button>
+      <div class="status" id="status" role="status" aria-live="polite"></div>
+    </form>
+
+    <p class="foot">
+      Este feedback entra num pipeline automático que o classifica por tema e
+      urgência, e transforma as dores mais reportadas em ideias de campanha.
+      Enviado como <code>feedback_submitted</code>.
+    </p>
   </main>
 
   <script>
-    let feedbackType = 'praise';
+    const form = document.getElementById('form');
     const toggle = document.getElementById('toggle');
     const textEl = document.getElementById('text');
     const submitEl = document.getElementById('submit');
     const statusEl = document.getElementById('status');
+    const counterEl = document.getElementById('counter');
 
-    toggle.addEventListener('click', (e) => {
-      const btn = e.target.closest('button'); if (!btn) return;
-      feedbackType = btn.dataset.type;
-      [...toggle.children].forEach(b => b.classList.toggle('active', b === btn));
+    const MIN_LENGTH = 10;
+    let feedbackType = 'praise';
+
+    /* O `channel` diz de onde veio o feedback. Nos dados semeados os valores são
+       web / mobile / email_survey, por isso mantenho o mesmo vocabulário — se
+       inventasse uma etiqueta nova, os 150 eventos antigos e os novos deixavam
+       de poder ser lidos no mesmo gráfico. */
+    const channel = window.matchMedia('(max-width: 820px)').matches ? 'mobile' : 'web';
+
+    const newId = () => (crypto.randomUUID
+      ? crypto.randomUUID()
+      : 'fb-' + Date.now() + '-' + Math.random().toString(16).slice(2));
+
+    toggle.addEventListener('click', (event) => {
+      const button = event.target.closest('button');
+      if (!button) return;
+      feedbackType = button.dataset.type;
+      [...toggle.children].forEach((b) =>
+        b.setAttribute('aria-pressed', String(b === button)));
     });
 
-    submitEl.addEventListener('click', () => {
-      const text = textEl.value.trim();
-      if (!text) { statusEl.textContent = 'Escreve algo primeiro.'; statusEl.className = 'status err'; return; }
+    textEl.addEventListener('input', () => {
+      const n = textEl.value.trim().length;
+      const short = n > 0 && n < MIN_LENGTH;
+      counterEl.textContent = short ? `faltam ${MIN_LENGTH - n} caracteres` : `${n}/1000`;
+      counterEl.classList.toggle('short', short);
+    });
 
-      // ── LEG 1: capturar o feedback no PostHog. ───────────────────────────
-      // Baseline mínimo abaixo. Decide TU que propriedades os teus agentes a
-      // jusante vão precisar (tema? só o texto? algo mais?). O que capturas
-      // aqui condiciona a análise no Agente 1.
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const text = textEl.value.trim();
+
+      /* Guarda mínima à entrada. Um "ok" ou um "asd" não é feedback: gasta uma
+         chamada ao modelo e entra nas contagens a diluir os temas reais. Sai
+         mais barato filtrar aqui do que a jusante. */
+      if (text.length < MIN_LENGTH) {
+        statusEl.textContent = 'Escreve um pouco mais — precisamos de perceber o contexto.';
+        statusEl.className = 'status err';
+        textEl.focus();
+        return;
+      }
+
+      if (typeof posthog === 'undefined' || !posthog.capture) {
+        statusEl.textContent = 'Não foi possível enviar (bloqueador de anúncios?). Tenta novamente.';
+        statusEl.className = 'status err';
+        return;
+      }
+
+      submitEl.disabled = true;
+
+      /* As propriedades são escolhidas a pensar em quem as lê a jusante:
+
+         feedback_id  — o agente devolve a classificação ao PostHog num evento
+                        `feedback_classified` separado; sem uma chave estável não
+                        havia como ligar a classificação ao texto que a originou.
+         text_length  — permite pesar um desabafo de 300 caracteres contra um
+                        "está lento" sem reprocessar o texto todo.
+         page/referrer— de onde veio quem se deu ao trabalho de escrever.
+
+         O que NÃO capturo: o tema. É deliberado — inferir o tema é o trabalho do
+         agente, e um menu de temas na página enviesaria a resposta para as
+         categorias que já conhecemos, que é precisamente o que queremos evitar. */
       posthog.capture('feedback_submitted', {
+        feedback_id: newId(),
         feedback_type: feedbackType,
         text: text,
+        text_length: text.length,
+        channel: channel,
+        lp_version: '2026-07-27',
+        page: location.pathname,
+        referrer: document.referrer || 'direct',
       });
-      // ─────────────────────────────────────────────────────────────────────
 
-      statusEl.textContent = 'Obrigado pelo teu feedback! 🙌';
+      statusEl.textContent = 'Obrigado! O teu feedback já entrou no pipeline. 🙌';
       statusEl.className = 'status ok';
       textEl.value = '';
+      counterEl.textContent = `mínimo ${MIN_LENGTH} caracteres`;
+      counterEl.classList.remove('short');
+
+      /* Reabrir passados 2 segundos: dá sinal de que o envio terminou e evita o
+         duplo clique acidental, que geraria dois eventos do mesmo feedback. */
+      setTimeout(() => { submitEl.disabled = false; }, 2000);
     });
   </script>
 </body>
