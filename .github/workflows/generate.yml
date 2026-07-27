@@ -65,7 +65,9 @@ jobs:
               echo "::error::O secret $name está vazio ou não existe."
               exit 1
             fi
-            echo "✓ $name presente (${#name} → ${!name:0:4}…)"
+            # Presença e comprimento, nunca o conteúdo. Os primeiros caracteres
+            # de uma chave chegam para a identificar em logs que ficam públicos.
+            echo "✓ $name presente (${#name} caracteres)"
           done
 
       - name: Correr pipeline
@@ -120,9 +122,12 @@ jobs:
           delete-branch: true
           commit-message: "feat(creatives): nova ronda gerada a partir do feedback"
           title: "Criativos para revisão — ronda #${{ github.run_number }}"
-          labels: |
-            criativos
-            ${{ steps.status.outputs.degraded == 'true' && 'needs-human-review' || 'gerado-pelo-modelo' }}
+          # `labels` acrescenta, não substitui: o Pull Request é reutilizado
+          # entre execuções e ficava com `needs-human-review` de uma execução
+          # degradada ao lado de `gerado-pelo-modelo` de uma limpa — a dizer
+          # duas coisas contrárias. O estado real vai no corpo, que é reescrito
+          # a cada execução; aqui fica só a etiqueta que não muda.
+          labels: criativos
           body: |
             Criativos gerados pelo pipeline a partir do feedback no PostHog.
             **Nada disto está publicado.** Os ficheiros estão todos em `status: draft`;
