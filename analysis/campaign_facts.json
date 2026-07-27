@@ -378,7 +378,7 @@
         "theme": "agendamento",
         "angle_type": "pain_resolution",
         "feedback_signal": 29,
-        "avg_urgency": 3.52,
+        "avg_urgency": 3.59,
         "cvr_pct": 8.42
       },
       {
@@ -442,14 +442,14 @@
       "theme": "faturacao",
       "label": "Faturação e subscrição",
       "complaints": 14,
-      "avg_pain_urgency": 3.71,
+      "avg_pain_urgency": 3.79,
       "quote": "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque."
     },
     {
       "theme": "estabilidade",
       "label": "Estabilidade e desempenho",
       "complaints": 12,
-      "avg_pain_urgency": 3.58,
+      "avg_pain_urgency": 3.92,
       "quote": "Crashou tres vezes esta semana e perdi trabalho."
     }
   ]

@@ -1,21 +1,21 @@
 # Leitura dos resultados — `prev_campaign_q1`
 
-_Gerado automaticamente em 2026-07-27 10:13 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash-lite` e foi revista por um humano antes de qualquer decisão de orçamento._
+_Gerado automaticamente em 2026-07-27 10:15 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash-lite` e foi revista por um humano antes de qualquer decisão de orçamento._
 
 ## Conclusões
-* O feedback dos utilizadores é um forte preditor do desempenho dos anúncios. Temas com mais menções positivas (ou menos queixas com alta urgência) tendem a ter um CVR mais elevado, como se vê na forte correlação (ρ = 0.829) e no desempenho superior do tema de agendamento (cr_A) que reflete a dor de "perder marcações".
-* O ângulo `pain_resolution` (CVR 4.71%) demonstrou ser significativamente mais eficaz do que `praise_amplification` (CVR 2.96%), com um lift de 59% (p=0.0424).
-* A diferença de CVR entre dispositivos móveis (4.17%) e desktop (2.92%) não é estatisticamente significativa (p=0.206), pelo que não devemos tirar conclusões sobre a preferência de dispositivo com base nestes dados.
+* O feedback positivo dos utilizadores está diretamente correlacionado com o desempenho dos anúncios. Criativos que abordam temas com muitos elogios (como "Facilidade de uso" e "Poupança de tempo") tendem a ter um CVR mais elevado, enquanto temas com muitas queixas e poucos elogios (como "Faturação e subscrição" e "Estabilidade e desempenho") apresentam um CVR mais baixo.
+* O ângulo "pain_resolution" demonstrou ser significativamente mais eficaz (lift de 59%, p=0.0424) do que "praise_amplification", indicando que resolver dores dos utilizadores é uma estratégia mais rentável para a conversão.
+* A diferença de CVR entre dispositivos móveis (4.17%) e desktop (2.92%) não é estatisticamente significativa (p=0.206), pelo que não devemos tomar decisões com base nesta aparente diferença.
 
 ## O que fazer a seguir
-1. **Amplificar o tema de agendamento e marcações:** O criativo `cr_A` com o ângulo `pain_resolution` teve um CVR de 8.42% (IC 95%: 6.03–11.65%), significativamente superior à média da campanha. Devemos aumentar o investimento neste criativo e explorar variações do tema.
-2. **Testar criativos focados em faturação e estabilidade:** Estes temas registaram um volume considerável de queixas com alta urgência (3.71/5 e 3.58/5 respetivamente) e não tiveram criativos dedicados na campanha anterior. Testar anúncios que abordem estas dores pode melhorar o CVR geral.
-3. **Reduzir o investimento em criativos com baixo desempenho:** O criativo `cr_F` (`Integra tudo num só lugar`) teve um CVR de 1.67%, o mais baixo da campanha. Devemos desativar ou otimizar este criativo.
+1. **Amplificar criativos focados em "pain_resolution" e "Facilidade de uso/Poupança de tempo"**: O criativo cr_A, com tema "agendamento" (parte de "pain_resolution"), teve um CVR de 8.42%. Devemos investir mais em criativos que resolvam dores claras e que abordem os temas com mais elogios.
+2. **Cortar criativos focados em "integrações"**: O criativo cr_F, com tema "integrações", teve um CVR de 1.67%, um dos mais baixos. Este tema também tem poucas menções positivas no feedback.
+3. **Testar novos criativos focados em "Faturação e subscrição" e "Estabilidade e desempenho"**: Estes temas apresentam queixas com alta urgência (3.79/5 e 3.92/5 respetivamente) mas não tiveram criativos dedicados na campanha anterior. Dada a correlação entre feedback e desempenho, abordar estas dores pode gerar um aumento significativo no CVR.
 
 ## Limites desta leitura
-* As impressões e cliques não foram distribuídos equitativamente por todos os criativos e ângulos, o que pode influenciar a robustez das conclusões sobre o desempenho individual.
-* Não dispomos de dados de custo por clique ou custo por aquisição, pelo que o CVR não pode ser diretamente traduzido em Retorno do Investimento (ROI).
-* A análise de correlação baseia-se num número reduzido de temas (n=6), o que limita a generalização da força da relação observada.
+* Não temos dados sobre a distribuição igualitária de impressões por criativo, o que pode ter influenciado o desempenho individual.
+* A métrica CVR não considera o custo por clique ou por conversão, pelo que não podemos inferir o ROI (Retorno sobre o Investimento) desta campanha.
+* A correlação observada (Spearman ρ = 0.829) baseia-se num número reduzido de temas (n=6), o que limita a generalização das conclusões.
 
 ---
 
@@ -80,5 +80,5 @@ Temas com queixas registadas que a campanha anterior nunca abordou:
 
 | Tema | Queixas | Urgência média | Exemplo |
 |---|---|---|---|
-| Faturação e subscrição | 14 | 3.71 | "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque." |
-| Estabilidade e desempenho | 12 | 3.58 | "Crashou tres vezes esta semana e perdi trabalho." |
+| Faturação e subscrição | 14 | 3.79 | "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque." |
+| Estabilidade e desempenho | 12 | 3.92 | "Crashou tres vezes esta semana e perdi trabalho." |

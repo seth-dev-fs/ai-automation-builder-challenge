@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-07-27T10:13:42Z",
-  "duration_seconds": 80.8,
+  "finished_at": "2026-07-27T10:17:00Z",
+  "duration_seconds": 129.0,
   "mode": "posthog",
   "model": "gemini-2.5-flash-lite",
   "inputs": {
@@ -14,23 +14,17 @@
     "posthog_events_written": 154
   },
   "llm": {
-    "attempts": 12,
-    "schema_rejections": 3,
-    "transport_errors": 2,
+    "attempts": 14,
+    "schema_rejections": 0,
+    "transport_errors": 9,
     "calls": [
       {
         "agent": "feedback_analyst[0:50]",
         "attempt": 1,
-        "status": "erro_http",
-        "error": "HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE"
-      },
-      {
-        "agent": "feedback_analyst[0:50]",
-        "attempt": 2,
         "status": "ok",
-        "seconds": 13.03,
+        "seconds": 12.37,
         "tokens_in": 1586,
-        "tokens_out": 3017
+        "tokens_out": 3035
       },
       {
         "agent": "feedback_analyst[50:100]",
@@ -38,79 +32,101 @@
         "status": "ok",
         "seconds": 8.06,
         "tokens_in": 1538,
-        "tokens_out": 2999
+        "tokens_out": 3013
       },
       {
         "agent": "feedback_analyst[100:150]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 9.53,
+        "seconds": 9.29,
         "tokens_in": 1576,
-        "tokens_out": 3001
+        "tokens_out": 2996
       },
       {
         "agent": "feedback_analyst[150:151]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 0.69,
+        "seconds": 0.72,
         "tokens_in": 409,
-        "tokens_out": 72
+        "tokens_out": 71
       },
       {
         "agent": "results_reader",
         "attempt": 1,
         "status": "ok",
-        "seconds": 7.56,
+        "seconds": 6.83,
         "tokens_in": 984,
-        "tokens_out": 578
+        "tokens_out": 585
       },
       {
         "agent": "creative_writer[agendamento]",
         "attempt": 1,
-        "status": "rejeitado:contrato",
-        "error": "copy rejeitado: promessa absoluta"
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
       },
       {
         "agent": "creative_writer[agendamento]",
         "attempt": 2,
-        "status": "ok",
-        "seconds": 5.0,
-        "tokens_in": 628,
-        "tokens_out": 226
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[agendamento]",
+        "attempt": 3,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
       },
       {
         "agent": "creative_writer[faturacao]",
         "attempt": 1,
         "status": "erro_http",
-        "error": "HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE"
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
       },
       {
         "agent": "creative_writer[faturacao]",
         "attempt": 2,
-        "status": "rejeitado:contrato",
-        "error": "primary_text tem 316 caracteres, tem de estar entre 80 e 300"
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
       },
       {
         "agent": "creative_writer[faturacao]",
         "attempt": 3,
-        "status": "rejeitado:contrato",
-        "error": "headline tem 45 caracteres, o limite é 40"
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
       },
       {
         "agent": "creative_writer[estabilidade]",
         "attempt": 1,
-        "status": "ok",
-        "seconds": 4.96,
-        "tokens_in": 556,
-        "tokens_out": 235
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[estabilidade]",
+        "attempt": 2,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+      },
+      {
+        "agent": "creative_writer[estabilidade]",
+        "attempt": 3,
+        "status": "erro_http",
+        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
       }
     ]
   },
   "degraded": true,
   "degradations": [
     {
+      "agent": "creative_writer[agendamento]",
+      "reason": "[creative_writer[agendamento]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your "
+    },
+    {
       "agent": "creative_writer[faturacao]",
-      "reason": "[creative_writer[faturacao]] falhou 3 tentativas — headline tem 45 caracteres, o limite é 40"
+      "reason": "[creative_writer[faturacao]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your cu"
+    },
+    {
+      "agent": "creative_writer[estabilidade]",
+      "reason": "[creative_writer[estabilidade]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your"
     }
   ]
 }
