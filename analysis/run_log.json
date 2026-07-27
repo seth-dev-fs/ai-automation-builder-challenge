@@ -1,8 +1,8 @@
 {
-  "finished_at": "2026-07-27T10:17:00Z",
-  "duration_seconds": 129.0,
+  "finished_at": "2026-07-27T10:20:54Z",
+  "duration_seconds": 10.6,
   "mode": "posthog",
-  "model": "gemini-2.5-flash-lite",
+  "model": "gemini-2.5-flash",
   "inputs": {
     "feedback": 151,
     "views": 2000,
@@ -14,119 +14,93 @@
     "posthog_events_written": 154
   },
   "llm": {
-    "attempts": 14,
+    "attempts": 8,
     "schema_rejections": 0,
-    "transport_errors": 9,
+    "transport_errors": 8,
     "calls": [
       {
         "agent": "feedback_analyst[0:50]",
         "attempt": 1,
-        "status": "ok",
-        "seconds": 12.37,
-        "tokens_in": 1586,
-        "tokens_out": 3035
+        "status": "erro_http",
+        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
       },
       {
         "agent": "feedback_analyst[50:100]",
         "attempt": 1,
-        "status": "ok",
-        "seconds": 8.06,
-        "tokens_in": 1538,
-        "tokens_out": 3013
+        "status": "erro_http",
+        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
       },
       {
         "agent": "feedback_analyst[100:150]",
         "attempt": 1,
-        "status": "ok",
-        "seconds": 9.29,
-        "tokens_in": 1576,
-        "tokens_out": 2996
+        "status": "erro_http",
+        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
       },
       {
         "agent": "feedback_analyst[150:151]",
         "attempt": 1,
-        "status": "ok",
-        "seconds": 0.72,
-        "tokens_in": 409,
-        "tokens_out": 71
+        "status": "erro_http",
+        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
       },
       {
         "agent": "results_reader",
         "attempt": 1,
-        "status": "ok",
-        "seconds": 6.83,
-        "tokens_in": 984,
-        "tokens_out": 585
+        "status": "erro_http",
+        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
       },
       {
         "agent": "creative_writer[agendamento]",
         "attempt": 1,
         "status": "erro_http",
-        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
-      },
-      {
-        "agent": "creative_writer[agendamento]",
-        "attempt": 2,
-        "status": "erro_http",
-        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
-      },
-      {
-        "agent": "creative_writer[agendamento]",
-        "attempt": 3,
-        "status": "erro_http",
-        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
       },
       {
         "agent": "creative_writer[faturacao]",
         "attempt": 1,
         "status": "erro_http",
-        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
-      },
-      {
-        "agent": "creative_writer[faturacao]",
-        "attempt": 2,
-        "status": "erro_http",
-        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
-      },
-      {
-        "agent": "creative_writer[faturacao]",
-        "attempt": 3,
-        "status": "erro_http",
-        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
       },
       {
         "agent": "creative_writer[estabilidade]",
         "attempt": 1,
         "status": "erro_http",
-        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
-      },
-      {
-        "agent": "creative_writer[estabilidade]",
-        "attempt": 2,
-        "status": "erro_http",
-        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
-      },
-      {
-        "agent": "creative_writer[estabilidade]",
-        "attempt": 3,
-        "status": "erro_http",
-        "error": "HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.de"
+        "error": "HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis"
       }
     ]
   },
   "degraded": true,
   "degradations": [
     {
+      "agent": "feedback_analyst[0:50]",
+      "reason": "[feedback_analyst[0:50]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KE"
+    },
+    {
+      "agent": "feedback_analyst[50:100]",
+      "reason": "[feedback_analyst[50:100]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_"
+    },
+    {
+      "agent": "feedback_analyst[100:150]",
+      "reason": "[feedback_analyst[100:150]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API"
+    },
+    {
+      "agent": "feedback_analyst[150:151]",
+      "reason": "[feedback_analyst[150:151]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API"
+    },
+    {
+      "agent": "results_reader",
+      "reason": "[results_reader] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALI"
+    },
+    {
       "agent": "creative_writer[agendamento]",
-      "reason": "[creative_writer[agendamento]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your "
+      "reason": "[creative_writer[agendamento]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \""
     },
     {
       "agent": "creative_writer[faturacao]",
-      "reason": "[creative_writer[faturacao]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your cu"
+      "reason": "[creative_writer[faturacao]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"AP"
     },
     {
       "agent": "creative_writer[estabilidade]",
-      "reason": "[creative_writer[estabilidade]] falhou 3 tentativas — HTTP 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your"
+      "reason": "[creative_writer[estabilidade]] falhou 3 tentativas — HTTP 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": "
     }
   ]
 }

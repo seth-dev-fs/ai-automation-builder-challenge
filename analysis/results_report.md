@@ -1,21 +1,11 @@
 # Leitura dos resultados — `prev_campaign_q1`
 
-_Gerado automaticamente em 2026-07-27 10:15 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash-lite` e foi revista por um humano antes de qualquer decisão de orçamento._
+_Gerado automaticamente em 2026-07-27 10:20 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash` e foi revista por um humano antes de qualquer decisão de orçamento._
 
 ## Conclusões
-* O feedback positivo dos utilizadores está diretamente correlacionado com o desempenho dos anúncios. Criativos que abordam temas com muitos elogios (como "Facilidade de uso" e "Poupança de tempo") tendem a ter um CVR mais elevado, enquanto temas com muitas queixas e poucos elogios (como "Faturação e subscrição" e "Estabilidade e desempenho") apresentam um CVR mais baixo.
-* O ângulo "pain_resolution" demonstrou ser significativamente mais eficaz (lift de 59%, p=0.0424) do que "praise_amplification", indicando que resolver dores dos utilizadores é uma estratégia mais rentável para a conversão.
-* A diferença de CVR entre dispositivos móveis (4.17%) e desktop (2.92%) não é estatisticamente significativa (p=0.206), pelo que não devemos tomar decisões com base nesta aparente diferença.
 
-## O que fazer a seguir
-1. **Amplificar criativos focados em "pain_resolution" e "Facilidade de uso/Poupança de tempo"**: O criativo cr_A, com tema "agendamento" (parte de "pain_resolution"), teve um CVR de 8.42%. Devemos investir mais em criativos que resolvam dores claras e que abordem os temas com mais elogios.
-2. **Cortar criativos focados em "integrações"**: O criativo cr_F, com tema "integrações", teve um CVR de 1.67%, um dos mais baixos. Este tema também tem poucas menções positivas no feedback.
-3. **Testar novos criativos focados em "Faturação e subscrição" e "Estabilidade e desempenho"**: Estes temas apresentam queixas com alta urgência (3.79/5 e 3.92/5 respetivamente) mas não tiveram criativos dedicados na campanha anterior. Dada a correlação entre feedback e desempenho, abordar estas dores pode gerar um aumento significativo no CVR.
+> ⚠️ **O modelo não respondeu nesta execução.** A secção interpretativa não foi gerada. Os factos abaixo são calculados em código e mantêm-se válidos — a leitura tem de ser feita por um humano.
 
-## Limites desta leitura
-* Não temos dados sobre a distribuição igualitária de impressões por criativo, o que pode ter influenciado o desempenho individual.
-* A métrica CVR não considera o custo por clique ou por conversão, pelo que não podemos inferir o ROI (Retorno sobre o Investimento) desta campanha.
-* A correlação observada (Spearman ρ = 0.829) baseia-se num número reduzido de temas (n=6), o que limita a generalização das conclusões.
 
 ---
 
@@ -65,12 +55,12 @@ Para cada criativo: quantas vezes o seu tema aparece no feedback, com a carga co
 
 | Criativo | Tema | Ângulo | Menções no feedback | CVR |
 |---|---|---|---|---|
-| `cr_A` | agendamento | pain_resolution | 29 | **8.42%** |
-| `cr_C` | poupanca_tempo | praise_amplification | 21 | **4.17%** |
-| `cr_B` | suporte_lento | pain_resolution | 16 | **3.24%** |
-| `cr_D` | facilidade | praise_amplification | 22 | **2.5%** |
-| `cr_E` | relatorios | praise_amplification | 13 | **2.0%** |
-| `cr_F` | integracoes | pain_resolution | 5 | **1.67%** |
+| `cr_A` | agendamento | pain_resolution | 30 | **8.42%** |
+| `cr_C` | poupanca_tempo | praise_amplification | 17 | **4.17%** |
+| `cr_B` | suporte_lento | pain_resolution | 15 | **3.24%** |
+| `cr_D` | facilidade | praise_amplification | 19 | **2.5%** |
+| `cr_E` | relatorios | praise_amplification | 14 | **2.0%** |
+| `cr_F` | integracoes | pain_resolution | 7 | **1.67%** |
 
 Correlação de postos (Spearman) entre volume de feedback e CVR: **ρ = 0.829** no conjunto dos 6 criativos; ρ = 1.0 dentro de `pain_resolution` e ρ = 0.5 dentro de `praise_amplification`.
 
@@ -80,5 +70,5 @@ Temas com queixas registadas que a campanha anterior nunca abordou:
 
 | Tema | Queixas | Urgência média | Exemplo |
 |---|---|---|---|
-| Faturação e subscrição | 14 | 3.79 | "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque." |
-| Estabilidade e desempenho | 12 | 3.92 | "Crashou tres vezes esta semana e perdi trabalho." |
+| Faturação e subscrição | 14 | 4.21 | "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque." |
+| Estabilidade e desempenho | 10 | 4.3 | "Crashou tres vezes esta semana e perdi trabalho." |
