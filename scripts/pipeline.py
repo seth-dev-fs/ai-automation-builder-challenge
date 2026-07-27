@@ -130,6 +130,15 @@ def main():
         clusters_doc["clusters"], facts["by_theme"], facts_summary
     )
 
+    # Limpar a ronda anterior antes de escrever a nova: se um tema deixar de
+    # estar no top 3, o ficheiro dele tem de desaparecer. Caso contrário o
+    # repositório acumula criativos órfãos que ninguém sabe se ainda valem.
+    keep = {f"{c['creative_id']}.md" for c in creatives} | {"index.json", "README.md"}
+    for stale in os.listdir(CREATIVES) if os.path.isdir(CREATIVES) else []:
+        if stale.startswith("cr_") and stale not in keep:
+            os.remove(os.path.join(CREATIVES, stale))
+            print(f"  removido {stale} (já não está no top {creative_writer.MAX_CREATIVES})")
+
     for creative in creatives:
         write(os.path.join(CREATIVES, f"{creative['creative_id']}.md"),
               creative_writer.to_markdown(creative))

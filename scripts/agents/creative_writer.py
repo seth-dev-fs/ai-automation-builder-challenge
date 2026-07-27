@@ -283,7 +283,7 @@ def run(clusters, theme_performance, facts_summary):
     ranked = prioritise(clusters, theme_performance)[:MAX_CREATIVES]
     creatives = []
 
-    for n, cluster in enumerate(ranked, start=1):
+    for cluster in ranked:
         quotes = cluster["top_quotes"]
         label = f"creative_writer[{cluster['theme']}]"
         incomplete = False
@@ -297,7 +297,11 @@ def run(clusters, theme_performance, facts_summary):
             data = _fallback_creative(cluster, quotes)
             incomplete = True
 
-        creative_id = f"cr_q3_{cluster['theme']}_{n:02d}"
+        # O identificador deriva do tema, não da posição no ranking. Com o
+        # índice lá dentro, um tema que subisse de terceiro para segundo mudava
+        # de `creative_id` entre execuções — e a métrica que o seguia partia-se
+        # ao meio, sem ninguém dar por isso.
+        creative_id = f"cr_q3_{cluster['theme']}"
         creatives.append({
             "creative_id": creative_id,
             "status": "draft",
