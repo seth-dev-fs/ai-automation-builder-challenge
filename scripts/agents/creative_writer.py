@@ -144,8 +144,9 @@ CONTEXTO DE DESEMPENHO:
 {facts_summary}
 
 REGRAS DE OUTPUT:
-- `headline`: no máximo 40 caracteres. Concreta. Sem ponto final.
-- `primary_text`: entre 80 e 280 caracteres. Fala do problema antes da solução.
+- `headline`: no máximo 35 caracteres — conta-os. Concreta, sem ponto final.
+  Uma frase de 5 ou 6 palavras curtas.
+- `primary_text`: entre 100 e 250 caracteres. Fala do problema antes da solução.
 - `cta`: exatamente um de {CTA_OPTIONS}.
 - `image_prompt`: pelo menos 100 caracteres, em inglês, descrevendo a cena, o
   enquadramento e a luz. Sem texto dentro da imagem.
@@ -161,6 +162,13 @@ e qualquer número que não venhas a conseguir sustentar. Português de Portugal
 
 
 def _validator(n_quotes):
+    """Valida contra os limites REAIS das plataformas (40/300).
+
+    Ao modelo pedem-se 35 e 250 — uma folga deliberada. Os modelos mais pequenos
+    contam caracteres mal, e sem margem gastam-se as três tentativas a falhar
+    por dois caracteres. Pedir com folga e validar no limite real dá-lhes espaço
+    para errar sem que o resultado deixe de servir.
+    """
     def validate(data):
         headline = (data.get("headline") or "").strip()
         primary = (data.get("primary_text") or "").strip()
