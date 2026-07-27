@@ -1,11 +1,21 @@
 # Leitura dos resultados — `prev_campaign_q1`
 
-_Gerado automaticamente em 2026-07-27 10:08 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash` e foi revista por um humano antes de qualquer decisão de orçamento._
+_Gerado automaticamente em 2026-07-27 10:13 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash-lite` e foi revista por um humano antes de qualquer decisão de orçamento._
 
 ## Conclusões
+* O feedback dos utilizadores é um forte preditor do desempenho dos anúncios. Temas com mais menções positivas (ou menos queixas com alta urgência) tendem a ter um CVR mais elevado, como se vê na forte correlação (ρ = 0.829) e no desempenho superior do tema de agendamento (cr_A) que reflete a dor de "perder marcações".
+* O ângulo `pain_resolution` (CVR 4.71%) demonstrou ser significativamente mais eficaz do que `praise_amplification` (CVR 2.96%), com um lift de 59% (p=0.0424).
+* A diferença de CVR entre dispositivos móveis (4.17%) e desktop (2.92%) não é estatisticamente significativa (p=0.206), pelo que não devemos tirar conclusões sobre a preferência de dispositivo com base nestes dados.
 
-> ⚠️ **O modelo não respondeu nesta execução.** A secção interpretativa não foi gerada. Os factos abaixo são calculados em código e mantêm-se válidos — a leitura tem de ser feita por um humano.
+## O que fazer a seguir
+1. **Amplificar o tema de agendamento e marcações:** O criativo `cr_A` com o ângulo `pain_resolution` teve um CVR de 8.42% (IC 95%: 6.03–11.65%), significativamente superior à média da campanha. Devemos aumentar o investimento neste criativo e explorar variações do tema.
+2. **Testar criativos focados em faturação e estabilidade:** Estes temas registaram um volume considerável de queixas com alta urgência (3.71/5 e 3.58/5 respetivamente) e não tiveram criativos dedicados na campanha anterior. Testar anúncios que abordem estas dores pode melhorar o CVR geral.
+3. **Reduzir o investimento em criativos com baixo desempenho:** O criativo `cr_F` (`Integra tudo num só lugar`) teve um CVR de 1.67%, o mais baixo da campanha. Devemos desativar ou otimizar este criativo.
 
+## Limites desta leitura
+* As impressões e cliques não foram distribuídos equitativamente por todos os criativos e ângulos, o que pode influenciar a robustez das conclusões sobre o desempenho individual.
+* Não dispomos de dados de custo por clique ou custo por aquisição, pelo que o CVR não pode ser diretamente traduzido em Retorno do Investimento (ROI).
+* A análise de correlação baseia-se num número reduzido de temas (n=6), o que limita a generalização da força da relação observada.
 
 ---
 
@@ -55,14 +65,14 @@ Para cada criativo: quantas vezes o seu tema aparece no feedback, com a carga co
 
 | Criativo | Tema | Ângulo | Menções no feedback | CVR |
 |---|---|---|---|---|
-| `cr_A` | agendamento | pain_resolution | 30 | **8.42%** |
-| `cr_C` | poupanca_tempo | praise_amplification | 20 | **4.17%** |
-| `cr_B` | suporte_lento | pain_resolution | 15 | **3.24%** |
-| `cr_D` | facilidade | praise_amplification | 20 | **2.5%** |
-| `cr_E` | relatorios | praise_amplification | 14 | **2.0%** |
-| `cr_F` | integracoes | pain_resolution | 8 | **1.67%** |
+| `cr_A` | agendamento | pain_resolution | 29 | **8.42%** |
+| `cr_C` | poupanca_tempo | praise_amplification | 21 | **4.17%** |
+| `cr_B` | suporte_lento | pain_resolution | 16 | **3.24%** |
+| `cr_D` | facilidade | praise_amplification | 22 | **2.5%** |
+| `cr_E` | relatorios | praise_amplification | 13 | **2.0%** |
+| `cr_F` | integracoes | pain_resolution | 5 | **1.67%** |
 
-Correlação de postos (Spearman) entre volume de feedback e CVR: **ρ = 0.943** no conjunto dos 6 criativos; ρ = 1.0 dentro de `pain_resolution` e ρ = 1.0 dentro de `praise_amplification`.
+Correlação de postos (Spearman) entre volume de feedback e CVR: **ρ = 0.829** no conjunto dos 6 criativos; ρ = 1.0 dentro de `pain_resolution` e ρ = 0.5 dentro de `praise_amplification`.
 
 ### Dores sem criativo
 
@@ -70,5 +80,5 @@ Temas com queixas registadas que a campanha anterior nunca abordou:
 
 | Tema | Queixas | Urgência média | Exemplo |
 |---|---|---|---|
-| Faturação e subscrição | 14 | 4.07 | "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque." |
-| Estabilidade e desempenho | 12 | 3.92 | "Crashou tres vezes esta semana e perdi trabalho." |
+| Faturação e subscrição | 14 | 3.71 | "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque." |
+| Estabilidade e desempenho | 12 | 3.58 | "Crashou tres vezes esta semana e perdi trabalho." |

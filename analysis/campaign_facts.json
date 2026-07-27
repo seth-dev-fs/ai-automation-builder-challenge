@@ -377,15 +377,15 @@
         "creative_id": "cr_A",
         "theme": "agendamento",
         "angle_type": "pain_resolution",
-        "feedback_signal": 30,
-        "avg_urgency": 4.17,
+        "feedback_signal": 29,
+        "avg_urgency": 3.52,
         "cvr_pct": 8.42
       },
       {
         "creative_id": "cr_C",
         "theme": "poupanca_tempo",
         "angle_type": "praise_amplification",
-        "feedback_signal": 20,
+        "feedback_signal": 21,
         "avg_urgency": 0.0,
         "cvr_pct": 4.17
       },
@@ -393,15 +393,15 @@
         "creative_id": "cr_B",
         "theme": "suporte_lento",
         "angle_type": "pain_resolution",
-        "feedback_signal": 15,
-        "avg_urgency": 3.27,
+        "feedback_signal": 16,
+        "avg_urgency": 4.06,
         "cvr_pct": 3.24
       },
       {
         "creative_id": "cr_D",
         "theme": "facilidade",
         "angle_type": "praise_amplification",
-        "feedback_signal": 20,
+        "feedback_signal": 22,
         "avg_urgency": 0.0,
         "cvr_pct": 2.5
       },
@@ -409,22 +409,22 @@
         "creative_id": "cr_E",
         "theme": "relatorios",
         "angle_type": "praise_amplification",
-        "feedback_signal": 14,
-        "avg_urgency": 0.0,
+        "feedback_signal": 13,
+        "avg_urgency": 3.14,
         "cvr_pct": 2.0
       },
       {
         "creative_id": "cr_F",
         "theme": "integracoes",
         "angle_type": "pain_resolution",
-        "feedback_signal": 8,
-        "avg_urgency": 3.12,
+        "feedback_signal": 5,
+        "avg_urgency": 3.6,
         "cvr_pct": 1.67
       }
     ],
     "correlation": {
       "global": {
-        "rho": 0.943,
+        "rho": 0.829,
         "n": 6
       },
       "pain_resolution": {
@@ -432,7 +432,7 @@
         "n": 3
       },
       "praise_amplification": {
-        "rho": 1.0,
+        "rho": 0.5,
         "n": 3
       }
     }
@@ -442,14 +442,14 @@
       "theme": "faturacao",
       "label": "Faturação e subscrição",
       "complaints": 14,
-      "avg_pain_urgency": 4.07,
+      "avg_pain_urgency": 3.71,
       "quote": "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque."
     },
     {
       "theme": "estabilidade",
       "label": "Estabilidade e desempenho",
       "complaints": 12,
-      "avg_pain_urgency": 3.92,
+      "avg_pain_urgency": 3.58,
       "quote": "Crashou tres vezes esta semana e perdi trabalho."
     }
   ]
