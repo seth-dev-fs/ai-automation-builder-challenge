@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-07-27T10:36:45Z",
-  "duration_seconds": 44.1,
+  "finished_at": "2026-07-27T11:13:50Z",
+  "duration_seconds": 43.4,
   "mode": "posthog",
   "model": "gemini-2.5-flash",
   "inputs": {
@@ -11,7 +11,7 @@
   "outputs": {
     "clusters": 9,
     "creatives": 3,
-    "posthog_events_written": 154
+    "posthog_events_written": 0
   },
   "llm": {
     "attempts": 8,
@@ -22,9 +22,9 @@
         "agent": "feedback_analyst[0:50]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 9.08,
+        "seconds": 8.69,
         "tokens_in": 1586,
-        "tokens_out": 2263
+        "tokens_out": 2195
       },
       {
         "agent": "feedback_analyst[50:100]",
@@ -32,55 +32,55 @@
         "status": "ok",
         "seconds": 11.66,
         "tokens_in": 1538,
-        "tokens_out": 3036
+        "tokens_out": 3091
       },
       {
         "agent": "feedback_analyst[100:150]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 9.81,
+        "seconds": 9.48,
         "tokens_in": 1576,
-        "tokens_out": 2401
+        "tokens_out": 2392
       },
       {
         "agent": "feedback_analyst[150:151]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 0.87,
+        "seconds": 0.84,
         "tokens_in": 409,
-        "tokens_out": 46
+        "tokens_out": 43
       },
       {
         "agent": "results_reader",
         "attempt": 1,
         "status": "ok",
-        "seconds": 4.33,
+        "seconds": 4.59,
         "tokens_in": 983,
-        "tokens_out": 823
+        "tokens_out": 789
       },
       {
         "agent": "creative_writer[agendamento]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 2.07,
+        "seconds": 1.94,
         "tokens_in": 608,
-        "tokens_out": 290
+        "tokens_out": 279
       },
       {
         "agent": "creative_writer[estabilidade]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 1.76,
+        "seconds": 1.92,
         "tokens_in": 578,
-        "tokens_out": 251
+        "tokens_out": 273
       },
       {
         "agent": "creative_writer[faturacao]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 2.04,
+        "seconds": 1.97,
         "tokens_in": 585,
-        "tokens_out": 283
+        "tokens_out": 292
       }
     ]
   },
