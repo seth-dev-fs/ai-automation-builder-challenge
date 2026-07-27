@@ -178,7 +178,10 @@
         text: text,
         text_length: text.length,
         channel: channel,
-        lp_version: '2026-07-27',
+        // Prefixo "v" de propósito: sem ele o PostHog reconhece "2026-07-27"
+        // como data e passa a tratar a propriedade como timestamp, o que a
+        // torna inútil para filtrar por versão da página.
+        lp_version: 'v1-2026-07-27',
         page: location.pathname,
         referrer: document.referrer || 'direct',
       });
