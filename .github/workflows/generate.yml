@@ -50,6 +50,24 @@ jobs:
           python -m compileall -q scripts/
           echo "✓ scripts compilam"
 
+      # Um secret vazio não dá erro em lado nenhum: o pipeline corre, degrada
+      # para o caminho determinístico e devolve verde. Já aconteceu — um
+      # comando de extração da chave falhou em silêncio e o secret ficou vazio,
+      # e só se percebeu ao ler o run_log. Vale mais falhar aqui, alto e cedo.
+      - name: Confirmar que os secrets não estão vazios
+        env:
+          POSTHOG_PROJECT_ID: ${{ secrets.POSTHOG_PROJECT_ID }}
+          POSTHOG_PERSONAL_API_KEY: ${{ secrets.POSTHOG_PERSONAL_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          for name in POSTHOG_PROJECT_ID POSTHOG_PERSONAL_API_KEY GEMINI_API_KEY; do
+            if [ -z "${!name}" ]; then
+              echo "::error::O secret $name está vazio ou não existe."
+              exit 1
+            fi
+            echo "✓ $name presente (${#name} → ${!name:0:4}…)"
+          done
+
       - name: Correr pipeline
         env:
           POSTHOG_HOST: ${{ secrets.POSTHOG_HOST }}
