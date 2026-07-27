@@ -44,8 +44,8 @@ trabalho:
 
 Todos os criativos nascem com `status: draft`. O PR traz uma checklist curta
 (o copy diz a verdade? as citações sustentam mesmo o ângulo? nenhuma promessa
-que não consigamos cumprir?) e, se a execução tiver sido degradada, sai com a
-etiqueta `needs-human-review`.
+que não consigamos cumprir?) e, se a execução tiver sido degradada, diz-lo em
+destaque no corpo, com os criativos afetados marcados `incomplete`.
 
 Ao fazer merge, um segundo workflow envia `creative_approved` para o PostHog.
 Não é decoração: passa a haver forma de responder, daqui a dois meses, a "de
@@ -96,10 +96,10 @@ imediatamente acima, escrita por código.
 
 O padrão que encontrei — e que o agente de leitura também encontra sozinho — é
 que **a ordem dos temas por volume de feedback reproduz a ordem dos criativos por
-taxa de conversão**. Dentro dos anúncios que resolvem uma dor, a correspondência
-é perfeita: `agendamento` é a queixa nº1 e `cr_A` é o melhor criativo (8,42%);
-`integrações` é a queixa menos frequente e `cr_F` é o pior (1,67%). Spearman
-ρ = 1,0 dentro de `pain_resolution`, ρ = 0,83 no conjunto.
+taxa de conversão**. Dentro de cada ângulo a correspondência é perfeita:
+`agendamento` é a queixa nº1 e `cr_A` é o melhor criativo (8,42%); `integrações`
+é a queixa menos frequente e `cr_F` é o pior (1,67%). Spearman ρ = 1,0 dentro de
+`pain_resolution` e de `praise_amplification`, ρ = 0,94 no conjunto dos seis.
 
 Isto é a tese que justifica o pipeline existir: o feedback não serve só para
 saber o que arranjar, prevê o que vai converter.
@@ -116,7 +116,7 @@ e reafectá-lo por acaso.
 
 ## Onde a IA me falhou
 
-Três casos concretos, desta sessão:
+Cinco casos concretos, desta sessão:
 
 **O primeiro teste que corri foi o de falha, e ainda bem.** Corri o pipeline sem
 chave de LLM para ver a degradação funcionar. Ficou pendurado dois minutos: o
