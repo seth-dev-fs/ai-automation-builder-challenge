@@ -17,6 +17,16 @@ import os
 import time
 import urllib.error
 import urllib.request
+import uuid as uuid_lib
+
+# Espaço de nomes fixo: o mesmo par (evento, chave) tem de dar sempre o mesmo
+# UUID, entre execuções e entre máquinas. É o que torna o write-back idempotente.
+UUID_NAMESPACE = uuid_lib.UUID("6f9619ff-8b86-d011-b42d-00c04fc964ff")
+
+
+def event_uuid(event_name, key):
+    """UUID determinístico para um evento — reenviar não duplica."""
+    return str(uuid_lib.uuid5(UUID_NAMESPACE, f"{event_name}:{key}"))
 
 HOST = os.environ.get("POSTHOG_HOST", "https://eu.i.posthog.com").rstrip("/")
 PROJECT_ID = os.environ.get("POSTHOG_PROJECT_ID", "")
@@ -88,6 +98,12 @@ def capture(events, dry_run=False):
                 "properties": {**e.get("properties", {}),
                                "distinct_id": e.get("distinct_id", "pipeline"),
                                "$lib": "challenge-pipeline"},
+                # O `uuid` é determinístico (ver `event_uuid`). O pipeline corre
+                # todas as semanas sobre o mesmo feedback, e sem isto cada
+                # execução criava outra cópia de cada classificação — ao fim de
+                # cinco execuções o dashboard mostrava 755 classificações para
+                # 151 feedbacks. O PostHog descarta eventos com um uuid que já viu.
+                **({"uuid": e["uuid"]} if e.get("uuid") else {}),
                 **({"timestamp": e["timestamp"]} if e.get("timestamp") else {}),
             }
             for e in chunk

@@ -78,12 +78,17 @@ ORDER BY cvr_pct DESC
             "PostHog como `feedback_classified`. É isto que torna as dores "
             "consultáveis ao lado dos resultados."
         ),
+        # `uniqExact` sobre o feedback_ref e não `count()`: cada execução do
+        # pipeline reclassifica os mesmos feedbacks, e contar eventos contaria
+        # a mesma queixa uma vez por execução. O write-back já é idempotente
+        # (uuid determinístico), mas a query não deve depender disso — os
+        # eventos das execuções anteriores à correção continuam na base.
         "query": """
 SELECT
   properties.theme_label AS tema,
-  countIf(properties.sentiment = 'negative') AS queixas,
-  countIf(properties.sentiment = 'positive') AS elogios,
-  count() AS total,
+  uniqExactIf(properties.feedback_ref, properties.sentiment = 'negative') AS queixas,
+  uniqExactIf(properties.feedback_ref, properties.sentiment = 'positive') AS elogios,
+  uniqExact(properties.feedback_ref) AS total,
   round(avg(toFloat(properties.urgency)), 2) AS urgencia_media
 FROM events
 WHERE event = 'feedback_classified'
@@ -107,8 +112,8 @@ SELECT
 FROM (
   SELECT
     properties.theme AS tema,
-    countIf(properties.sentiment = 'negative') AS queixas,
-    countIf(properties.sentiment = 'positive') AS elogios,
+    uniqExactIf(properties.feedback_ref, properties.sentiment = 'negative') AS queixas,
+    uniqExactIf(properties.feedback_ref, properties.sentiment = 'positive') AS elogios,
     0 AS impressoes, 0 AS cliques
   FROM events WHERE event = 'feedback_classified' GROUP BY tema
   UNION ALL
@@ -133,8 +138,8 @@ ORDER BY queixas_no_feedback DESC
 SELECT
   properties.theme_label AS tema,
   round(avg(toFloat(properties.urgency)), 2) AS urgencia_media,
-  countIf(toFloat(properties.urgency) = 5) AS criticas,
-  count() AS queixas
+  uniqExactIf(properties.feedback_ref, toFloat(properties.urgency) = 5) AS criticas,
+  uniqExact(properties.feedback_ref) AS queixas
 FROM events
 WHERE event = 'feedback_classified' AND properties.sentiment = 'negative'
 GROUP BY tema
@@ -167,8 +172,8 @@ SELECT
   properties.creative_id AS criativo,
   any(properties.theme) AS tema,
   any(properties.headline) AS headline,
-  countIf(event = 'creative_generated') AS proposto,
-  countIf(event = 'creative_approved') AS aprovado
+  countIf(event = 'creative_generated') > 0 AS proposto,
+  countIf(event = 'creative_approved') > 0 AS aprovado
 FROM events
 WHERE event IN ('creative_generated', 'creative_approved')
 GROUP BY criativo

@@ -25,6 +25,7 @@ import time
 from collections import defaultdict
 
 import llm
+import posthog_io
 import taxonomy
 
 # 50 e não 25: cada lote é uma chamada, e os limites por minuto do plano
@@ -227,6 +228,11 @@ def to_posthog_events(classified):
         {
             "event": "feedback_classified",
             "distinct_id": f"feedback_{item['ref'][:12]}",
+            "uuid": posthog_io.event_uuid("feedback_classified", item["ref"]),
+            # O timestamp é o do feedback original, não o da execução. Senão o
+            # gráfico de evolução mostrava 151 classificações todas na mesma
+            # segunda-feira de manhã, que é quando o pipeline corre.
+            "timestamp": item["timestamp"],
             "properties": {
                 "feedback_ref": item["ref"],
                 "theme": item["theme"],

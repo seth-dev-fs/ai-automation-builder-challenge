@@ -131,6 +131,15 @@ código; tinha um erro de juízo. Acrescentei um limiar de cinco menções, com 
 raciocínio escrito no sítio: um tema urgente com pouco volume é um problema de
 suporte, não é um anúncio.
 
+**O modelo pequeno não sabe contar até quarenta.** Ao mudar para o
+`gemini-2.5-flash-lite` — para fugir a limites de quota — os criativos começaram
+a ser rejeitados pela minha própria validação: *"headline tem 45 caracteres, o
+limite é 40"*, três vezes seguidas, até esgotar as tentativas. A validação
+estava certa, o modelo é que conta caracteres mal. A correção não foi baixar a
+guarda: passei a **pedir 35 e a validar a 40**. A folga é para ele errar sem que
+o resultado deixe de servir. Na mesma execução, a validação apanhou também um
+copy com uma promessa absoluta — e nessa o retry resolveu à primeira.
+
 **Dirigir bem é sobretudo saber o que verificar.** A parte que eu não posso
 delegar é decidir o que conta como estar feito. Por isso é que o caminho de falha
 foi testado antes do caminho de sucesso, e é por isso que os números do relatório
