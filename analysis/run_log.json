@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-07-27T10:33:04Z",
-  "duration_seconds": 4.1,
+  "finished_at": "2026-07-27T10:36:45Z",
+  "duration_seconds": 44.1,
   "mode": "posthog",
   "model": "gemini-2.5-flash",
   "inputs": {
@@ -17,41 +17,73 @@
     "attempts": 8,
     "schema_rejections": 0,
     "transport_errors": 0,
-    "calls": []
+    "calls": [
+      {
+        "agent": "feedback_analyst[0:50]",
+        "attempt": 1,
+        "status": "ok",
+        "seconds": 9.08,
+        "tokens_in": 1586,
+        "tokens_out": 2263
+      },
+      {
+        "agent": "feedback_analyst[50:100]",
+        "attempt": 1,
+        "status": "ok",
+        "seconds": 11.66,
+        "tokens_in": 1538,
+        "tokens_out": 3036
+      },
+      {
+        "agent": "feedback_analyst[100:150]",
+        "attempt": 1,
+        "status": "ok",
+        "seconds": 9.81,
+        "tokens_in": 1576,
+        "tokens_out": 2401
+      },
+      {
+        "agent": "feedback_analyst[150:151]",
+        "attempt": 1,
+        "status": "ok",
+        "seconds": 0.87,
+        "tokens_in": 409,
+        "tokens_out": 46
+      },
+      {
+        "agent": "results_reader",
+        "attempt": 1,
+        "status": "ok",
+        "seconds": 4.33,
+        "tokens_in": 983,
+        "tokens_out": 823
+      },
+      {
+        "agent": "creative_writer[agendamento]",
+        "attempt": 1,
+        "status": "ok",
+        "seconds": 2.07,
+        "tokens_in": 608,
+        "tokens_out": 290
+      },
+      {
+        "agent": "creative_writer[estabilidade]",
+        "attempt": 1,
+        "status": "ok",
+        "seconds": 1.76,
+        "tokens_in": 578,
+        "tokens_out": 251
+      },
+      {
+        "agent": "creative_writer[faturacao]",
+        "attempt": 1,
+        "status": "ok",
+        "seconds": 2.04,
+        "tokens_in": 585,
+        "tokens_out": 283
+      }
+    ]
   },
-  "degraded": true,
-  "degradations": [
-    {
-      "agent": "feedback_analyst[0:50]",
-      "reason": "GEMINI_API_KEY não definida"
-    },
-    {
-      "agent": "feedback_analyst[50:100]",
-      "reason": "GEMINI_API_KEY não definida"
-    },
-    {
-      "agent": "feedback_analyst[100:150]",
-      "reason": "GEMINI_API_KEY não definida"
-    },
-    {
-      "agent": "feedback_analyst[150:151]",
-      "reason": "GEMINI_API_KEY não definida"
-    },
-    {
-      "agent": "results_reader",
-      "reason": "GEMINI_API_KEY não definida"
-    },
-    {
-      "agent": "creative_writer[agendamento]",
-      "reason": "GEMINI_API_KEY não definida"
-    },
-    {
-      "agent": "creative_writer[faturacao]",
-      "reason": "GEMINI_API_KEY não definida"
-    },
-    {
-      "agent": "creative_writer[estabilidade]",
-      "reason": "GEMINI_API_KEY não definida"
-    }
-  ]
+  "degraded": false,
+  "degradations": []
 }

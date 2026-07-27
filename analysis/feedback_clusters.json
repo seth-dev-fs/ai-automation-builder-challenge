@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T10:33:02Z",
+  "generated_at": "2026-07-27T10:36:34Z",
   "model": "gemini-2.5-flash",
   "source_events": 151,
   "taxonomy": [
@@ -15,120 +15,44 @@
   ],
   "coverage": {
     "total": 151,
-    "by_llm": 0,
-    "by_fallback": 151
+    "by_llm": 151,
+    "by_fallback": 0
   },
-  "degraded": true,
+  "degraded": false,
   "clusters": [
     {
       "theme": "agendamento",
       "label": "Agendamento e marcações",
-      "total": 30,
-      "share_pct": 19.9,
-      "complaints": 30,
+      "total": 26,
+      "share_pct": 17.2,
+      "complaints": 26,
       "praise": 0,
       "pain_ratio": 1.0,
-      "avg_urgency": 4.43,
-      "avg_pain_urgency": 4.43,
+      "avg_urgency": 3.46,
+      "avg_pain_urgency": 3.46,
       "covered_by_previous_campaign": true,
       "top_quotes": [
+        {
+          "ref": "019fa309-0e7e-71ce-a2c3-743b7ded8012",
+          "text": "Teste de ponta a ponta da landing page: remarcar uma sessão obriga a cancelar e criar tudo de novo, e o cliente recebe dois emails contraditorios.",
+          "urgency": 4,
+          "sentiment": "negative"
+        },
         {
           "ref": "019f875c-9720-7708-9625-94877cf16fc0",
           "text": "Na minha experiencia, Perdi uma reuniao porque o agendamento nao me avisou a horas.",
-          "urgency": 5,
+          "urgency": 4,
           "sentiment": "negative"
         },
         {
-          "ref": "019f6a37-0310-75ae-a9f9-e98e7ded737d",
-          "text": "Nao consigo reagendar sem ligar ao suporte, devia ser automatico.",
-          "urgency": 5,
+          "ref": "019f6bad-14c8-729f-8476-72ec2f5a456b",
+          "text": "Sinceramente, As marcacoes desaparecem do calendario as vezes, e stressante.",
+          "urgency": 4,
           "sentiment": "negative"
         },
         {
-          "ref": "019f6153-8b88-7df2-b9d2-d5823e3b2cbf",
-          "text": "Perdi uma reuniao porque o agendamento nao me avisou a horas.",
-          "urgency": 5,
-          "sentiment": "negative"
-        },
-        {
-          "ref": "019f5150-4578-71af-831b-255fe43053cf",
-          "text": "Sinceramente, Perdi uma reuniao porque o agendamento nao me avisou a horas.",
-          "urgency": 5,
-          "sentiment": "negative"
-        }
-      ]
-    },
-    {
-      "theme": "suporte_lento",
-      "label": "Suporte e tempo de resposta",
-      "total": 26,
-      "share_pct": 17.2,
-      "complaints": 15,
-      "praise": 11,
-      "pain_ratio": 0.58,
-      "avg_urgency": 2.15,
-      "avg_pain_urgency": 3.0,
-      "covered_by_previous_campaign": true,
-      "top_quotes": [
-        {
-          "ref": "019f786f-a310-72e8-88e3-34e029f0c73c",
-          "text": "Precisei de ajuda urgente e so responderam no dia seguinte.",
-          "urgency": 3,
-          "sentiment": "negative"
-        },
-        {
-          "ref": "019f698e-a968-74c1-8fdd-58dad9d2c755",
-          "text": "Sinceramente, Abri um ticket ha tres dias e ainda ninguem respondeu.",
-          "urgency": 3,
-          "sentiment": "negative"
-        },
-        {
-          "ref": "019f670e-f3c8-7759-9be1-4e5416bcb595",
-          "text": "O suporte demora imenso a responder quando tenho um problema urgente.",
-          "urgency": 3,
-          "sentiment": "negative"
-        },
-        {
-          "ref": "019f6352-6cb0-7791-bd18-f2270af388e6",
-          "text": "Sinceramente, Precisei de ajuda urgente e so responderam no dia seguinte.",
-          "urgency": 3,
-          "sentiment": "negative"
-        }
-      ]
-    },
-    {
-      "theme": "faturacao",
-      "label": "Faturação e subscrição",
-      "total": 14,
-      "share_pct": 9.3,
-      "complaints": 14,
-      "praise": 0,
-      "pain_ratio": 1.0,
-      "avg_urgency": 4.21,
-      "avg_pain_urgency": 4.21,
-      "covered_by_previous_campaign": false,
-      "top_quotes": [
-        {
-          "ref": "019f82e8-54e0-7033-9701-f3d9257fbc79",
-          "text": "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque.",
-          "urgency": 5,
-          "sentiment": "negative"
-        },
-        {
-          "ref": "019f68e6-c8d8-7f5e-96f7-cb58ddbe995c",
-          "text": "Fui cobrado duas vezes este mes e ninguem me explica porque.",
-          "urgency": 5,
-          "sentiment": "negative"
-        },
-        {
-          "ref": "019efd27-1328-7021-898d-15e936412433",
-          "text": "Honestamente, Fui cobrado duas vezes este mes e ninguem me explica porque.",
-          "urgency": 5,
-          "sentiment": "negative"
-        },
-        {
-          "ref": "019f8474-d0e0-7307-b781-35433b494346",
-          "text": "E dificil perceber o que estou a pagar, a faturacao e confusa.",
+          "ref": "019f6359-65d8-71a4-813f-06089d136d29",
+          "text": "Sinceramente, Marquei uma sessao e o cliente recebeu a hora errada.",
           "urgency": 4,
           "sentiment": "negative"
         }
@@ -137,13 +61,13 @@
     {
       "theme": "estabilidade",
       "label": "Estabilidade e desempenho",
-      "total": 10,
-      "share_pct": 6.6,
-      "complaints": 10,
+      "total": 16,
+      "share_pct": 10.6,
+      "complaints": 16,
       "praise": 0,
       "pain_ratio": 1.0,
-      "avg_urgency": 4.3,
-      "avg_pain_urgency": 4.3,
+      "avg_urgency": 3.69,
+      "avg_pain_urgency": 3.69,
       "covered_by_previous_campaign": false,
       "top_quotes": [
         {
@@ -165,47 +89,85 @@
           "sentiment": "negative"
         },
         {
-          "ref": "019f745b-4798-716b-a6ff-c0cce2bbdc31",
-          "text": "Na minha experiencia, A sincronizacao falha e as vezes vejo dados desatualizados.",
+          "ref": "019f170a-3220-76fb-ba7f-bae9c00ae5d3",
+          "text": "Honestamente, As marcacoes desaparecem do calendario as vezes, e stressante.",
           "urgency": 4,
           "sentiment": "negative"
         }
       ]
     },
     {
-      "theme": "outro",
-      "label": "Outro",
+      "theme": "suporte_lento",
+      "label": "Suporte e tempo de resposta",
+      "total": 16,
+      "share_pct": 10.6,
+      "complaints": 16,
+      "praise": 0,
+      "pain_ratio": 1.0,
+      "avg_urgency": 4.0,
+      "avg_pain_urgency": 4.0,
+      "covered_by_previous_campaign": true,
+      "top_quotes": [
+        {
+          "ref": "019f786f-a310-72e8-88e3-34e029f0c73c",
+          "text": "Precisei de ajuda urgente e so responderam no dia seguinte.",
+          "urgency": 4,
+          "sentiment": "negative"
+        },
+        {
+          "ref": "019f698e-a968-74c1-8fdd-58dad9d2c755",
+          "text": "Sinceramente, Abri um ticket ha tres dias e ainda ninguem respondeu.",
+          "urgency": 4,
+          "sentiment": "negative"
+        },
+        {
+          "ref": "019f670e-f3c8-7759-9be1-4e5416bcb595",
+          "text": "O suporte demora imenso a responder quando tenho um problema urgente.",
+          "urgency": 4,
+          "sentiment": "negative"
+        },
+        {
+          "ref": "019f6352-6cb0-7791-bd18-f2270af388e6",
+          "text": "Sinceramente, Precisei de ajuda urgente e so responderam no dia seguinte.",
+          "urgency": 4,
+          "sentiment": "negative"
+        }
+      ]
+    },
+    {
+      "theme": "faturacao",
+      "label": "Faturação e subscrição",
       "total": 14,
       "share_pct": 9.3,
-      "complaints": 7,
-      "praise": 7,
-      "pain_ratio": 0.5,
-      "avg_urgency": 2.0,
-      "avg_pain_urgency": 3.0,
+      "complaints": 14,
+      "praise": 0,
+      "pain_ratio": 1.0,
+      "avg_urgency": 3.86,
+      "avg_pain_urgency": 3.86,
       "covered_by_previous_campaign": false,
       "top_quotes": [
         {
-          "ref": "019f8370-af20-7b65-b7c4-537333cd1205",
-          "text": "Honestamente, A app fica lenta quando tenho muitos itens na lista.",
-          "urgency": 3,
+          "ref": "019f82e8-54e0-7033-9701-f3d9257fbc79",
+          "text": "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque.",
+          "urgency": 5,
           "sentiment": "negative"
         },
         {
-          "ref": "019f60bd-eec0-7cfc-bf2f-bba97c6167d7",
-          "text": "Na minha experiencia, Nao ha ligacao ao meu CRM, e um trabalhao manter os dois.",
-          "urgency": 3,
+          "ref": "019f68e6-c8d8-7f5e-96f7-cb58ddbe995c",
+          "text": "Fui cobrado duas vezes este mes e ninguem me explica porque.",
+          "urgency": 5,
           "sentiment": "negative"
         },
         {
-          "ref": "019f603e-23e8-78a9-8b7a-8c2e5157d14e",
-          "text": "Nao ha ligacao ao meu CRM, e um trabalhao manter os dois.",
-          "urgency": 3,
+          "ref": "019efd27-1328-7021-898d-15e936412433",
+          "text": "Honestamente, Fui cobrado duas vezes este mes e ninguem me explica porque.",
+          "urgency": 5,
           "sentiment": "negative"
         },
         {
-          "ref": "019f2c4e-49a0-7a0b-b59c-4dc2f19290a0",
-          "text": "A app fica lenta quando tenho muitos itens na lista.",
-          "urgency": 3,
+          "ref": "019f769d-4c40-79b7-8275-fdd274d72761",
+          "text": "Cancelar a subscricao foi uma odisseia.",
+          "urgency": 4,
           "sentiment": "negative"
         }
       ]
@@ -218,10 +180,22 @@
       "complaints": 7,
       "praise": 0,
       "pain_ratio": 1.0,
-      "avg_urgency": 3.0,
-      "avg_pain_urgency": 3.0,
+      "avg_urgency": 3.29,
+      "avg_pain_urgency": 3.29,
       "covered_by_previous_campaign": true,
       "top_quotes": [
+        {
+          "ref": "019f60bd-eec0-7cfc-bf2f-bba97c6167d7",
+          "text": "Na minha experiencia, Nao ha ligacao ao meu CRM, e um trabalhao manter os dois.",
+          "urgency": 4,
+          "sentiment": "negative"
+        },
+        {
+          "ref": "019f603e-23e8-78a9-8b7a-8c2e5157d14e",
+          "text": "Nao ha ligacao ao meu CRM, e um trabalhao manter os dois.",
+          "urgency": 4,
+          "sentiment": "negative"
+        },
         {
           "ref": "019f2517-1ab8-7b45-a8c4-abda8c23d841",
           "text": "Sinceramente, Gostava de exportar para o Excel automaticamente, nao da.",
@@ -233,10 +207,24 @@
           "text": "Gostava de exportar para o Excel automaticamente, nao da.",
           "urgency": 3,
           "sentiment": "negative"
-        },
+        }
+      ]
+    },
+    {
+      "theme": "relatorios",
+      "label": "Relatórios e métricas",
+      "total": 14,
+      "share_pct": 9.3,
+      "complaints": 3,
+      "praise": 11,
+      "pain_ratio": 0.21,
+      "avg_urgency": 1.43,
+      "avg_pain_urgency": 3.0,
+      "covered_by_previous_campaign": true,
+      "top_quotes": [
         {
-          "ref": "019f1523-3df8-7d7b-98d1-9bcd9f804f88",
-          "text": "Falta integracao com as ferramentas que ja uso, tenho de copiar tudo a mao.",
+          "ref": "019f02d0-c828-79f1-ae5e-f4670cffdf1d",
+          "text": "Gostava de exportar para o Excel automaticamente, nao da.",
           "urgency": 3,
           "sentiment": "negative"
         },
@@ -245,21 +233,39 @@
           "text": "Honestamente, Gostava de exportar para o Excel automaticamente, nao da.",
           "urgency": 3,
           "sentiment": "negative"
+        },
+        {
+          "ref": "019f87c9-a900-7061-8d3d-7e5d727dc4ff",
+          "text": "Os relatorios automaticos impressionaram a direcao.",
+          "urgency": 1,
+          "sentiment": "positive"
+        },
+        {
+          "ref": "019f7032-1818-770e-8f22-ce72388f7be5",
+          "text": "Sinceramente, Adoro os dashboards, dao-me uma visao clara do negocio.",
+          "urgency": 1,
+          "sentiment": "positive"
         }
       ]
     },
     {
       "theme": "facilidade",
       "label": "Facilidade de uso",
-      "total": 19,
-      "share_pct": 12.6,
-      "complaints": 0,
-      "praise": 19,
-      "pain_ratio": 0.0,
-      "avg_urgency": 1.0,
-      "avg_pain_urgency": 0.0,
+      "total": 23,
+      "share_pct": 15.2,
+      "complaints": 1,
+      "praise": 22,
+      "pain_ratio": 0.04,
+      "avg_urgency": 1.09,
+      "avg_pain_urgency": 3.0,
       "covered_by_previous_campaign": true,
       "top_quotes": [
+        {
+          "ref": "019f6157-96b0-7777-a742-b46d06d8e27a",
+          "text": "O fluxo de marcar horario tem passos a mais, perco-me sempre.",
+          "urgency": 3,
+          "sentiment": "negative"
+        },
         {
           "ref": "019f865c-8470-7c08-9149-6b0289e4f71f",
           "text": "A interface e limpa e intuitiva, adoro.",
@@ -277,22 +283,16 @@
           "text": "Honestamente, Nunca precisei de manual, percebe-se tudo sozinho.",
           "urgency": 1,
           "sentiment": "positive"
-        },
-        {
-          "ref": "019f630d-3dc0-7c34-9902-593a835c4e5f",
-          "text": "Sinceramente, Facil de configurar, sem complicacoes.",
-          "urgency": 1,
-          "sentiment": "positive"
         }
       ]
     },
     {
       "theme": "poupanca_tempo",
       "label": "Poupança de tempo",
-      "total": 17,
-      "share_pct": 11.3,
+      "total": 23,
+      "share_pct": 15.2,
       "complaints": 0,
-      "praise": 17,
+      "praise": 23,
       "pain_ratio": 0.0,
       "avg_urgency": 1.0,
       "avg_pain_urgency": 0.0,
@@ -311,52 +311,52 @@
           "sentiment": "positive"
         },
         {
-          "ref": "019f7dd8-1508-7f7b-b1c9-bdcb694f8564",
-          "text": "Na minha experiencia, Reduzi o trabalho manual para quase zero.",
-          "urgency": 1,
-          "sentiment": "positive"
-        },
-        {
-          "ref": "019f77ab-f550-737e-a411-34402d8cd268",
-          "text": "Poupo horas todas as semanas desde que comecei a usar.",
-          "urgency": 1,
-          "sentiment": "positive"
-        }
-      ]
-    },
-    {
-      "theme": "relatorios",
-      "label": "Relatórios e métricas",
-      "total": 14,
-      "share_pct": 9.3,
-      "complaints": 0,
-      "praise": 14,
-      "pain_ratio": 0.0,
-      "avg_urgency": 1.0,
-      "avg_pain_urgency": 0.0,
-      "covered_by_previous_campaign": true,
-      "top_quotes": [
-        {
-          "ref": "019f87c9-a900-7061-8d3d-7e5d727dc4ff",
-          "text": "Os relatorios automaticos impressionaram a direcao.",
-          "urgency": 1,
-          "sentiment": "positive"
-        },
-        {
           "ref": "019f7f4d-6f28-74b1-82b0-f6d3101b0160",
           "text": "Honestamente, Consigo mostrar resultados aos clientes num instante.",
           "urgency": 1,
           "sentiment": "positive"
         },
         {
-          "ref": "019f7032-1818-770e-8f22-ce72388f7be5",
-          "text": "Sinceramente, Adoro os dashboards, dao-me uma visao clara do negocio.",
+          "ref": "019f7dd8-1508-7f7b-b1c9-bdcb694f8564",
+          "text": "Na minha experiencia, Reduzi o trabalho manual para quase zero.",
+          "urgency": 1,
+          "sentiment": "positive"
+        }
+      ]
+    },
+    {
+      "theme": "outro",
+      "label": "Outro",
+      "total": 12,
+      "share_pct": 7.9,
+      "complaints": 0,
+      "praise": 12,
+      "pain_ratio": 0.0,
+      "avg_urgency": 1.0,
+      "avg_pain_urgency": 0.0,
+      "covered_by_previous_campaign": false,
+      "top_quotes": [
+        {
+          "ref": "019f8259-4f98-796d-b577-4a886b9ccc56",
+          "text": "Sinceramente, A equipa de apoio resolveu o meu problema no mesmo dia.",
           "urgency": 1,
           "sentiment": "positive"
         },
         {
-          "ref": "019f676a-fa60-7dec-afcd-0ffacaf3980d",
-          "text": "Os relatorios sao lindos e faceis de partilhar com o chefe.",
+          "ref": "019f74f8-23d8-7da5-a7ef-ce87961fc490",
+          "text": "Honestamente, Quando precisei, o suporte foi rapido e simpatico.",
+          "urgency": 1,
+          "sentiment": "positive"
+        },
+        {
+          "ref": "019f643a-6380-7775-9887-e09d8d55e38a",
+          "text": "Na minha experiencia, O suporte e um dos melhores que ja tive.",
+          "urgency": 1,
+          "sentiment": "positive"
+        },
+        {
+          "ref": "019f5ae0-d968-7dfb-993a-0023c26f8bbe",
+          "text": "Adoro o atendimento, sempre atenciosos.",
           "urgency": 1,
           "sentiment": "positive"
         }
@@ -369,1661 +369,1661 @@
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-27 10:05:07.612000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Teste de ponta a ponta da landing page: remarcar uma sessão obriga a cancelar e criar tudo de novo, e o cliente receb..."
+      "summary": "Remarcar sessões é complicado e gera emails contraditórios para o cliente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f87c9-a900-7061-8d3d-7e5d727dc4ff",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-22 03:06:08.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatorios automaticos impressionaram a direcao."
+      "summary": "Os relatórios automáticos impressionaram a direção.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f875c-9720-7708-9625-94877cf16fc0",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-22 01:07:00.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Na minha experiencia, Perdi uma reuniao porque o agendamento nao me avisou a horas."
+      "urgency": 4,
+      "summary": "O agendamento não enviou aviso a tempo, resultando na perda de uma reunião.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f865c-8470-7c08-9149-6b0289e4f71f",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-21 20:27:18.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface e limpa e intuitiva, adoro."
+      "summary": "A interface é limpa e intuitiva.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f856a-19d8-7fe8-aba3-33f2bc3bf5fa",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-21 16:02:31.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Honestamente, A interface e limpa e intuitiva, adoro."
+      "summary": "A interface é limpa e intuitiva.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f8521-d5d8-7673-9ccd-5d81146ede2f",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-21 14:43:35.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O que antes demorava uma tarde agora faco em minutos."
+      "summary": "Tarefas que demoravam uma tarde agora são feitas em minutos.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f8483-6f10-7047-bb28-2c0b96af8159",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-21 11:50:34.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, A minha produtividade disparou, faco muito mais em menos tempo."
+      "summary": "A produtividade do utilizador aumentou significativamente, fazendo mais em menos tempo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f8474-d0e0-7307-b781-35433b494346",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-21 11:34:36.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "E dificil perceber o que estou a pagar, a faturacao e confusa."
+      "urgency": 3,
+      "summary": "A faturação é confusa e o cliente não entende o que está a pagar.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f837b-fda8-7bcb-8130-78895fde78e9",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-21 07:02:49.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Honestamente, Encontrei varios bugs a exportar dados, saem incompletos."
+      "summary": "Foram encontrados vários bugs na exportação de dados, que saem incompletos.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f8370-af20-7b65-b7c4-537333cd1205",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-07-21 06:50:28.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Honestamente, A app fica lenta quando tenho muitos itens na lista."
+      "summary": "A aplicação fica lenta com muitos itens na lista.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f82e8-54e0-7033-9701-f3d9257fbc79",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-21 04:21:32.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque."
+      "summary": "O cliente foi cobrado duas vezes no mesmo mês sem explicação.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f8259-4f98-796d-b577-4a886b9ccc56",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-21 01:45:19.000000",
-      "classified_by": "fallback",
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, A equipa de apoio resolveu o meu problema no mesmo dia."
+      "summary": "A equipa de apoio resolveu o problema do cliente no mesmo dia.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f81af-8aa8-738d-bdc3-d6f33fc4cf1a",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-20 22:39:53.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Honestamente, A app fica lenta quando tenho muitos itens na lista."
+      "summary": "A aplicação fica lenta com muitos itens na lista.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f7f4d-6f28-74b1-82b0-f6d3101b0160",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-20 11:33:29.000000",
-      "classified_by": "fallback",
-      "theme": "relatorios",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Honestamente, Consigo mostrar resultados aos clientes num instante."
+      "summary": "O utilizador consegue mostrar resultados aos clientes rapidamente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f7df1-7138-75bd-8b99-98dc608d7bfc",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-20 05:13:23.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Devia haver lembretes de agendamento, esqueci-me de uma marcacao importante."
+      "urgency": 3,
+      "summary": "O cliente esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f7dd8-1508-7f7b-b1c9-bdcb694f8564",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-20 04:45:41.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Reduzi o trabalho manual para quase zero."
+      "summary": "O trabalho manual foi reduzido para quase zero.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f7db2-f520-7930-bfa3-7f96f2252de3",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-20 04:05:08.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Sinceramente, E dificil perceber o que estou a pagar, a faturacao e confusa."
+      "urgency": 3,
+      "summary": "A faturação é confusa e o cliente não entende o que está a pagar.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f7a73-c3f8-7409-8bcd-a1e2ed6bf4ef",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-19 12:57:15.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Honestamente, Nunca precisei de manual, percebe-se tudo sozinho."
+      "summary": "A aplicação é intuitiva e não requer manual.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f79c0-0070-778a-a124-88a0184b2069",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-19 09:40:54.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "Crashou tres vezes esta semana e perdi trabalho."
+      "summary": "A aplicação crashou três vezes na semana, resultando em perda de trabalho.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f786f-a310-72e8-88e3-34e029f0c73c",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-19 03:33:30.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Precisei de ajuda urgente e so responderam no dia seguinte."
+      "urgency": 4,
+      "summary": "O suporte demorou a responder a um pedido de ajuda urgente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f77ab-f550-737e-a411-34402d8cd268",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-18 23:59:46.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Poupo horas todas as semanas desde que comecei a usar."
+      "summary": "O utilizador poupa horas todas as semanas com a ferramenta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f769d-4c40-79b7-8275-fdd274d72761",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-18 19:04:08.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Cancelar a subscricao foi uma odisseia."
+      "summary": "Cancelar a subscrição foi um processo difícil.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f74f8-23d8-7da5-a7ef-ce87961fc490",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-18 11:24:07.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Honestamente, Quando precisei, o suporte foi rapido e simpatico."
+      "summary": "O suporte foi rápido e simpático quando necessário.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f74a8-b3e8-7fec-b205-725b104f0547",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-18 09:57:21.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Precisei de ajuda urgente e so responderam no dia seguinte."
+      "urgency": 4,
+      "summary": "O suporte demorou a responder a um pedido de ajuda urgente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f745b-4798-716b-a6ff-c0cce2bbdc31",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-18 08:32:47.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Na minha experiencia, A sincronizacao falha e as vezes vejo dados desatualizados."
+      "urgency": 3,
+      "summary": "A sincronização falha e os dados aparecem desatualizados.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f72d6-16c8-7ee4-ba05-11dff7f7b854",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-18 01:27:41.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "E dificil perceber o que estou a pagar, a faturacao e confusa."
+      "urgency": 3,
+      "summary": "A faturação é confusa e o cliente não entende o que está a pagar.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f7119-2870-79b0-88a1-b1c8ab13756b",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-17 17:21:42.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Ganhei imenso tempo, e o melhor da ferramenta."
+      "summary": "A ferramenta proporciona uma grande poupança de tempo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f7032-1818-770e-8f22-ce72388f7be5",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-17 13:09:19.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Adoro os dashboards, dao-me uma visao clara do negocio."
+      "summary": "Os dashboards fornecem uma visão clara do negócio.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6ea2-3118-74d1-88b5-587b3dcb6cdf",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-17 05:52:31.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A minha produtividade disparou, faco muito mais em menos tempo."
+      "summary": "A produtividade do utilizador aumentou significativamente, fazendo mais em menos tempo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6bad-14c8-729f-8476-72ec2f5a456b",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-16 16:05:33.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Sinceramente, As marcacoes desaparecem do calendario as vezes, e stressante."
+      "summary": "As marcações desaparecem do calendário, causando stress.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6b92-4968-74fd-93d2-c8e2a035c48d",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-16 15:36:17.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatorios automaticos impressionaram a direcao."
+      "summary": "Os relatórios automáticos impressionaram a direção.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6a37-0310-75ae-a9f9-e98e7ded737d",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-16 09:16:58.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Nao consigo reagendar sem ligar ao suporte, devia ser automatico."
+      "urgency": 3,
+      "summary": "Não é possível reagendar sem contactar o suporte, deveria ser automático.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6990-e7a0-7140-aece-63857004444c",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-16 06:15:32.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Reduzi o trabalho manual para quase zero."
+      "summary": "O trabalho manual foi reduzido para quase zero.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f698e-a968-74c1-8fdd-58dad9d2c755",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-16 06:13:05.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Sinceramente, Abri um ticket ha tres dias e ainda ninguem respondeu."
+      "urgency": 4,
+      "summary": "O suporte não respondeu a um ticket aberto há três dias.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f68e6-c8d8-7f5e-96f7-cb58ddbe995c",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-16 03:09:43.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "Fui cobrado duas vezes este mes e ninguem me explica porque."
+      "summary": "O cliente foi cobrado duas vezes no mesmo mês sem explicação.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f676a-fa60-7dec-afcd-0ffacaf3980d",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-15 20:14:52.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatorios sao lindos e faceis de partilhar com o chefe."
+      "summary": "Os relatórios são esteticamente agradáveis e fáceis de partilhar.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f670e-f3c8-7759-9be1-4e5416bcb595",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-15 18:34:21.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "O suporte demora imenso a responder quando tenho um problema urgente."
+      "urgency": 4,
+      "summary": "O suporte demora muito a responder a problemas urgentes.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f66ba-e440-731d-b1e1-6a1ff4111546",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-15 17:02:32.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Na minha experiencia, Cancelar a subscricao foi uma odisseia."
+      "summary": "Cancelar a subscrição foi um processo difícil.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6693-d828-7db4-8d88-2ace003adb74",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-15 16:19:53.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Ganhei imenso tempo, e o melhor da ferramenta."
+      "summary": "A ferramenta proporciona uma grande poupança de tempo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f65db-0f78-7f92-90a3-a65487c80afc",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-15 12:58:03.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Na minha experiencia, A fatura nao bate certo com o plano que contratei."
+      "summary": "A fatura não corresponde ao plano contratado.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f65ad-92f0-7862-a0f2-59ff4a68ca14",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-15 12:08:22.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "A fatura nao bate certo com o plano que contratei."
+      "summary": "A fatura não corresponde ao plano contratado.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f643a-6380-7775-9887-e09d8d55e38a",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-15 05:22:56.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, O suporte e um dos melhores que ja tive."
+      "summary": "O suporte é um dos melhores que o cliente já experimentou.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6359-65d8-71a4-813f-06089d136d29",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-15 01:17:11.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Sinceramente, Marquei uma sessao e o cliente recebeu a hora errada."
+      "summary": "O cliente recebeu a hora errada para uma sessão agendada.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6352-6cb0-7791-bd18-f2270af388e6",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-15 01:09:34.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Sinceramente, Precisei de ajuda urgente e so responderam no dia seguinte."
+      "urgency": 4,
+      "summary": "O suporte demorou a responder a um pedido de ajuda urgente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f633c-5c40-73e6-97a0-fae37d68b51c",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-15 00:45:28.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "No telemovel as listas grandes travam completamente."
+      "urgency": 3,
+      "summary": "Listas grandes travam completamente a aplicação no telemóvel.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f630d-3dc0-7c34-9902-593a835c4e5f",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-14 23:54:00.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Facil de configurar, sem complicacoes."
+      "summary": "A configuração da aplicação é fácil e sem complicações.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6157-96b0-7777-a742-b46d06d8e27a",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-07-14 15:55:58.000000",
-      "classified_by": "fallback",
-      "theme": "agendamento",
+      "theme": "facilidade",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "O fluxo de marcar horario tem passos a mais, perco-me sempre."
+      "urgency": 3,
+      "summary": "O fluxo de marcação de horário tem passos a mais, causando confusão.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6153-8b88-7df2-b9d2-d5823e3b2cbf",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-14 15:51:33.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Perdi uma reuniao porque o agendamento nao me avisou a horas."
+      "urgency": 4,
+      "summary": "O agendamento não enviou aviso a tempo, resultando na perda de uma reunião.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f6148-5858-7fa3-8c97-907cd5b9ff03",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-14 15:39:19.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "As metricas ajudam-me a tomar decisoes com confianca."
+      "summary": "As métricas ajudam a tomar decisões com confiança.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f60bd-eec0-7cfc-bf2f-bba97c6167d7",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-07-14 13:08:08.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "integracoes",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Na minha experiencia, Nao ha ligacao ao meu CRM, e um trabalhao manter os dois."
+      "urgency": 4,
+      "summary": "Não há integração com o CRM do cliente, exigindo trabalho manual.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f606d-a410-7864-9bf6-c98484ee1254",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-14 11:40:26.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, O que antes demorava uma tarde agora faco em minutos."
+      "summary": "O cliente poupa muito tempo com a ferramenta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f603e-23e8-78a9-8b7a-8c2e5157d14e",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-07-14 10:48:33.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "integracoes",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Nao ha ligacao ao meu CRM, e um trabalhao manter os dois."
+      "urgency": 4,
+      "summary": "O cliente não tem integração com o CRM, o que causa trabalho manual.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f5d53-2188-7ab9-aff5-f41b2db53017",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-13 21:12:37.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Ganhei imenso tempo, e o melhor da ferramenta."
+      "summary": "O cliente poupa imenso tempo com a ferramenta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f5b6c-8f08-7be5-b9ae-d0176e295c2b",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-13 12:21:09.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "No telemovel as listas grandes travam completamente."
+      "urgency": 3,
+      "summary": "A aplicação trava no telemóvel com listas grandes.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f5ae0-d968-7dfb-993a-0023c26f8bbe",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-13 09:48:33.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Adoro o atendimento, sempre atenciosos."
+      "summary": "O cliente elogia o atendimento atencioso.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f5400-5dd0-76d7-b62a-f525d7b85ae9",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-12 01:45:38.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Poupo horas todas as semanas desde que comecei a usar."
+      "summary": "O cliente poupa horas todas as semanas.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f5314-a9f8-774d-b9c4-0f32ca16445d",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-11 21:28:11.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Na minha experiencia, Devia haver lembretes de agendamento, esqueci-me de uma marcacao importante."
+      "urgency": 3,
+      "summary": "O cliente esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f5150-4578-71af-831b-255fe43053cf",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-11 13:14:03.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Sinceramente, Perdi uma reuniao porque o agendamento nao me avisou a horas."
+      "urgency": 4,
+      "summary": "O cliente perdeu uma reunião porque o agendamento não o avisou a horas.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f50c2-d670-7229-8d2d-76824c6782dd",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-11 10:39:34.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A minha equipa aprendeu a usar num instante."
+      "summary": "A equipa do cliente aprendeu a usar a ferramenta rapidamente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f4ea1-2720-747a-8da7-77ef80cccca2",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-07-11 00:43:32.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Na minha experiencia, O suporte demora imenso a responder quando tenho um problema urgente."
+      "urgency": 4,
+      "summary": "O suporte demora a responder a problemas urgentes.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f4e1a-5f38-70fb-86d8-1caaab477b83",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-10 22:16:19.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Ganhei imenso tempo, e o melhor da ferramenta."
+      "summary": "O cliente poupa imenso tempo com a ferramenta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f4c09-6d10-729c-a27a-6e76e0b42f56",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-10 12:38:34.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Adoro o atendimento, sempre atenciosos."
+      "summary": "O cliente elogia o atendimento atencioso.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f4ad4-c188-7c00-ae5c-bd550f1449db",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-07-10 07:01:25.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Na minha experiencia, E dificil perceber o que estou a pagar, a faturacao e confusa."
+      "urgency": 3,
+      "summary": "O cliente considera a faturação confusa e difícil de entender.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f49df-3628-7935-95b2-d7651cecd2a5",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-10 02:33:13.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "E das ferramentas mais simples que ja experimentei."
+      "summary": "A ferramenta é das mais simples que o cliente já experimentou.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f491a-4fe8-763e-8fdd-ddf5ad887acd",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-07-09 22:58:09.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Abri um ticket ha tres dias e ainda ninguem respondeu."
+      "urgency": 4,
+      "summary": "O cliente abriu um ticket há três dias e não obteve resposta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f45e9-8e10-795a-8261-d1ff3db4d8ab",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-09 08:06:02.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, A minha produtividade disparou, faco muito mais em menos tempo."
+      "summary": "A produtividade do cliente aumentou, fazendo mais em menos tempo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f44da-dd30-7c0c-95d9-cb54b798998e",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-09 03:10:22.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Nao consigo reagendar sem ligar ao suporte, devia ser automatico."
+      "urgency": 3,
+      "summary": "O cliente não consegue reagendar sem contactar o suporte.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f446e-f818-77a1-9e31-05503e92e3cd",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-09 01:12:31.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Ganhei imenso tempo, e o melhor da ferramenta."
+      "summary": "O cliente poupa imenso tempo com a ferramenta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f446d-2740-7200-a309-18252fdc2621",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-09 01:10:32.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Os relatorios sao lindos e faceis de partilhar com o chefe."
+      "summary": "Os relatórios são esteticamente agradáveis e fáceis de partilhar.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f439c-9c88-7b39-9783-53fe02b1ffa5",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-08 21:22:45.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, As metricas ajudam-me a tomar decisoes com confianca."
+      "summary": "As métricas ajudam o cliente a tomar decisões com confiança.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f4294-b208-7465-9932-3458432d145f",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-08 16:34:29.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Honestamente, Quando precisei, o suporte foi rapido e simpatico."
+      "summary": "O suporte foi rápido e simpático quando o cliente precisou.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f413e-22b8-7fcf-9099-0eeb4ce1b77f",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-08 10:20:19.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O preco subiu sem aviso nenhum, senti-me enganado."
+      "summary": "O preço subiu sem aviso, o cliente sentiu-se enganado.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f40d7-c3b0-7c2f-a5ec-0dada87dc5e5",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-08 08:28:30.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Consigo mostrar resultados aos clientes num instante."
+      "summary": "O cliente consegue mostrar resultados aos clientes rapidamente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f3e32-6d40-7324-97d0-2843836314ca",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-07 20:08:40.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Nao consigo reagendar sem ligar ao suporte, devia ser automatico."
+      "urgency": 3,
+      "summary": "O cliente não consegue reagendar sem contactar o suporte.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f3dec-86b8-79fa-936f-e177d0eb52ab",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-07 18:52:19.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Poupo horas todas as semanas desde que comecei a usar."
+      "summary": "O cliente poupa horas todas as semanas.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f3d4c-4b30-7f78-a226-f8a734f171e7",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-07 15:57:18.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Reduzi o trabalho manual para quase zero."
+      "summary": "O cliente reduziu o trabalho manual para quase zero.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f3cd6-57e0-7e72-9c25-871484afbf4e",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-07 13:48:28.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "A fatura nao bate certo com o plano que contratei."
+      "summary": "A fatura não corresponde ao plano contratado pelo cliente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f3935-c120-7590-8bee-946fba27a053",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-06 20:54:12.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Honestamente, A app fica lenta quando tenho muitos itens na lista."
+      "summary": "A aplicação fica lenta com muitos itens na lista.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f38f6-7dd0-7745-a2a8-f79859a55121",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-06 19:45:06.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "E dificil perceber o que estou a pagar, a faturacao e confusa."
+      "urgency": 3,
+      "summary": "O cliente considera a faturação confusa e difícil de entender.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f37fb-1670-77cc-a218-c7475051ad78",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-06 15:10:30.000000",
-      "classified_by": "fallback",
-      "theme": "poupanca_tempo",
+      "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Super facil de usar, comecei a trabalhar em minutos."
+      "summary": "A ferramenta é super fácil de usar, permitindo começar a trabalhar rapidamente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f359d-5050-7be0-8bde-dd237fd4f468",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-06 04:08:50.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Honestamente, Facil de configurar, sem complicacoes."
+      "summary": "A ferramenta é fácil de configurar, sem complicações.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f32ca-94c8-796a-b5f4-761615079b06",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-05 14:59:25.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "Crashou tres vezes esta semana e perdi trabalho."
+      "summary": "A aplicação crashou várias vezes, resultando em perda de trabalho.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f315c-5ae0-720c-95ad-6579f9e58433",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-05 08:19:24.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Abri um ticket ha tres dias e ainda ninguem respondeu."
+      "urgency": 4,
+      "summary": "O cliente abriu um ticket há três dias e não obteve resposta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2fbc-e380-71c2-ad62-351c1f1e082a",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-05 00:45:36.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Precisei de ajuda urgente e so responderam no dia seguinte."
+      "urgency": 4,
+      "summary": "O suporte demorou a responder a um pedido de ajuda urgente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2eff-c958-75b2-a9bc-3632ccd29131",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-07-04 21:19:03.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Devia haver lembretes de agendamento, esqueci-me de uma marcacao importante."
+      "urgency": 3,
+      "summary": "O cliente esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2e2a-02c8-7378-81f3-653183b6c894",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-04 17:25:33.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "As marcacoes desaparecem do calendario as vezes, e stressante."
+      "summary": "As marcações desaparecem do calendário, causando stress ao cliente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2d9e-be70-7f6a-b916-de9df492e32e",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-04 14:53:26.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Adoro o atendimento, sempre atenciosos."
+      "summary": "O cliente elogia o atendimento atencioso.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2d2d-8610-7890-a8c1-59b822528d4d",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-04 12:49:46.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Ganhei imenso tempo, e o melhor da ferramenta."
+      "summary": "O cliente poupa imenso tempo com a ferramenta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2c94-99a0-7f83-bd3e-a1bfd2248492",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-04 10:02:44.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "Honestamente, Crashou tres vezes esta semana e perdi trabalho."
+      "summary": "A aplicação crashou várias vezes, resultando em perda de trabalho.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2c4e-49a0-7a0b-b59c-4dc2f19290a0",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-04 08:45:56.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A app fica lenta quando tenho muitos itens na lista."
+      "summary": "A aplicação fica lenta com muitos itens na lista.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2bff-56b0-7c57-83d9-d5d46bffec81",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-04 07:19:42.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Reduzi o trabalho manual para quase zero."
+      "summary": "O cliente reduziu o trabalho manual para quase zero.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2b71-3bc8-7754-94b2-b17213be5eba",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-04 04:44:29.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Adoro o atendimento, sempre atenciosos."
+      "summary": "O cliente elogia o atendimento atencioso.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2702-7f98-70cf-ae9e-33b719a92e31",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-03 08:05:03.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Honestamente, Devia haver lembretes de agendamento, esqueci-me de uma marcacao importante."
+      "urgency": 3,
+      "summary": "O cliente esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f264c-c810-7b43-9790-e8d4f2631178",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-03 04:46:34.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface e limpa e intuitiva, adoro."
+      "summary": "A interface é limpa e intuitiva.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f2517-1ab8-7b45-a8c4-abda8c23d841",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-02 23:08:19.000000",
-      "classified_by": "fallback",
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Sinceramente, Gostava de exportar para o Excel automaticamente, nao da."
+      "summary": "O cliente não consegue exportar automaticamente para o Excel.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f234a-26d0-72b4-8421-369abb80d026",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-07-02 14:44:50.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Nunca precisei de manual, percebe-se tudo sozinho."
+      "summary": "A ferramenta é intuitiva e não requer manual.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f232b-e0d0-707d-a8c5-edbd7f972f83",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-02 14:11:46.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Sinceramente, As marcacoes desaparecem do calendario as vezes, e stressante."
+      "summary": "As marcações desaparecem do calendário, causando stress ao cliente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f22e5-5a20-7211-a8ae-cf8bcadf8642",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-02 12:54:44.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Nunca precisei de manual, percebe-se tudo sozinho."
+      "summary": "A ferramenta é intuitiva e não requer manual.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f220e-91c0-72ec-9c77-802553741838",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-02 09:00:08.000000",
-      "classified_by": "fallback",
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Gostava de exportar para o Excel automaticamente, nao da."
+      "summary": "O cliente não consegue exportar automaticamente para o Excel.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f20a6-dfb8-7387-938d-c21e194660d2",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-07-02 02:27:15.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Sinceramente, No telemovel as listas grandes travam completamente."
+      "urgency": 3,
+      "summary": "A aplicação trava no telemóvel com listas grandes.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1f6b-3ef0-713a-93fd-00692951692b",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-01 20:42:30.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Honestamente, Devia haver lembretes de agendamento, esqueci-me de uma marcacao importante."
+      "urgency": 3,
+      "summary": "O utilizador esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1e08-5b60-73a6-b1c1-f883707048ec",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-01 14:14:52.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O suporte e um dos melhores que ja tive."
+      "summary": "O utilizador elogia o suporte, considerando-o um dos melhores.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1d4a-7a00-70e4-9d44-05c078e4a7a0",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-07-01 10:47:28.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, A minha produtividade disparou, faco muito mais em menos tempo."
+      "summary": "O utilizador relata um aumento significativo na produtividade e poupança de tempo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1bb7-1860-7916-95f3-62f3dce6b603",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-07-01 03:26:52.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Honestamente, A minha equipa aprendeu a usar num instante."
+      "summary": "A equipa do utilizador aprendeu a usar o produto rapidamente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1b32-1980-7449-b30a-b4af1ea363f0",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-07-01 01:01:36.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Honestamente, Abri um ticket ha tres dias e ainda ninguem respondeu."
+      "urgency": 4,
+      "summary": "O utilizador abriu um ticket há três dias e ainda não obteve resposta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1a7d-9a78-73fe-b9ec-137da2715994",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-30 21:44:27.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Nao consigo reagendar sem ligar ao suporte, devia ser automatico."
+      "urgency": 3,
+      "summary": "O utilizador não consegue reagendar sem contactar o suporte, desejando automatização.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f19c1-5b10-75ec-8afe-a1bde0b0157f",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-30 18:18:50.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Nunca precisei de manual, percebe-se tudo sozinho."
+      "summary": "O utilizador nunca precisou de manual, achando o produto intuitivo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f19b4-b8b0-7b9a-8907-c329ed782ba5",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-30 18:05:02.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Na minha experiencia, Perdi uma reuniao porque o agendamento nao me avisou a horas."
+      "urgency": 4,
+      "summary": "O utilizador perdeu uma reunião porque o agendamento não o avisou a horas.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1781-d708-700f-90be-c943baefb039",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-30 07:50:13.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Marquei uma sessao e o cliente recebeu a hora errada."
+      "summary": "O cliente do utilizador recebeu a hora errada para uma sessão agendada.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f170a-3220-76fb-ba7f-bae9c00ae5d3",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-30 05:39:32.000000",
-      "classified_by": "fallback",
-      "theme": "agendamento",
+      "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Honestamente, As marcacoes desaparecem do calendario as vezes, e stressante."
+      "summary": "As marcações desaparecem do calendário, causando stress ao utilizador.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1586-f168-724a-a871-2466c05bffc8",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-06-29 22:36:33.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Precisei de ajuda urgente e so responderam no dia seguinte."
+      "urgency": 4,
+      "summary": "O utilizador precisou de ajuda urgente e só obteve resposta no dia seguinte.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1523-3df8-7d7b-98d1-9bcd9f804f88",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-06-29 20:47:39.000000",
-      "classified_by": "fallback",
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Falta integracao com as ferramentas que ja uso, tenho de copiar tudo a mao."
+      "summary": "O utilizador sente falta de integração com outras ferramentas, exigindo trabalho manual.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f13bf-6838-757b-9296-112211d9f9f5",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-06-29 14:18:59.000000",
-      "classified_by": "fallback",
-      "theme": "poupanca_tempo",
+      "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Super facil de usar, comecei a trabalhar em minutos."
+      "summary": "O utilizador considera o produto super fácil de usar, começando a trabalhar rapidamente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1393-3ba0-777b-a4a0-f3cb28420305",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-29 13:30:44.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Adoro os dashboards, dao-me uma visao clara do negocio."
+      "summary": "O utilizador elogia os dashboards por fornecerem uma visão clara do negócio.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f1365-9fd8-7999-97a6-68333ffe2773",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-06-29 12:40:55.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface e limpa e intuitiva, adoro."
+      "summary": "O utilizador aprecia a interface limpa e intuitiva.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f11e6-4338-78ec-b288-53cbf6bd8966",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-29 05:42:11.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "O calendario e pouco claro, ja marquei duas coisas para a mesma hora."
+      "urgency": 3,
+      "summary": "O calendário é pouco claro, levando o utilizador a marcar duas coisas para a mesma hora.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0fe5-6e10-708a-a5e3-c9fe2a337125",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-28 20:22:02.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Nao consigo reagendar sem ligar ao suporte, devia ser automatico."
+      "urgency": 3,
+      "summary": "O utilizador não consegue reagendar sem contactar o suporte, desejando automatização.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0e1c-fa80-79fe-959f-58bcad8a4411",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-28 12:03:28.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, A interface e limpa e intuitiva, adoro."
+      "summary": "O utilizador aprecia a interface limpa e intuitiva.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0d80-c250-7da3-9306-2c399ac4f261",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-06-28 09:12:50.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Nunca precisei de manual, percebe-se tudo sozinho."
+      "summary": "O utilizador nunca precisou de manual, achando o produto intuitivo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0c24-3f90-74fc-abfc-592c6aeb78e5",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-06-28 02:52:10.000000",
-      "classified_by": "fallback",
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Falta integracao com as ferramentas que ja uso, tenho de copiar tudo a mao."
+      "summary": "O utilizador sente falta de integração com outras ferramentas, exigindo trabalho manual.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0c22-0540-7926-8c65-9fa138826f5c",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-06-28 02:49:44.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Sinceramente, Perdi uma reuniao porque o agendamento nao me avisou a horas."
+      "urgency": 4,
+      "summary": "O utilizador perdeu uma reunião porque o agendamento não o avisou a horas.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0a6a-f6d0-75d2-8e60-4ab5c1f7ba84",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-27 18:50:10.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatorios automaticos impressionaram a direcao."
+      "summary": "Os relatórios automáticos impressionaram a direção.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0a0e-2900-76f2-9973-4b534e68f64b",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-06-27 17:08:48.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Nao consigo reagendar sem ligar ao suporte, devia ser automatico."
+      "urgency": 3,
+      "summary": "O utilizador não consegue reagendar sem contactar o suporte, desejando automatização.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f086b-13d8-7223-9369-2d9779af6a09",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-06-27 09:31:03.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Adoro o atendimento, sempre atenciosos."
+      "summary": "O utilizador elogia o atendimento, considerando-o sempre atencioso.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f06bb-c9b0-7d8f-a83d-9d7b6933864b",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-06-27 01:39:58.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, Nunca precisei de manual, percebe-se tudo sozinho."
+      "summary": "O utilizador nunca precisou de manual, achando o produto intuitivo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f05c7-ec00-759f-bf4d-cf839742fe54",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-26 21:13:36.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Precisei de ajuda urgente e so responderam no dia seguinte."
+      "urgency": 4,
+      "summary": "O utilizador precisou de ajuda urgente e só obteve resposta no dia seguinte.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0586-bc80-7806-9916-ab638ee22e3d",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-06-26 20:02:24.000000",
-      "classified_by": "fallback",
-      "theme": "poupanca_tempo",
+      "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Super facil de usar, comecei a trabalhar em minutos."
+      "summary": "O utilizador considera o produto super fácil de usar, começando a trabalhar rapidamente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0418-ec10-71bd-8497-cf4624083b0f",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-26 13:22:50.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface e limpa e intuitiva, adoro."
+      "summary": "O utilizador aprecia a interface limpa e intuitiva.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f02d0-c828-79f1-ae5e-f4670cffdf1d",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-26 07:24:25.000000",
-      "classified_by": "fallback",
-      "theme": "integracoes",
+      "theme": "relatorios",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Gostava de exportar para o Excel automaticamente, nao da."
+      "summary": "O utilizador gostaria de exportar dados para o Excel automaticamente, mas não consegue.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f025c-3850-7574-8372-4f648489b18b",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-26 05:17:06.000000",
-      "classified_by": "fallback",
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Reduzi o trabalho manual para quase zero."
+      "summary": "O utilizador reduziu o trabalho manual para quase zero.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f01a8-5588-7201-a098-7daf3f4f7587",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-06-26 02:00:37.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, O suporte e um dos melhores que ja tive."
+      "summary": "O utilizador elogia o suporte, considerando-o um dos melhores.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0190-06e0-7be8-95af-9c101db756c2",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-06-26 01:34:04.000000",
-      "classified_by": "fallback",
-      "theme": "agendamento",
+      "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "As marcacoes desaparecem do calendario as vezes, e stressante."
+      "summary": "As marcações desaparecem do calendário, causando stress ao utilizador.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0162-3080-7462-9286-9fc2c92da478",
       "feedback_type": "praise",
       "channel": "mobile",
       "timestamp": "2026-06-26 00:44:00.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Nunca precisei de manual, percebe-se tudo sozinho."
+      "summary": "O utilizador nunca precisou de manual, achando o produto intuitivo.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0149-2e28-7f9f-96ab-bb1c16841eb4",
       "feedback_type": "complaint",
       "channel": "email_survey",
       "timestamp": "2026-06-26 00:16:41.000000",
-      "classified_by": "fallback",
-      "theme": "outro",
+      "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Na minha experiencia, Fiquei bloqueado uma tarde inteira a espera de ajuda."
+      "urgency": 4,
+      "summary": "O utilizador ficou bloqueado uma tarde inteira à espera de ajuda.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f007a-8bb8-705f-a6d9-dcdff3ff2075",
       "feedback_type": "praise",
       "channel": "email_survey",
       "timestamp": "2026-06-25 20:30:59.000000",
-      "classified_by": "fallback",
-      "theme": "suporte_lento",
+      "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O suporte e um dos melhores que ja tive."
+      "summary": "O utilizador elogia o suporte, considerando-o um dos melhores.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0066-d8c0-7708-bd03-c59ddb296be3",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-06-25 20:09:28.000000",
-      "classified_by": "fallback",
-      "theme": "agendamento",
+      "theme": "integracoes",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Sem integracao com o calendario Google isto perde metade da utilidade."
+      "urgency": 3,
+      "summary": "A falta de integração com o calendário Google reduz a utilidade do produto para o utilizador.",
+      "classified_by": "llm"
     },
     {
       "ref": "019f0027-dfa8-7f12-b3f6-04366282def8",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-25 19:00:41.000000",
-      "classified_by": "fallback",
-      "theme": "relatorios",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Consigo mostrar resultados aos clientes num instante."
+      "summary": "O utilizador consegue mostrar resultados aos clientes rapidamente.",
+      "classified_by": "llm"
     },
     {
       "ref": "019efd3e-f088-7214-8594-aeca1a917ded",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-25 05:27:01.000000",
-      "classified_by": "fallback",
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Sinceramente, E das ferramentas mais simples que ja experimentei."
+      "summary": "O utilizador considera o produto uma das ferramentas mais simples que já experimentou.",
+      "classified_by": "llm"
     },
     {
       "ref": "019efd27-1328-7021-898d-15e936412433",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-25 05:00:57.000000",
-      "classified_by": "fallback",
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "Honestamente, Fui cobrado duas vezes este mes e ninguem me explica porque."
+      "summary": "O utilizador foi cobrado duas vezes no mês e não obteve explicação.",
+      "classified_by": "llm"
     },
     {
       "ref": "019efd21-1bd0-7816-bc78-d41b336b4894",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-06-25 04:54:26.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Encontrei varios bugs a exportar dados, saem incompletos."
+      "summary": "O utilizador encontrou vários bugs na exportação de dados, que saem incompletos.",
+      "classified_by": "llm"
     },
     {
       "ref": "019efcc2-5de8-745c-a562-b5dc00f73e87",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-25 03:10:57.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Honestamente, As respostas do suporte sao lentas e genericas."
+      "urgency": 4,
+      "summary": "As respostas do suporte são lentas e genéricas.",
+      "classified_by": "llm"
     },
     {
       "ref": "019efcbb-0ae8-79d6-bf96-eb34cde9e3ca",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-25 03:02:57.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Sinceramente, Abri um ticket ha tres dias e ainda ninguem respondeu."
+      "urgency": 4,
+      "summary": "O utilizador abriu um ticket há três dias e ainda não obteve resposta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019efc16-7a00-740a-8273-d0c0b4feaabc",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-25 00:03:12.000000",
-      "classified_by": "fallback",
-      "theme": "integracoes",
+      "theme": "relatorios",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Honestamente, Gostava de exportar para o Excel automaticamente, nao da."
+      "summary": "O utilizador gostaria de exportar dados para o Excel automaticamente, mas não consegue.",
+      "classified_by": "llm"
     },
     {
       "ref": "019efbdd-4190-73db-bb88-645066077ed2",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-06-24 23:00:42.000000",
-      "classified_by": "fallback",
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Sinceramente, A sincronizacao falha e as vezes vejo dados desatualizados."
+      "summary": "A sincronização falha e o utilizador vê dados desatualizados.",
+      "classified_by": "llm"
     },
     {
       "ref": "019efb36-33f0-7f81-9722-a875319993f2",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-24 19:58:14.000000",
-      "classified_by": "fallback",
-      "theme": "integracoes",
+      "theme": "relatorios",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Honestamente, Gostava de exportar para o Excel automaticamente, nao da."
+      "summary": "O utilizador gostaria de exportar dados para o Excel automaticamente, mas não consegue.",
+      "classified_by": "llm"
     },
     {
       "ref": "019ef98f-bb98-7dfc-9084-4790ea9286df",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-24 12:16:47.000000",
-      "classified_by": "fallback",
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Os relatorios sao lindos e faceis de partilhar com o chefe."
+      "summary": "O utilizador elogia os relatórios, considerando-os bonitos e fáceis de partilhar.",
+      "classified_by": "llm"
     },
     {
       "ref": "019ef61e-b0b8-78d2-ac2c-1209945df105",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-06-23 20:14:27.000000",
-      "classified_by": "fallback",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "Sinceramente, Abri um ticket ha tres dias e ainda ninguem respondeu."
+      "urgency": 4,
+      "summary": "O utilizador abriu um ticket há três dias e ainda não obteve resposta.",
+      "classified_by": "llm"
     },
     {
       "ref": "019ef5ee-1f20-72e6-8f0b-b6d99a5049e3",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-23 19:21:24.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Marquei uma sessao e o cliente recebeu a hora errada."
+      "summary": "O cliente do utilizador recebeu a hora errada para uma sessão agendada.",
+      "classified_by": "llm"
     },
     {
       "ref": "019ef40f-54d0-72f2-af15-7b0f66777679",
       "feedback_type": "complaint",
       "channel": "mobile",
       "timestamp": "2026-06-23 10:38:26.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Nao consigo reagendar sem ligar ao suporte, devia ser automatico."
+      "urgency": 3,
+      "summary": "O utilizador não consegue reagendar sem contactar o suporte, desejando automatização.",
+      "classified_by": "llm"
     },
     {
       "ref": "019ef230-9a20-7327-82f5-8fd20a61b0e5",
       "feedback_type": "complaint",
       "channel": "web",
       "timestamp": "2026-06-23 01:55:32.000000",
-      "classified_by": "fallback",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Sinceramente, Devia haver lembretes de agendamento, esqueci-me de uma marcacao importante."
+      "urgency": 3,
+      "summary": "O utilizador esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
+      "classified_by": "llm"
     },
     {
       "ref": "019ef1ca-7998-79bc-a667-17f260d033ec",
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-23 00:03:59.000000",
-      "classified_by": "fallback",
-      "theme": "relatorios",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Na minha experiencia, Consigo mostrar resultados aos clientes num instante."
+      "summary": "O cliente consegue mostrar resultados aos clientes rapidamente.",
+      "classified_by": "llm"
     }
   ]
 }
