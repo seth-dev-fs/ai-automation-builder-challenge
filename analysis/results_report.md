@@ -1,22 +1,22 @@
 # Leitura dos resultados — `prev_campaign_q1`
 
-_Gerado automaticamente em 2026-07-27 11:13 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash` e foi revista por um humano antes de qualquer decisão de orçamento._
+_Gerado automaticamente em 2026-08-03 09:55 UTC pelo pipeline (`scripts/pipeline.py`). Os números são calculados em Python (`scripts/metrics.py`); a interpretação é do modelo `gemini-2.5-flash` e foi revista por um humano antes de qualquer decisão de orçamento._
 
 ## Conclusões
-* O feedback dos utilizadores, especialmente as queixas, está fortemente correlacionado com o desempenho dos criativos. Criativos que abordam dores frequentes e urgentes (como "Agendamento e marcações") têm um CVR significativamente mais alto. Isto sugere que a seleção de criativos deve ser guiada pela análise do feedback, priorizando a resolução de problemas.
-* O ângulo de comunicação "pain_resolution" (resolução de problemas) superou o "praise_amplification" (amplificação de elogios) em 59% (p=0.0424), o que é uma diferença significativa. O criativo com melhor desempenho, "cr_A", usou este ângulo e focou-se no tema "agendamento", que tem 26 queixas e urgência média de 3.5/5.
-* A diferença de CVR entre mobile (4.17%) e desktop (2.92%) não é estatisticamente significativa (p=0.206). Não devemos tomar decisões orçamentais baseadas nesta aparente diferença, pois pode ser apenas ruído.
-* O criativo "cr_F", com o tema "integrações", teve o pior CVR (1.67%). Este tema tem apenas 10 queixas, com uma urgência média de 3.2/5, o que reforça a ideia de que criativos focados em dores menos prementes ou menos frequentes têm pior desempenho.
+* O padrão principal é a forte correlação (Spearman ρ = 0.943) entre o volume de menções no feedback e o CVR dos criativos. Isto sugere que os temas com mais queixas ou elogios no feedback dos utilizadores tendem a ter um melhor desempenho nos anúncios. Para escolher criativos, devemos focar-nos nos temas mais presentes no feedback.
+* O criativo "Nunca mais percas uma marcacao" (cr_A), com o ângulo _pain_resolution_ e tema _agendamento_, foi o de melhor desempenho, com um CVR de 8.42% (IC 95%: 6.03–11.65%). Este tema de agendamento também tem 26 queixas, a maior quantidade de queixas.
+* O ângulo _pain_resolution_ superou significativamente o _praise_amplification_ (lift +59%, p=0.0424), com CVRs de 4.71% e 2.96%, respetivamente.
+* A diferença aparente no CVR entre mobile (4.17%) e desktop (2.92%) não é estatisticamente significativa (p=0.206). Não devemos agir sobre esta diferença ainda, pois pode ser ruído.
 
 ## O que fazer a seguir
-1. **Amplificar criativos com ângulo "pain_resolution" e temas de alta urgência:** O criativo "cr_A" obteve um CVR de 8.42% e o ângulo "pain_resolution" teve um lift de 59%. Devemos criar mais criativos que abordem as dores mais urgentes e frequentes, como "Estabilidade e desempenho" (16 queixas, urgência 3.69/5) e "Faturação e subscrição" (14 queixas, urgência 3.86/5), que não tiveram criativos na campanha anterior.
-2. **Cortar criativos com baixo desempenho e temas de baixa urgência:** O criativo "cr_F" teve um CVR de 1.67%. Devemos desativar criativos focados em temas com poucas queixas ou baixa urgência, como "integrações", e reavaliar a sua relevância para futuras campanhas.
-3. **Testar novos criativos baseados em dores não abordadas:** Criar e testar criativos para as dores de "Estabilidade e desempenho" (16 queixas, urgência 3.69/5) e "Faturação e subscrição" (14 queixas, urgência 3.86/5). Estes temas representam problemas significativos para os utilizadores e podem ter um alto potencial de CVR, seguindo o padrão observado.
+1. Amplificar criativos com o ângulo _pain_resolution_ e temas de alta urgência/volume de queixas. O criativo cr_A ("Nunca mais percas uma marcacao") teve um CVR de 8.42%, e o ângulo _pain_resolution_ demonstrou um lift de +59% face ao _praise_amplification_. O tema _agendamento_ tem 26 queixas, a maior quantidade.
+2. Cortar criativos com o tema _integrações_. O criativo cr_F ("Integra tudo num so lugar") teve o pior CVR, de 1.67%. Este tema também tem o menor volume de queixas (10) e a menor urgência média (3.2/5).
+3. Testar novos criativos focados nos temas _estabilidade e desempenho_ e _faturação e subscrição_. Estes temas têm 16 e 14 queixas, respetivamente, com urgências médias de 3.62/5 e 3.57/5, mas não tiveram nenhum criativo na campanha anterior. Isto alinha-se com a forte correlação observada entre feedback e CVR.
 
 ## Limites desta leitura
-* A correlação observada entre o volume de menções no feedback e o CVR dos criativos tem um n=6, o que é um tamanho de amostra pequeno e pode limitar a generalização.
-* Não temos dados de custo, o que significa que o CVR não pode ser diretamente traduzido em ROI. Não é possível determinar a rentabilidade dos criativos apenas com estes dados.
-* Não sabemos se as impressões foram distribuídas uniformemente pelos criativos, o que pode influenciar a fiabilidade dos CVRs individuais.
+* A correlação de Spearman ρ = 0.943 foi calculada com um n=6, o que é um tamanho de amostra pequeno e pode não ser generalizável.
+* Não temos dados de custo, o que significa que o CVR não pode ser diretamente traduzido em ROI.
+* Não sabemos se as impressões foram distribuídas uniformemente pelos diferentes criativos, o que pode influenciar os CVRs observados.
 
 ---
 
@@ -67,10 +67,10 @@ Para cada criativo: quantas vezes o seu tema aparece no feedback, com a carga co
 | Criativo | Tema | Ângulo | Menções no feedback | CVR |
 |---|---|---|---|---|
 | `cr_A` | agendamento | pain_resolution | 26 | **8.42%** |
-| `cr_C` | poupanca_tempo | praise_amplification | 22 | **4.17%** |
+| `cr_C` | poupanca_tempo | praise_amplification | 23 | **4.17%** |
 | `cr_B` | suporte_lento | pain_resolution | 16 | **3.24%** |
 | `cr_D` | facilidade | praise_amplification | 22 | **2.5%** |
-| `cr_E` | relatorios | praise_amplification | 12 | **2.0%** |
+| `cr_E` | relatorios | praise_amplification | 11 | **2.0%** |
 | `cr_F` | integracoes | pain_resolution | 10 | **1.67%** |
 
 Correlação de postos (Spearman) entre volume de feedback e CVR: **ρ = 0.943** no conjunto dos 6 criativos; ρ = 1.0 dentro de `pain_resolution` e ρ = 1.0 dentro de `praise_amplification`.
@@ -81,5 +81,5 @@ Temas com queixas registadas que a campanha anterior nunca abordou:
 
 | Tema | Queixas | Urgência média | Exemplo |
 |---|---|---|---|
-| Estabilidade e desempenho | 16 | 3.69 | "Crashou tres vezes esta semana e perdi trabalho." |
-| Faturação e subscrição | 14 | 3.86 | "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque." |
+| Estabilidade e desempenho | 16 | 3.62 | "Crashou tres vezes esta semana e perdi trabalho." |
+| Faturação e subscrição | 14 | 3.57 | "Honestamente, Fui cobrado duas vezes este mes e ninguem me explica porque." |

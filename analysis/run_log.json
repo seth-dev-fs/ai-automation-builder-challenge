@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-07-27T11:13:50Z",
-  "duration_seconds": 43.4,
+  "finished_at": "2026-08-03T09:55:44Z",
+  "duration_seconds": 42.9,
   "mode": "posthog",
   "model": "gemini-2.5-flash",
   "inputs": {
@@ -22,65 +22,65 @@
         "agent": "feedback_analyst[0:50]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 8.69,
+        "seconds": 8.97,
         "tokens_in": 1586,
-        "tokens_out": 2195
+        "tokens_out": 2294
       },
       {
         "agent": "feedback_analyst[50:100]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 11.66,
+        "seconds": 12.48,
         "tokens_in": 1538,
-        "tokens_out": 3091
+        "tokens_out": 3131
       },
       {
         "agent": "feedback_analyst[100:150]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 9.48,
+        "seconds": 9.16,
         "tokens_in": 1576,
-        "tokens_out": 2392
+        "tokens_out": 2353
       },
       {
         "agent": "feedback_analyst[150:151]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 0.84,
+        "seconds": 0.59,
         "tokens_in": 409,
-        "tokens_out": 43
+        "tokens_out": 44
       },
       {
         "agent": "results_reader",
         "attempt": 1,
         "status": "ok",
-        "seconds": 4.59,
-        "tokens_in": 983,
-        "tokens_out": 789
+        "seconds": 3.97,
+        "tokens_in": 980,
+        "tokens_out": 674
       },
       {
         "agent": "creative_writer[agendamento]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 1.94,
+        "seconds": 2.08,
         "tokens_in": 608,
-        "tokens_out": 279
+        "tokens_out": 270
       },
       {
         "agent": "creative_writer[estabilidade]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 1.92,
-        "tokens_in": 578,
-        "tokens_out": 273
+        "seconds": 1.85,
+        "tokens_in": 572,
+        "tokens_out": 275
       },
       {
         "agent": "creative_writer[faturacao]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 1.97,
-        "tokens_in": 585,
-        "tokens_out": 292
+        "seconds": 1.98,
+        "tokens_in": 591,
+        "tokens_out": 267
       }
     ]
   },

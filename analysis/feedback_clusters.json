@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T11:13:40Z",
+  "generated_at": "2026-08-03T09:55:34Z",
   "model": "gemini-2.5-flash",
   "source_events": 151,
   "taxonomy": [
@@ -28,8 +28,8 @@
       "complaints": 26,
       "praise": 0,
       "pain_ratio": 1.0,
-      "avg_urgency": 3.5,
-      "avg_pain_urgency": 3.5,
+      "avg_urgency": 3.46,
+      "avg_pain_urgency": 3.46,
       "covered_by_previous_campaign": true,
       "top_quotes": [
         {
@@ -66,8 +66,8 @@
       "complaints": 16,
       "praise": 0,
       "pain_ratio": 1.0,
-      "avg_urgency": 3.69,
-      "avg_pain_urgency": 3.69,
+      "avg_urgency": 3.62,
+      "avg_pain_urgency": 3.62,
       "covered_by_previous_campaign": false,
       "top_quotes": [
         {
@@ -83,14 +83,14 @@
           "sentiment": "negative"
         },
         {
-          "ref": "019f837b-fda8-7bcb-8130-78895fde78e9",
-          "text": "Honestamente, Encontrei varios bugs a exportar dados, saem incompletos.",
+          "ref": "019f170a-3220-76fb-ba7f-bae9c00ae5d3",
+          "text": "Honestamente, As marcacoes desaparecem do calendario as vezes, e stressante.",
           "urgency": 4,
           "sentiment": "negative"
         },
         {
-          "ref": "019f170a-3220-76fb-ba7f-bae9c00ae5d3",
-          "text": "Honestamente, As marcacoes desaparecem do calendario as vezes, e stressante.",
+          "ref": "019f0190-06e0-7be8-95af-9c101db756c2",
+          "text": "As marcacoes desaparecem do calendario as vezes, e stressante.",
           "urgency": 4,
           "sentiment": "negative"
         }
@@ -104,8 +104,8 @@
       "complaints": 16,
       "praise": 0,
       "pain_ratio": 1.0,
-      "avg_urgency": 3.94,
-      "avg_pain_urgency": 3.94,
+      "avg_urgency": 4.0,
+      "avg_pain_urgency": 4.0,
       "covered_by_previous_campaign": true,
       "top_quotes": [
         {
@@ -142,22 +142,10 @@
       "complaints": 14,
       "praise": 0,
       "pain_ratio": 1.0,
-      "avg_urgency": 3.86,
-      "avg_pain_urgency": 3.86,
+      "avg_urgency": 3.57,
+      "avg_pain_urgency": 3.57,
       "covered_by_previous_campaign": false,
       "top_quotes": [
-        {
-          "ref": "019f82e8-54e0-7033-9701-f3d9257fbc79",
-          "text": "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque.",
-          "urgency": 5,
-          "sentiment": "negative"
-        },
-        {
-          "ref": "019f68e6-c8d8-7f5e-96f7-cb58ddbe995c",
-          "text": "Fui cobrado duas vezes este mes e ninguem me explica porque.",
-          "urgency": 5,
-          "sentiment": "negative"
-        },
         {
           "ref": "019efd27-1328-7021-898d-15e936412433",
           "text": "Honestamente, Fui cobrado duas vezes este mes e ninguem me explica porque.",
@@ -165,8 +153,20 @@
           "sentiment": "negative"
         },
         {
-          "ref": "019f769d-4c40-79b7-8275-fdd274d72761",
-          "text": "Cancelar a subscricao foi uma odisseia.",
+          "ref": "019f82e8-54e0-7033-9701-f3d9257fbc79",
+          "text": "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque.",
+          "urgency": 4,
+          "sentiment": "negative"
+        },
+        {
+          "ref": "019f68e6-c8d8-7f5e-96f7-cb58ddbe995c",
+          "text": "Fui cobrado duas vezes este mes e ninguem me explica porque.",
+          "urgency": 4,
+          "sentiment": "negative"
+        },
+        {
+          "ref": "019f65db-0f78-7f92-90a3-a65487c80afc",
+          "text": "Na minha experiencia, A fatura nao bate certo com o plano que contratei.",
           "urgency": 4,
           "sentiment": "negative"
         }
@@ -251,10 +251,10 @@
     {
       "theme": "poupanca_tempo",
       "label": "Poupança de tempo",
-      "total": 22,
-      "share_pct": 14.6,
+      "total": 23,
+      "share_pct": 15.2,
       "complaints": 0,
-      "praise": 22,
+      "praise": 23,
       "pain_ratio": 0.0,
       "avg_urgency": 1.0,
       "avg_pain_urgency": 0.0,
@@ -281,44 +281,6 @@
         {
           "ref": "019f7dd8-1508-7f7b-b1c9-bdcb694f8564",
           "text": "Na minha experiencia, Reduzi o trabalho manual para quase zero.",
-          "urgency": 1,
-          "sentiment": "positive"
-        }
-      ]
-    },
-    {
-      "theme": "relatorios",
-      "label": "Relatórios e métricas",
-      "total": 12,
-      "share_pct": 7.9,
-      "complaints": 0,
-      "praise": 12,
-      "pain_ratio": 0.0,
-      "avg_urgency": 1.0,
-      "avg_pain_urgency": 0.0,
-      "covered_by_previous_campaign": true,
-      "top_quotes": [
-        {
-          "ref": "019f87c9-a900-7061-8d3d-7e5d727dc4ff",
-          "text": "Os relatorios automaticos impressionaram a direcao.",
-          "urgency": 1,
-          "sentiment": "positive"
-        },
-        {
-          "ref": "019f7032-1818-770e-8f22-ce72388f7be5",
-          "text": "Sinceramente, Adoro os dashboards, dao-me uma visao clara do negocio.",
-          "urgency": 1,
-          "sentiment": "positive"
-        },
-        {
-          "ref": "019f676a-fa60-7dec-afcd-0ffacaf3980d",
-          "text": "Os relatorios sao lindos e faceis de partilhar com o chefe.",
-          "urgency": 1,
-          "sentiment": "positive"
-        },
-        {
-          "ref": "019f6148-5858-7fa3-8c97-907cd5b9ff03",
-          "text": "As metricas ajudam-me a tomar decisoes com confianca.",
           "urgency": 1,
           "sentiment": "positive"
         }
@@ -361,6 +323,44 @@
           "sentiment": "positive"
         }
       ]
+    },
+    {
+      "theme": "relatorios",
+      "label": "Relatórios e métricas",
+      "total": 11,
+      "share_pct": 7.3,
+      "complaints": 0,
+      "praise": 11,
+      "pain_ratio": 0.0,
+      "avg_urgency": 1.0,
+      "avg_pain_urgency": 0.0,
+      "covered_by_previous_campaign": true,
+      "top_quotes": [
+        {
+          "ref": "019f87c9-a900-7061-8d3d-7e5d727dc4ff",
+          "text": "Os relatorios automaticos impressionaram a direcao.",
+          "urgency": 1,
+          "sentiment": "positive"
+        },
+        {
+          "ref": "019f7032-1818-770e-8f22-ce72388f7be5",
+          "text": "Sinceramente, Adoro os dashboards, dao-me uma visao clara do negocio.",
+          "urgency": 1,
+          "sentiment": "positive"
+        },
+        {
+          "ref": "019f676a-fa60-7dec-afcd-0ffacaf3980d",
+          "text": "Os relatorios sao lindos e faceis de partilhar com o chefe.",
+          "urgency": 1,
+          "sentiment": "positive"
+        },
+        {
+          "ref": "019f6148-5858-7fa3-8c97-907cd5b9ff03",
+          "text": "As metricas ajudam-me a tomar decisoes com confianca.",
+          "urgency": 1,
+          "sentiment": "positive"
+        }
+      ]
     }
   ],
   "items": [
@@ -372,7 +372,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Remarcar uma sessão é complicado e gera emails contraditórios para o cliente.",
+      "summary": "Remarcar uma sessao obriga a cancelar e criar de novo, e o cliente recebe emails contraditorios.",
       "classified_by": "llm"
     },
     {
@@ -383,7 +383,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatórios automáticos impressionaram a direção.",
+      "summary": "Os relatorios automaticos impressionaram a direcao.",
       "classified_by": "llm"
     },
     {
@@ -394,7 +394,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O agendamento não enviou aviso a tempo, resultando na perda de uma reunião.",
+      "summary": "Perdeu uma reuniao porque o agendamento nao o avisou a horas.",
       "classified_by": "llm"
     },
     {
@@ -405,7 +405,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface é limpa e intuitiva.",
+      "summary": "A interface e limpa e intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -416,7 +416,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface é limpa e intuitiva.",
+      "summary": "A interface e limpa e intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -427,7 +427,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O tempo gasto em tarefas foi drasticamente reduzido.",
+      "summary": "O que antes demorava uma tarde agora e feito em minutos.",
       "classified_by": "llm"
     },
     {
@@ -438,7 +438,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A produtividade do utilizador aumentou significativamente.",
+      "summary": "A produtividade do cliente disparou, fazendo mais em menos tempo.",
       "classified_by": "llm"
     },
     {
@@ -449,7 +449,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A faturação é confusa e difícil de entender.",
+      "summary": "E dificil perceber o que esta a pagar, a faturacao e confusa.",
       "classified_by": "llm"
     },
     {
@@ -459,8 +459,8 @@
       "timestamp": "2026-07-21 07:02:49.000000",
       "theme": "estabilidade",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "Encontrou bugs na exportação de dados, que saem incompletos.",
+      "urgency": 3,
+      "summary": "Encontrou varios bugs a exportar dados, que saem incompletos.",
       "classified_by": "llm"
     },
     {
@@ -471,7 +471,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A aplicação fica lenta com muitos itens na lista.",
+      "summary": "A app fica lenta quando tem muitos itens na lista.",
       "classified_by": "llm"
     },
     {
@@ -481,8 +481,8 @@
       "timestamp": "2026-07-21 04:21:32.000000",
       "theme": "faturacao",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Foi cobrado duas vezes no mesmo mês sem explicação.",
+      "urgency": 4,
+      "summary": "Foi cobrado duas vezes este mes e ninguem lhe explica o motivo.",
       "classified_by": "llm"
     },
     {
@@ -504,7 +504,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A aplicação fica lenta com muitos itens na lista.",
+      "summary": "A app fica lenta quando tem muitos itens na lista.",
       "classified_by": "llm"
     },
     {
@@ -515,7 +515,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Consegue mostrar resultados aos clientes rapidamente.",
+      "summary": "Consegue mostrar resultados aos clientes num instante.",
       "classified_by": "llm"
     },
     {
@@ -526,7 +526,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Faltam lembretes de agendamento, o que levou a esquecer uma marcação.",
+      "summary": "Esqueceu-se de uma marcacao importante por falta de lembretes de agendamento.",
       "classified_by": "llm"
     },
     {
@@ -537,7 +537,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O trabalho manual foi reduzido para quase zero.",
+      "summary": "Reduziu o trabalho manual para quase zero.",
       "classified_by": "llm"
     },
     {
@@ -548,7 +548,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A faturação é confusa e difícil de entender.",
+      "summary": "E dificil perceber o que esta a pagar, a faturacao e confusa.",
       "classified_by": "llm"
     },
     {
@@ -559,7 +559,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A aplicação é intuitiva e não requer manual.",
+      "summary": "Nunca precisou de manual, percebe-se tudo sozinho.",
       "classified_by": "llm"
     },
     {
@@ -570,7 +570,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "A aplicação crashou várias vezes, resultando em perda de trabalho.",
+      "summary": "A aplicacao crashou tres vezes esta semana e o cliente perdeu trabalho.",
       "classified_by": "llm"
     },
     {
@@ -581,7 +581,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O suporte demorou a responder a um pedido urgente.",
+      "summary": "Precisou de ajuda urgente e so responderam no dia seguinte.",
       "classified_by": "llm"
     },
     {
@@ -592,7 +592,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Poupa horas todas as semanas com a utilização da ferramenta.",
+      "summary": "Poupa horas todas as semanas desde que comecou a usar.",
       "classified_by": "llm"
     },
     {
@@ -602,8 +602,8 @@
       "timestamp": "2026-07-18 19:04:08.000000",
       "theme": "faturacao",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "O processo de cancelar a subscrição foi complicado.",
+      "urgency": 3,
+      "summary": "Cancelar a subscricao foi uma odisseia.",
       "classified_by": "llm"
     },
     {
@@ -614,7 +614,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O suporte foi rápido e simpático quando necessário.",
+      "summary": "Quando precisou, o suporte foi rapido e simpatico.",
       "classified_by": "llm"
     },
     {
@@ -625,7 +625,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O suporte demorou a responder a um pedido urgente.",
+      "summary": "Precisou de ajuda urgente e so responderam no dia seguinte.",
       "classified_by": "llm"
     },
     {
@@ -636,7 +636,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A sincronização falha, mostrando dados desatualizados.",
+      "summary": "A sincronizacao falha e as vezes ve dados desatualizados.",
       "classified_by": "llm"
     },
     {
@@ -647,7 +647,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A faturação é confusa e difícil de entender.",
+      "summary": "E dificil perceber o que esta a pagar, a faturacao e confusa.",
       "classified_by": "llm"
     },
     {
@@ -658,7 +658,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A ferramenta proporciona uma grande poupança de tempo.",
+      "summary": "Ganhou imenso tempo, e o melhor da ferramenta.",
       "classified_by": "llm"
     },
     {
@@ -669,7 +669,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os dashboards fornecem uma visão clara do negócio.",
+      "summary": "Adora os dashboards, dao uma visao clara do negocio.",
       "classified_by": "llm"
     },
     {
@@ -680,7 +680,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A produtividade do utilizador aumentou significativamente.",
+      "summary": "A produtividade do cliente disparou, fazendo muito mais em menos tempo.",
       "classified_by": "llm"
     },
     {
@@ -691,7 +691,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "As marcações desaparecem do calendário, causando stress.",
+      "summary": "As marcacoes desaparecem do calendario as vezes, o que e stressante.",
       "classified_by": "llm"
     },
     {
@@ -702,7 +702,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatórios automáticos impressionaram a direção.",
+      "summary": "Os relatorios automaticos impressionaram a direcao.",
       "classified_by": "llm"
     },
     {
@@ -713,7 +713,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Não é possível reagendar sem contactar o suporte.",
+      "summary": "Nao consegue reagendar sem ligar ao suporte, devia ser automatico.",
       "classified_by": "llm"
     },
     {
@@ -724,7 +724,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O trabalho manual foi reduzido para quase zero.",
+      "summary": "Reduziu o trabalho manual para quase zero.",
       "classified_by": "llm"
     },
     {
@@ -735,7 +735,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Um ticket de suporte está aberto há três dias sem resposta.",
+      "summary": "Abriu um ticket ha tres dias e ainda ninguem respondeu.",
       "classified_by": "llm"
     },
     {
@@ -745,8 +745,8 @@
       "timestamp": "2026-07-16 03:09:43.000000",
       "theme": "faturacao",
       "sentiment": "negative",
-      "urgency": 5,
-      "summary": "Foi cobrado duas vezes no mesmo mês sem explicação.",
+      "urgency": 4,
+      "summary": "Foi cobrado duas vezes este mes e ninguem lhe explica o motivo.",
       "classified_by": "llm"
     },
     {
@@ -757,7 +757,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatórios são esteticamente agradáveis e fáceis de partilhar.",
+      "summary": "Os relatorios sao lindos e faceis de partilhar com o chefe.",
       "classified_by": "llm"
     },
     {
@@ -768,7 +768,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O suporte demora a responder a problemas urgentes.",
+      "summary": "O suporte demora imenso a responder quando tem um problema urgente.",
       "classified_by": "llm"
     },
     {
@@ -778,8 +778,8 @@
       "timestamp": "2026-07-15 17:02:32.000000",
       "theme": "faturacao",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "O processo de cancelar a subscrição foi complicado.",
+      "urgency": 3,
+      "summary": "Cancelar a subscricao foi uma odisseia.",
       "classified_by": "llm"
     },
     {
@@ -790,7 +790,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A ferramenta proporciona uma grande poupança de tempo.",
+      "summary": "Ganhou imenso tempo, e o melhor da ferramenta.",
       "classified_by": "llm"
     },
     {
@@ -801,7 +801,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "A fatura não corresponde ao plano contratado.",
+      "summary": "A fatura nao bate certo com o plano que contratou.",
       "classified_by": "llm"
     },
     {
@@ -812,7 +812,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "A fatura não corresponde ao plano contratado.",
+      "summary": "A fatura nao bate certo com o plano que contratou.",
       "classified_by": "llm"
     },
     {
@@ -823,7 +823,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O suporte é considerado um dos melhores.",
+      "summary": "O suporte e um dos melhores que ja teve.",
       "classified_by": "llm"
     },
     {
@@ -834,7 +834,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O cliente recebeu a hora errada para uma sessão agendada.",
+      "summary": "Marcou uma sessao e o cliente recebeu a hora errada.",
       "classified_by": "llm"
     },
     {
@@ -845,7 +845,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O suporte demorou a responder a um pedido urgente.",
+      "summary": "Precisou de ajuda urgente e so responderam no dia seguinte.",
       "classified_by": "llm"
     },
     {
@@ -856,7 +856,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Listas grandes causam travamentos na aplicação móvel.",
+      "summary": "No telemovel as listas grandes travam completamente.",
       "classified_by": "llm"
     },
     {
@@ -867,7 +867,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A configuração da aplicação é fácil e sem complicações.",
+      "summary": "Facil de configurar, sem complicacoes.",
       "classified_by": "llm"
     },
     {
@@ -878,7 +878,7 @@
       "theme": "facilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O fluxo de marcação de horário tem passos excessivos e é confuso.",
+      "summary": "O fluxo de marcar horario tem passos a mais, o cliente perde-se sempre.",
       "classified_by": "llm"
     },
     {
@@ -889,7 +889,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O agendamento não enviou aviso a tempo, resultando na perda de uma reunião.",
+      "summary": "Perdeu uma reuniao porque o agendamento nao o avisou a horas.",
       "classified_by": "llm"
     },
     {
@@ -900,7 +900,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "As métricas fornecidas ajudam na tomada de decisões.",
+      "summary": "As metricas ajudam a tomar decisoes com confianca.",
       "classified_by": "llm"
     },
     {
@@ -911,7 +911,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "Falta integração com o CRM, o que gera trabalho manual.",
+      "summary": "Nao ha ligacao ao CRM, e um trabalhao manter os dois.",
       "classified_by": "llm"
     },
     {
@@ -922,7 +922,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador poupa tempo significativo nas suas tarefas diárias.",
+      "summary": "O cliente elogia a poupança de tempo significativa que a ferramenta proporciona.",
       "classified_by": "llm"
     },
     {
@@ -933,7 +933,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador não consegue integrar a ferramenta com o seu CRM, o que causa trabalho manual extra.",
+      "summary": "O cliente queixa-se da falta de integração com o CRM, o que causa trabalho manual.",
       "classified_by": "llm"
     },
     {
@@ -944,7 +944,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador poupa imenso tempo com a ferramenta.",
+      "summary": "O cliente elogia a ferramenta por proporcionar uma grande poupança de tempo.",
       "classified_by": "llm"
     },
     {
@@ -955,7 +955,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A aplicação móvel trava com listas grandes.",
+      "summary": "O cliente reporta que a aplicação trava em listas grandes no telemóvel.",
       "classified_by": "llm"
     },
     {
@@ -966,7 +966,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador elogia o atendimento atencioso.",
+      "summary": "O cliente elogia o atendimento atencioso.",
       "classified_by": "llm"
     },
     {
@@ -977,7 +977,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador poupa horas todas as semanas.",
+      "summary": "O cliente poupa horas semanalmente com a ferramenta.",
       "classified_by": "llm"
     },
     {
@@ -987,8 +987,8 @@
       "timestamp": "2026-07-11 21:28:11.000000",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "O utilizador esqueceu-se de uma marcação importante devido à falta de lembretes de agendamento.",
+      "urgency": 3,
+      "summary": "O cliente sugere lembretes de agendamento para evitar esquecimentos.",
       "classified_by": "llm"
     },
     {
@@ -999,7 +999,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador perdeu uma reunião porque o agendamento não o avisou a horas.",
+      "summary": "O cliente perdeu uma reunião por falta de aviso atempado do agendamento.",
       "classified_by": "llm"
     },
     {
@@ -1010,7 +1010,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A equipa do utilizador aprendeu a usar a ferramenta rapidamente.",
+      "summary": "A equipa do cliente aprendeu a usar a ferramenta rapidamente.",
       "classified_by": "llm"
     },
     {
@@ -1021,7 +1021,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O suporte demora a responder a problemas urgentes.",
+      "summary": "O cliente queixa-se da demora do suporte em responder a problemas urgentes.",
       "classified_by": "llm"
     },
     {
@@ -1032,7 +1032,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador poupa imenso tempo com a ferramenta.",
+      "summary": "O cliente elogia a ferramenta por proporcionar uma grande poupança de tempo.",
       "classified_by": "llm"
     },
     {
@@ -1043,7 +1043,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador elogia o atendimento atencioso.",
+      "summary": "O cliente elogia o atendimento atencioso.",
       "classified_by": "llm"
     },
     {
@@ -1054,7 +1054,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador acha a faturação confusa e difícil de entender.",
+      "summary": "O cliente considera a faturação confusa e difícil de entender.",
       "classified_by": "llm"
     },
     {
@@ -1065,7 +1065,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A ferramenta é das mais simples que o utilizador já experimentou.",
+      "summary": "O cliente considera a ferramenta uma das mais simples que já usou.",
       "classified_by": "llm"
     },
     {
@@ -1076,7 +1076,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador abriu um ticket há três dias e ainda não obteve resposta.",
+      "summary": "O cliente aguarda resposta a um ticket de suporte há três dias.",
       "classified_by": "llm"
     },
     {
@@ -1087,7 +1087,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A produtividade do utilizador aumentou, fazendo mais em menos tempo.",
+      "summary": "O cliente relata um aumento significativo na produtividade e poupança de tempo.",
       "classified_by": "llm"
     },
     {
@@ -1098,7 +1098,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador não consegue reagendar sem contactar o suporte.",
+      "summary": "O cliente não consegue reagendar sem contactar o suporte, desejando automação.",
       "classified_by": "llm"
     },
     {
@@ -1109,7 +1109,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador poupa imenso tempo com a ferramenta.",
+      "summary": "O cliente elogia a ferramenta por proporcionar uma grande poupança de tempo.",
       "classified_by": "llm"
     },
     {
@@ -1120,7 +1120,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatórios são esteticamente agradáveis e fáceis de partilhar.",
+      "summary": "O cliente elogia a qualidade e facilidade de partilha dos relatórios.",
       "classified_by": "llm"
     },
     {
@@ -1131,7 +1131,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "As métricas da ferramenta ajudam o utilizador a tomar decisões com confiança.",
+      "summary": "O cliente valoriza as métricas para tomar decisões com confiança.",
       "classified_by": "llm"
     },
     {
@@ -1142,7 +1142,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O suporte foi rápido e simpático quando o utilizador precisou.",
+      "summary": "O cliente elogia a rapidez e simpatia do suporte quando precisou.",
       "classified_by": "llm"
     },
     {
@@ -1153,7 +1153,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O preço subiu sem aviso, o que fez o utilizador sentir-se enganado.",
+      "summary": "O cliente queixa-se de um aumento de preço sem aviso prévio.",
       "classified_by": "llm"
     },
     {
@@ -1164,7 +1164,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador consegue mostrar resultados aos clientes rapidamente.",
+      "summary": "O cliente consegue mostrar resultados aos clientes rapidamente.",
       "classified_by": "llm"
     },
     {
@@ -1175,7 +1175,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador não consegue reagendar sem contactar o suporte.",
+      "summary": "O cliente não consegue reagendar sem contactar o suporte, desejando automação.",
       "classified_by": "llm"
     },
     {
@@ -1186,7 +1186,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador poupa horas todas as semanas.",
+      "summary": "O cliente poupa horas semanalmente com a ferramenta.",
       "classified_by": "llm"
     },
     {
@@ -1197,7 +1197,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador reduziu o trabalho manual para quase zero.",
+      "summary": "O cliente reduziu o trabalho manual para quase zero.",
       "classified_by": "llm"
     },
     {
@@ -1208,7 +1208,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "A fatura não corresponde ao plano contratado pelo utilizador.",
+      "summary": "O cliente reporta que a fatura não corresponde ao plano contratado.",
       "classified_by": "llm"
     },
     {
@@ -1219,7 +1219,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A aplicação fica lenta com muitos itens na lista.",
+      "summary": "O cliente reporta que a aplicação fica lenta com muitos itens na lista.",
       "classified_by": "llm"
     },
     {
@@ -1230,7 +1230,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador acha a faturação confusa e difícil de entender.",
+      "summary": "O cliente considera a faturação confusa e difícil de entender.",
       "classified_by": "llm"
     },
     {
@@ -1241,7 +1241,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A ferramenta é super fácil de usar, permitindo começar a trabalhar rapidamente.",
+      "summary": "O cliente elogia a facilidade de uso, começando a trabalhar rapidamente.",
       "classified_by": "llm"
     },
     {
@@ -1252,7 +1252,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A ferramenta é fácil de configurar, sem complicações.",
+      "summary": "O cliente elogia a facilidade de configuração da ferramenta.",
       "classified_by": "llm"
     },
     {
@@ -1263,7 +1263,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "A aplicação crashou várias vezes, resultando na perda de trabalho.",
+      "summary": "O cliente perdeu trabalho devido a falhas frequentes da aplicação.",
       "classified_by": "llm"
     },
     {
@@ -1274,7 +1274,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador abriu um ticket há três dias e ainda não obteve resposta.",
+      "summary": "O cliente aguarda resposta a um ticket de suporte há três dias.",
       "classified_by": "llm"
     },
     {
@@ -1285,7 +1285,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O suporte demorou a responder a um pedido de ajuda urgente.",
+      "summary": "O cliente precisou de ajuda urgente e só obteve resposta no dia seguinte.",
       "classified_by": "llm"
     },
     {
@@ -1295,8 +1295,8 @@
       "timestamp": "2026-07-04 21:19:03.000000",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "O utilizador esqueceu-se de uma marcação importante devido à falta de lembretes de agendamento.",
+      "urgency": 3,
+      "summary": "O cliente sugere lembretes de agendamento para evitar esquecimentos.",
       "classified_by": "llm"
     },
     {
@@ -1307,7 +1307,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "As marcações desaparecem do calendário, causando stress ao utilizador.",
+      "summary": "O cliente reporta que as marcações desaparecem do calendário, causando stress.",
       "classified_by": "llm"
     },
     {
@@ -1318,7 +1318,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador elogia o atendimento atencioso.",
+      "summary": "O cliente elogia o atendimento atencioso.",
       "classified_by": "llm"
     },
     {
@@ -1329,7 +1329,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador poupa imenso tempo com a ferramenta.",
+      "summary": "O cliente elogia a ferramenta por proporcionar uma grande poupança de tempo.",
       "classified_by": "llm"
     },
     {
@@ -1340,7 +1340,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "A aplicação crashou várias vezes, resultando na perda de trabalho.",
+      "summary": "O cliente perdeu trabalho devido a falhas frequentes da aplicação.",
       "classified_by": "llm"
     },
     {
@@ -1351,7 +1351,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A aplicação fica lenta com muitos itens na lista.",
+      "summary": "O cliente reporta que a aplicação fica lenta com muitos itens na lista.",
       "classified_by": "llm"
     },
     {
@@ -1362,7 +1362,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador reduziu o trabalho manual para quase zero.",
+      "summary": "O cliente reduziu o trabalho manual para quase zero.",
       "classified_by": "llm"
     },
     {
@@ -1373,7 +1373,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador elogia o atendimento atencioso.",
+      "summary": "O cliente elogia o atendimento atencioso.",
       "classified_by": "llm"
     },
     {
@@ -1383,8 +1383,8 @@
       "timestamp": "2026-07-03 08:05:03.000000",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 4,
-      "summary": "O utilizador esqueceu-se de uma marcação importante devido à falta de lembretes de agendamento.",
+      "urgency": 3,
+      "summary": "O cliente sugere lembretes de agendamento para evitar esquecimentos.",
       "classified_by": "llm"
     },
     {
@@ -1395,7 +1395,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface é limpa e intuitiva.",
+      "summary": "O cliente elogia a interface limpa e intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -1406,7 +1406,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador gostaria de exportar para o Excel automaticamente, mas não é possível.",
+      "summary": "O cliente gostaria de exportar automaticamente para o Excel, mas não é possível.",
       "classified_by": "llm"
     },
     {
@@ -1417,7 +1417,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A ferramenta é intuitiva e não requer manual.",
+      "summary": "O cliente elogia a facilidade de uso, não precisando de manual.",
       "classified_by": "llm"
     },
     {
@@ -1428,7 +1428,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "As marcações desaparecem do calendário, causando stress ao utilizador.",
+      "summary": "O cliente reporta que as marcações desaparecem do calendário, causando stress.",
       "classified_by": "llm"
     },
     {
@@ -1439,7 +1439,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A ferramenta é intuitiva e não requer manual.",
+      "summary": "O cliente elogia a facilidade de uso, não precisando de manual.",
       "classified_by": "llm"
     },
     {
@@ -1450,7 +1450,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador gostaria de exportar para o Excel automaticamente, mas não é possível.",
+      "summary": "O cliente gostaria de exportar automaticamente para o Excel, mas não é possível.",
       "classified_by": "llm"
     },
     {
@@ -1461,7 +1461,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A aplicação móvel trava com listas grandes.",
+      "summary": "O cliente reporta que a aplicação trava em listas grandes no telemóvel.",
       "classified_by": "llm"
     },
     {
@@ -1472,7 +1472,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
+      "summary": "O cliente esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
       "classified_by": "llm"
     },
     {
@@ -1483,7 +1483,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador elogia o suporte como um dos melhores que já teve.",
+      "summary": "O cliente elogia o suporte como um dos melhores que já teve.",
       "classified_by": "llm"
     },
     {
@@ -1494,7 +1494,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A produtividade do utilizador disparou, fazendo mais em menos tempo.",
+      "summary": "O cliente relata um aumento significativo na produtividade e poupança de tempo.",
       "classified_by": "llm"
     },
     {
@@ -1505,7 +1505,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A equipa do utilizador aprendeu a usar a ferramenta rapidamente.",
+      "summary": "A equipa do cliente aprendeu a usar a ferramenta rapidamente.",
       "classified_by": "llm"
     },
     {
@@ -1516,7 +1516,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador abriu um ticket há três dias e ainda não obteve resposta.",
+      "summary": "O cliente abriu um ticket há três dias e ainda não obteve resposta.",
       "classified_by": "llm"
     },
     {
@@ -1527,7 +1527,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador não consegue reagendar sem contactar o suporte, desejando automação.",
+      "summary": "O cliente não consegue reagendar sem contactar o suporte, desejando automação.",
       "classified_by": "llm"
     },
     {
@@ -1538,7 +1538,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador nunca precisou de manual, achando a ferramenta intuitiva.",
+      "summary": "O cliente nunca precisou de manual, achando a ferramenta intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -1549,7 +1549,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador perdeu uma reunião porque o agendamento não o avisou a horas.",
+      "summary": "O cliente perdeu uma reunião porque o agendamento não o avisou a tempo.",
       "classified_by": "llm"
     },
     {
@@ -1559,8 +1559,8 @@
       "timestamp": "2026-06-30 07:50:13.000000",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "O cliente do utilizador recebeu a hora errada para uma sessão agendada.",
+      "urgency": 4,
+      "summary": "O cliente marcou uma sessão e o cliente recebeu a hora errada.",
       "classified_by": "llm"
     },
     {
@@ -1571,7 +1571,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "As marcações desaparecem do calendário, causando stress ao utilizador.",
+      "summary": "As marcações desaparecem do calendário, causando stress ao cliente.",
       "classified_by": "llm"
     },
     {
@@ -1582,7 +1582,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador precisou de ajuda urgente e só obteve resposta no dia seguinte.",
+      "summary": "O cliente precisou de ajuda urgente e só obteve resposta no dia seguinte.",
       "classified_by": "llm"
     },
     {
@@ -1593,7 +1593,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Falta integração com ferramentas existentes, exigindo cópia manual de dados.",
+      "summary": "O cliente sente falta de integração com outras ferramentas, exigindo trabalho manual.",
       "classified_by": "llm"
     },
     {
@@ -1604,7 +1604,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador achou a ferramenta super fácil de usar, começando a trabalhar em minutos.",
+      "summary": "O cliente considera a ferramenta super fácil de usar, começando a trabalhar em minutos.",
       "classified_by": "llm"
     },
     {
@@ -1615,7 +1615,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador adora os dashboards que fornecem uma visão clara do negócio.",
+      "summary": "O cliente adora os dashboards por fornecerem uma visão clara do negócio.",
       "classified_by": "llm"
     },
     {
@@ -1626,7 +1626,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface é limpa e intuitiva, agradando ao utilizador.",
+      "summary": "O cliente elogia a interface limpa e intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -1637,7 +1637,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O calendário é pouco claro, resultando em duas marcações para a mesma hora.",
+      "summary": "O calendário é pouco claro, levando o cliente a marcar duas coisas para a mesma hora.",
       "classified_by": "llm"
     },
     {
@@ -1648,7 +1648,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador não consegue reagendar sem contactar o suporte, desejando automação.",
+      "summary": "O cliente não consegue reagendar sem contactar o suporte, desejando automação.",
       "classified_by": "llm"
     },
     {
@@ -1659,7 +1659,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface é limpa e intuitiva, agradando ao utilizador.",
+      "summary": "O cliente elogia a interface limpa e intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -1670,7 +1670,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador nunca precisou de manual, achando a ferramenta intuitiva.",
+      "summary": "O cliente nunca precisou de manual, achando a ferramenta intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -1681,7 +1681,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "Falta integração com ferramentas existentes, exigindo cópia manual de dados.",
+      "summary": "O cliente sente falta de integração com outras ferramentas, exigindo trabalho manual.",
       "classified_by": "llm"
     },
     {
@@ -1692,7 +1692,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador perdeu uma reunião porque o agendamento não o avisou a horas.",
+      "summary": "O cliente perdeu uma reunião porque o agendamento não o avisou a tempo.",
       "classified_by": "llm"
     },
     {
@@ -1703,7 +1703,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatórios automáticos impressionaram a direção.",
+      "summary": "Os relatórios automáticos impressionaram a direção do cliente.",
       "classified_by": "llm"
     },
     {
@@ -1714,7 +1714,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador não consegue reagendar sem contactar o suporte, desejando automação.",
+      "summary": "O cliente não consegue reagendar sem contactar o suporte, desejando automação.",
       "classified_by": "llm"
     },
     {
@@ -1725,7 +1725,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador elogia o atendimento, sempre atencioso.",
+      "summary": "O cliente adora o atendimento, sempre atencioso.",
       "classified_by": "llm"
     },
     {
@@ -1736,7 +1736,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador nunca precisou de manual, achando a ferramenta intuitiva.",
+      "summary": "O cliente nunca precisou de manual, achando a ferramenta intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -1747,7 +1747,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador precisou de ajuda urgente e só obteve resposta no dia seguinte.",
+      "summary": "O cliente precisou de ajuda urgente e só obteve resposta no dia seguinte.",
       "classified_by": "llm"
     },
     {
@@ -1758,7 +1758,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador achou a ferramenta super fácil de usar, começando a trabalhar em minutos.",
+      "summary": "O cliente considera a ferramenta super fácil de usar, começando a trabalhar em minutos.",
       "classified_by": "llm"
     },
     {
@@ -1769,7 +1769,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "A interface é limpa e intuitiva, agradando ao utilizador.",
+      "summary": "O cliente elogia a interface limpa e intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -1780,7 +1780,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador gostaria de exportar para o Excel automaticamente, mas não é possível.",
+      "summary": "O cliente gostaria de exportar para o Excel automaticamente, mas não é possível.",
       "classified_by": "llm"
     },
     {
@@ -1791,7 +1791,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador reduziu o trabalho manual para quase zero.",
+      "summary": "O cliente reduziu o trabalho manual para quase zero.",
       "classified_by": "llm"
     },
     {
@@ -1802,7 +1802,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador elogia o suporte como um dos melhores que já teve.",
+      "summary": "O cliente elogia o suporte como um dos melhores que já teve.",
       "classified_by": "llm"
     },
     {
@@ -1813,7 +1813,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "As marcações desaparecem do calendário, causando stress ao utilizador.",
+      "summary": "As marcações desaparecem do calendário, causando stress ao cliente.",
       "classified_by": "llm"
     },
     {
@@ -1824,7 +1824,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador nunca precisou de manual, achando a ferramenta intuitiva.",
+      "summary": "O cliente nunca precisou de manual, achando a ferramenta intuitiva.",
       "classified_by": "llm"
     },
     {
@@ -1835,7 +1835,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador ficou bloqueado uma tarde inteira à espera de ajuda.",
+      "summary": "O cliente ficou bloqueado uma tarde inteira à espera de ajuda.",
       "classified_by": "llm"
     },
     {
@@ -1846,7 +1846,7 @@
       "theme": "outro",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador elogia o suporte como um dos melhores que já teve.",
+      "summary": "O cliente elogia o suporte como um dos melhores que já teve.",
       "classified_by": "llm"
     },
     {
@@ -1857,7 +1857,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "A falta de integração com o Google Calendar reduz a utilidade da ferramenta.",
+      "summary": "A falta de integração com o calendário Google reduz a utilidade da ferramenta para o cliente.",
       "classified_by": "llm"
     },
     {
@@ -1868,7 +1868,7 @@
       "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador consegue mostrar resultados aos clientes rapidamente.",
+      "summary": "O cliente consegue mostrar resultados aos clientes rapidamente.",
       "classified_by": "llm"
     },
     {
@@ -1879,7 +1879,7 @@
       "theme": "facilidade",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O utilizador considera a ferramenta uma das mais simples que já experimentou.",
+      "summary": "O cliente considera a ferramenta uma das mais simples que já experimentou.",
       "classified_by": "llm"
     },
     {
@@ -1890,7 +1890,7 @@
       "theme": "faturacao",
       "sentiment": "negative",
       "urgency": 5,
-      "summary": "O utilizador foi cobrado duas vezes e não obteve explicação.",
+      "summary": "O cliente foi cobrado duas vezes e não obteve explicação.",
       "classified_by": "llm"
     },
     {
@@ -1901,7 +1901,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador encontrou vários bugs na exportação de dados, que saem incompletos.",
+      "summary": "O cliente encontrou vários bugs na exportação de dados, que saem incompletos.",
       "classified_by": "llm"
     },
     {
@@ -1911,8 +1911,8 @@
       "timestamp": "2026-06-25 03:10:57.000000",
       "theme": "suporte_lento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "As respostas do suporte são lentas e genéricas.",
+      "urgency": 4,
+      "summary": "As respostas do suporte são lentas e genéricas para o cliente.",
       "classified_by": "llm"
     },
     {
@@ -1923,7 +1923,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador abriu um ticket há três dias e ainda não obteve resposta.",
+      "summary": "O cliente abriu um ticket há três dias e ainda não obteve resposta.",
       "classified_by": "llm"
     },
     {
@@ -1934,7 +1934,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador gostaria de exportar para o Excel automaticamente, mas não é possível.",
+      "summary": "O cliente gostaria de exportar para o Excel automaticamente, mas não é possível.",
       "classified_by": "llm"
     },
     {
@@ -1945,7 +1945,7 @@
       "theme": "estabilidade",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "A sincronização falha e o utilizador vê dados desatualizados.",
+      "summary": "A sincronização falha e o cliente vê dados desatualizados.",
       "classified_by": "llm"
     },
     {
@@ -1956,7 +1956,7 @@
       "theme": "integracoes",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador gostaria de exportar para o Excel automaticamente, mas não é possível.",
+      "summary": "O cliente gostaria de exportar para o Excel automaticamente, mas não é possível.",
       "classified_by": "llm"
     },
     {
@@ -1967,7 +1967,7 @@
       "theme": "relatorios",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "Os relatórios são bonitos e fáceis de partilhar com o chefe.",
+      "summary": "Os relatórios são bonitos e fáceis de partilhar com o chefe do cliente.",
       "classified_by": "llm"
     },
     {
@@ -1978,7 +1978,7 @@
       "theme": "suporte_lento",
       "sentiment": "negative",
       "urgency": 4,
-      "summary": "O utilizador abriu um ticket há três dias e ainda não obteve resposta.",
+      "summary": "O cliente abriu um ticket há três dias e ainda não obteve resposta.",
       "classified_by": "llm"
     },
     {
@@ -1988,8 +1988,8 @@
       "timestamp": "2026-06-23 19:21:24.000000",
       "theme": "agendamento",
       "sentiment": "negative",
-      "urgency": 3,
-      "summary": "O cliente do utilizador recebeu a hora errada para uma sessão agendada.",
+      "urgency": 4,
+      "summary": "O cliente marcou uma sessão e o cliente recebeu a hora errada.",
       "classified_by": "llm"
     },
     {
@@ -2000,7 +2000,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador não consegue reagendar sem contactar o suporte, desejando automação.",
+      "summary": "O cliente não consegue reagendar sem contactar o suporte, desejando automação.",
       "classified_by": "llm"
     },
     {
@@ -2011,7 +2011,7 @@
       "theme": "agendamento",
       "sentiment": "negative",
       "urgency": 3,
-      "summary": "O utilizador esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
+      "summary": "O cliente esqueceu-se de uma marcação importante por falta de lembretes de agendamento.",
       "classified_by": "llm"
     },
     {
@@ -2019,10 +2019,10 @@
       "feedback_type": "praise",
       "channel": "web",
       "timestamp": "2026-06-23 00:03:59.000000",
-      "theme": "relatorios",
+      "theme": "poupanca_tempo",
       "sentiment": "positive",
       "urgency": 1,
-      "summary": "O cliente consegue mostrar resultados aos clientes rapidamente.",
+      "summary": "O cliente consegue mostrar resultados rapidamente.",
       "classified_by": "llm"
     }
   ]
