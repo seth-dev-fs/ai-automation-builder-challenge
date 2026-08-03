@@ -18,35 +18,35 @@
   "feedback_signal": 26,
   "avg_urgency": 3.46,
   "historical_cvr_pct": 8.42,
-  "generated_at": "2026-07-27T10:36:41Z",
+  "generated_at": "2026-08-03T09:55:40Z",
   "generated_by": "gemini-2.5-flash",
   "incomplete": false,
-  "angle": "Este anúncio foca-se em resolver as frustrações comuns de agendamento que levam a erros e perda de tempo, oferecendo uma solução fiável.",
-  "headline": "Marcações sem erros, sempre.",
-  "primary_text": "Perdeste uma reunião porque o aviso não chegou a horas? As marcações desaparecem do calendário ou os clientes recebem a hora errada? Remarcar não devia ser um pesadelo. Resolve esses problemas e garante que as tuas marcações são sempre precisas.",
+  "angle": "Este anúncio foca-se em resolver a frustração e o stress de problemas comuns de agendamento.",
+  "headline": "Marcações sem stress e sem erros",
+  "primary_text": "Perdeste uma reunião porque o agendamento falhou? As marcações desaparecem do calendário? Ou pior, o cliente recebe a hora errada? Acaba com a confusão. Remarcar nunca mais será um pesadelo de e-mails contraditórios.",
   "cta": "Experimentar grátis",
-  "image_prompt": "A close-up shot of a person's hand confidently tapping a 'confirm' button on a sleek, modern tablet displaying a perfectly organized calendar application. The background is a soft-focused, bright office environment, suggesting efficiency and calm. The lighting is natural and inviting, highlighting the user's interaction with the technology. No text on screen.",
-  "why_this_works": "Este anúncio segue o ângulo de pain_resolution, que provou ser o mais eficaz na campanha anterior, e aborda diretamente as dores dos clientes, tal como o criativo com melhor desempenho."
+  "image_prompt": "Close-up shot of a person's hands holding a tablet, displaying a clear, organized digital calendar with multiple appointments. The person has a relaxed, slightly smiling expression, conveying a sense of relief and control. The background is a modern, clean office space, softly blurred. Natural, warm lighting streams in from a window, highlighting the screen and hands. No text visible on the tablet screen.",
+  "why_this_works": "Este anúncio capitaliza no sucesso anterior do ângulo de resolução de dor, atacando diretamente as frustrações dos utilizadores com agendamentos."
 }
 ---
 
-# Marcações sem erros, sempre.
+# Marcações sem stress e sem erros
 
-**Ângulo.** Este anúncio foca-se em resolver as frustrações comuns de agendamento que levam a erros e perda de tempo, oferecendo uma solução fiável.
+**Ângulo.** Este anúncio foca-se em resolver a frustração e o stress de problemas comuns de agendamento.
 
 **Copy.**
 
-Perdeste uma reunião porque o aviso não chegou a horas? As marcações desaparecem do calendário ou os clientes recebem a hora errada? Remarcar não devia ser um pesadelo. Resolve esses problemas e garante que as tuas marcações são sempre precisas.
+Perdeste uma reunião porque o agendamento falhou? As marcações desaparecem do calendário? Ou pior, o cliente recebe a hora errada? Acaba com a confusão. Remarcar nunca mais será um pesadelo de e-mails contraditórios.
 
 **CTA.** Experimentar grátis
 
 **Prompt de imagem.**
 
 ```
-A close-up shot of a person's hand confidently tapping a 'confirm' button on a sleek, modern tablet displaying a perfectly organized calendar application. The background is a soft-focused, bright office environment, suggesting efficiency and calm. The lighting is natural and inviting, highlighting the user's interaction with the technology. No text on screen.
+Close-up shot of a person's hands holding a tablet, displaying a clear, organized digital calendar with multiple appointments. The person has a relaxed, slightly smiling expression, conveying a sense of relief and control. The background is a modern, clean office space, softly blurred. Natural, warm lighting streams in from a window, highlighting the screen and hands. No text visible on the tablet screen.
 ```
 
-**Porque deve funcionar.** Este anúncio segue o ângulo de pain_resolution, que provou ser o mais eficaz na campanha anterior, e aborda diretamente as dores dos clientes, tal como o criativo com melhor desempenho.
+**Porque deve funcionar.** Este anúncio capitaliza no sucesso anterior do ângulo de resolução de dor, atacando diretamente as frustrações dos utilizadores com agendamentos.
 
 ## Evidência
 

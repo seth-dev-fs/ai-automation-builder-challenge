@@ -8,45 +8,45 @@
   "utm_campaign": "next_campaign_q3",
   "utm_content": "cr_q3_faturacao",
   "utm_medium": "paid_social",
-  "priority_score": 63.3,
+  "priority_score": 61.9,
   "priority_breakdown": {
     "volume": 21.5,
-    "urgencia": 19.3,
+    "urgencia": 17.8,
     "historico": 12.5,
     "lacuna": 10
   },
   "feedback_signal": 14,
-  "avg_urgency": 3.86,
+  "avg_urgency": 3.57,
   "historical_cvr_pct": null,
-  "generated_at": "2026-07-27T10:36:45Z",
+  "generated_at": "2026-08-03T09:55:44Z",
   "generated_by": "gemini-2.5-flash",
   "incomplete": false,
-  "angle": "Este anúncio resolve as dores de cabeça com faturação e subscrições, mostrando como o produto elimina a confusão e a dificuldade.",
-  "headline": "Faturação dupla? Nunca mais.",
-  "primary_text": "Faturas duplicadas e subscrições impossíveis de cancelar? Sabemos o quão frustrante é. Ninguém quer ser cobrado duas vezes e ter uma odisseia para gerir pagamentos. Simplifique a sua gestão de faturação e subscrições de uma vez por todas.",
-  "cta": "Experimentar grátis",
-  "image_prompt": "A close-up shot of a person's hands calmly interacting with a sleek, modern tablet displaying a clear, organized interface for managing subscriptions and invoices. The background is a soft, out-of-focus office setting with warm, natural light coming from a window. The person's expression is one of relief and control. No text visible on the screen or in the image.",
-  "why_this_works": "O anúncio foca-se diretamente na dor do cliente, como indicado pelo alto desempenho de 'pain_resolution' e a eficácia de criativos que abordam problemas específicos."
+  "angle": "Este anúncio foca-se em resolver a frustração de cobranças erradas e falta de clareza na faturação.",
+  "headline": "Cobranças erradas? Nunca mais",
+  "primary_text": "Fui cobrado duas vezes este mês e ninguém me explica porquê. A fatura não bate certo com o plano que contratei. Estas queixas são comuns. O nosso software ajuda a acabar com a confusão na faturação e subscrições, dando-lhe o controlo total.",
+  "cta": "Saber mais",
+  "image_prompt": "A close-up shot of a person's hand pointing at a confusing and disorganized paper bill, with a worried expression on their face. The background is a dimly lit, cluttered office desk, emphasizing the feeling of being overwhelmed. The lighting is soft and natural, highlighting the hand and the bill. No text is visible on the bill.",
+  "why_this_works": "O anúncio aborda diretamente a dor do cliente com as suas próprias palavras, o que, como o desempenho anterior mostra, é eficaz para este ângulo."
 }
 ---
 
-# Faturação dupla? Nunca mais.
+# Cobranças erradas? Nunca mais
 
-**Ângulo.** Este anúncio resolve as dores de cabeça com faturação e subscrições, mostrando como o produto elimina a confusão e a dificuldade.
+**Ângulo.** Este anúncio foca-se em resolver a frustração de cobranças erradas e falta de clareza na faturação.
 
 **Copy.**
 
-Faturas duplicadas e subscrições impossíveis de cancelar? Sabemos o quão frustrante é. Ninguém quer ser cobrado duas vezes e ter uma odisseia para gerir pagamentos. Simplifique a sua gestão de faturação e subscrições de uma vez por todas.
+Fui cobrado duas vezes este mês e ninguém me explica porquê. A fatura não bate certo com o plano que contratei. Estas queixas são comuns. O nosso software ajuda a acabar com a confusão na faturação e subscrições, dando-lhe o controlo total.
 
-**CTA.** Experimentar grátis
+**CTA.** Saber mais
 
 **Prompt de imagem.**
 
 ```
-A close-up shot of a person's hands calmly interacting with a sleek, modern tablet displaying a clear, organized interface for managing subscriptions and invoices. The background is a soft, out-of-focus office setting with warm, natural light coming from a window. The person's expression is one of relief and control. No text visible on the screen or in the image.
+A close-up shot of a person's hand pointing at a confusing and disorganized paper bill, with a worried expression on their face. The background is a dimly lit, cluttered office desk, emphasizing the feeling of being overwhelmed. The lighting is soft and natural, highlighting the hand and the bill. No text is visible on the bill.
 ```
 
-**Porque deve funcionar.** O anúncio foca-se diretamente na dor do cliente, como indicado pelo alto desempenho de 'pain_resolution' e a eficácia de criativos que abordam problemas específicos.
+**Porque deve funcionar.** O anúncio aborda diretamente a dor do cliente com as suas próprias palavras, o que, como o desempenho anterior mostra, é eficaz para este ângulo.
 
 ## Evidência
 
@@ -55,17 +55,17 @@ abaixo são as que o agente identificou como suporte do ângulo — cada `ref` �
 UUID do evento `feedback_submitted` no PostHog, portanto o percurso do anúncio
 até à frase que o originou é verificável.
 
-> Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque.  
-> <sub>`019f82e8-54e0-7033-9701-f3d9257fbc79` · urgência 5/5</sub>
-
-> Fui cobrado duas vezes este mes e ninguem me explica porque.  
-> <sub>`019f68e6-c8d8-7f5e-96f7-cb58ddbe995c` · urgência 5/5</sub>
-
 > Honestamente, Fui cobrado duas vezes este mes e ninguem me explica porque.  
 > <sub>`019efd27-1328-7021-898d-15e936412433` · urgência 5/5</sub>
 
-> Cancelar a subscricao foi uma odisseia.  
-> <sub>`019f769d-4c40-79b7-8275-fdd274d72761` · urgência 4/5</sub>
+> Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque.  
+> <sub>`019f82e8-54e0-7033-9701-f3d9257fbc79` · urgência 4/5</sub>
+
+> Fui cobrado duas vezes este mes e ninguem me explica porque.  
+> <sub>`019f68e6-c8d8-7f5e-96f7-cb58ddbe995c` · urgência 4/5</sub>
+
+> Na minha experiencia, A fatura nao bate certo com o plano que contratei.  
+> <sub>`019f65db-0f78-7f92-90a3-a65487c80afc` · urgência 4/5</sub>
 
 
 ## Medição

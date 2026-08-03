@@ -8,45 +8,45 @@
   "utm_campaign": "next_campaign_q3",
   "utm_content": "cr_q3_estabilidade",
   "utm_medium": "paid_social",
-  "priority_score": 65.6,
+  "priority_score": 65.2,
   "priority_breakdown": {
     "volume": 24.6,
-    "urgencia": 18.4,
+    "urgencia": 18.1,
     "historico": 12.5,
     "lacuna": 10
   },
   "feedback_signal": 16,
-  "avg_urgency": 3.69,
+  "avg_urgency": 3.62,
   "historical_cvr_pct": null,
-  "generated_at": "2026-07-27T10:36:43Z",
+  "generated_at": "2026-08-03T09:55:42Z",
   "generated_by": "gemini-2.5-flash",
   "incomplete": false,
-  "angle": "Este anúncio foca-se em resolver a frustração e a perda de trabalho causadas por falhas e bugs no software.",
-  "headline": "Não percas mais trabalho",
-  "primary_text": "Cansado de crashes que te fazem perder trabalho? As marcações desaparecem do calendário e os dados de exportação saem incompletos? Chega de stress. O nosso software é estável para que te foques no que realmente importa.",
+  "angle": "Este anúncio foca-se em resolver a dor de perder trabalho e marcações devido a falhas de software.",
+  "headline": "Chega de perder trabalho e stress",
+  "primary_text": "Cansado de ver o seu trabalho desaparecer ou marcações sumirem do calendário? Sabemos o quão frustrante é quando o software falha e perde dados importantes. Acabe com o stress de crashes inesperados e de ter de refazer tudo. Tenha a estabilidade que precisa para trabalhar sem preocupações.",
   "cta": "Experimentar grátis",
-  "image_prompt": "Close-up shot of a frustrated person's hands hovering over a laptop keyboard, a blurred screen in the background showing an error message or a blank document. The lighting is dim, emphasizing the user's distress. The composition should convey a sense of lost effort and exasperation. No text on screen or keyboard.",
-  "why_this_works": "Este anúncio aborda diretamente as dores de perda de trabalho e bugs, um ângulo que teve bom desempenho anteriormente."
+  "image_prompt": "A close-up shot of a person's hands looking frustrated at a computer screen displaying an error message, with a calendar application partially visible in the background. The scene is dimly lit, emphasizing the user's distress. The framing is tight on the hands and screen, with a shallow depth of field. No text or logos are visible on the screen or in the image.",
+  "why_this_works": "Este anúncio aborda diretamente a dor de perder trabalho, o que se alinha com o alto desempenho do ângulo de resolução de dor na campanha anterior."
 }
 ---
 
-# Não percas mais trabalho
+# Chega de perder trabalho e stress
 
-**Ângulo.** Este anúncio foca-se em resolver a frustração e a perda de trabalho causadas por falhas e bugs no software.
+**Ângulo.** Este anúncio foca-se em resolver a dor de perder trabalho e marcações devido a falhas de software.
 
 **Copy.**
 
-Cansado de crashes que te fazem perder trabalho? As marcações desaparecem do calendário e os dados de exportação saem incompletos? Chega de stress. O nosso software é estável para que te foques no que realmente importa.
+Cansado de ver o seu trabalho desaparecer ou marcações sumirem do calendário? Sabemos o quão frustrante é quando o software falha e perde dados importantes. Acabe com o stress de crashes inesperados e de ter de refazer tudo. Tenha a estabilidade que precisa para trabalhar sem preocupações.
 
 **CTA.** Experimentar grátis
 
 **Prompt de imagem.**
 
 ```
-Close-up shot of a frustrated person's hands hovering over a laptop keyboard, a blurred screen in the background showing an error message or a blank document. The lighting is dim, emphasizing the user's distress. The composition should convey a sense of lost effort and exasperation. No text on screen or keyboard.
+A close-up shot of a person's hands looking frustrated at a computer screen displaying an error message, with a calendar application partially visible in the background. The scene is dimly lit, emphasizing the user's distress. The framing is tight on the hands and screen, with a shallow depth of field. No text or logos are visible on the screen or in the image.
 ```
 
-**Porque deve funcionar.** Este anúncio aborda diretamente as dores de perda de trabalho e bugs, um ângulo que teve bom desempenho anteriormente.
+**Porque deve funcionar.** Este anúncio aborda diretamente a dor de perder trabalho, o que se alinha com o alto desempenho do ângulo de resolução de dor na campanha anterior.
 
 ## Evidência
 
@@ -61,11 +61,11 @@ até à frase que o originou é verificável.
 > Honestamente, Crashou tres vezes esta semana e perdi trabalho.  
 > <sub>`019f2c94-99a0-7f83-bd3e-a1bfd2248492` · urgência 5/5</sub>
 
-> Honestamente, Encontrei varios bugs a exportar dados, saem incompletos.  
-> <sub>`019f837b-fda8-7bcb-8130-78895fde78e9` · urgência 4/5</sub>
-
 > Honestamente, As marcacoes desaparecem do calendario as vezes, e stressante.  
 > <sub>`019f170a-3220-76fb-ba7f-bae9c00ae5d3` · urgência 4/5</sub>
+
+> As marcacoes desaparecem do calendario as vezes, e stressante.  
+> <sub>`019f0190-06e0-7be8-95af-9c101db756c2` · urgência 4/5</sub>
 
 
 ## Medição
