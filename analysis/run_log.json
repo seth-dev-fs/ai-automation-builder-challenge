@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-08-03T09:55:44Z",
-  "duration_seconds": 42.9,
+  "finished_at": "2026-08-10T07:50:26Z",
+  "duration_seconds": 41.6,
   "mode": "posthog",
   "model": "gemini-2.5-flash",
   "inputs": {
@@ -22,65 +22,65 @@
         "agent": "feedback_analyst[0:50]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 8.97,
+        "seconds": 8.75,
         "tokens_in": 1586,
-        "tokens_out": 2294
+        "tokens_out": 2209
       },
       {
         "agent": "feedback_analyst[50:100]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 12.48,
+        "seconds": 11.68,
         "tokens_in": 1538,
-        "tokens_out": 3131
+        "tokens_out": 3046
       },
       {
         "agent": "feedback_analyst[100:150]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 9.16,
+        "seconds": 9.37,
         "tokens_in": 1576,
-        "tokens_out": 2353
+        "tokens_out": 2401
       },
       {
         "agent": "feedback_analyst[150:151]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 0.59,
+        "seconds": 0.75,
         "tokens_in": 409,
-        "tokens_out": 44
+        "tokens_out": 46
       },
       {
         "agent": "results_reader",
         "attempt": 1,
         "status": "ok",
-        "seconds": 3.97,
+        "seconds": 3.48,
         "tokens_in": 980,
-        "tokens_out": 674
+        "tokens_out": 608
       },
       {
         "agent": "creative_writer[agendamento]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 2.08,
+        "seconds": 2.03,
         "tokens_in": 608,
-        "tokens_out": 270
+        "tokens_out": 290
       },
       {
         "agent": "creative_writer[estabilidade]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 1.85,
-        "tokens_in": 572,
-        "tokens_out": 275
+        "seconds": 1.92,
+        "tokens_in": 578,
+        "tokens_out": 287
       },
       {
         "agent": "creative_writer[faturacao]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 1.98,
+        "seconds": 1.91,
         "tokens_in": 591,
-        "tokens_out": 267
+        "tokens_out": 284
       }
     ]
   },
