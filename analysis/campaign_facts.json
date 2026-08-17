@@ -377,15 +377,15 @@
         "creative_id": "cr_A",
         "theme": "agendamento",
         "angle_type": "pain_resolution",
-        "feedback_signal": 27,
-        "avg_urgency": 3.44,
+        "feedback_signal": 26,
+        "avg_urgency": 3.46,
         "cvr_pct": 8.42
       },
       {
         "creative_id": "cr_C",
         "theme": "poupanca_tempo",
         "angle_type": "praise_amplification",
-        "feedback_signal": 23,
+        "feedback_signal": 22,
         "avg_urgency": 0.0,
         "cvr_pct": 4.17
       },
@@ -394,7 +394,7 @@
         "theme": "suporte_lento",
         "angle_type": "pain_resolution",
         "feedback_signal": 16,
-        "avg_urgency": 4.0,
+        "avg_urgency": 3.94,
         "cvr_pct": 3.24
       },
       {
@@ -402,14 +402,14 @@
         "theme": "facilidade",
         "angle_type": "praise_amplification",
         "feedback_signal": 22,
-        "avg_urgency": 0.0,
+        "avg_urgency": 3.0,
         "cvr_pct": 2.5
       },
       {
         "creative_id": "cr_E",
         "theme": "relatorios",
         "angle_type": "praise_amplification",
-        "feedback_signal": 11,
+        "feedback_signal": 12,
         "avg_urgency": 0.0,
         "cvr_pct": 2.0
       },
@@ -442,7 +442,7 @@
       "theme": "estabilidade",
       "label": "Estabilidade e desempenho",
       "complaints": 16,
-      "avg_pain_urgency": 3.69,
+      "avg_pain_urgency": 3.62,
       "quote": "Crashou tres vezes esta semana e perdi trabalho."
     },
     {
