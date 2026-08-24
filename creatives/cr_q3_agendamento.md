@@ -8,45 +8,45 @@
   "utm_campaign": "next_campaign_q3",
   "utm_content": "cr_q3_agendamento",
   "utm_medium": "paid_social",
-  "priority_score": 82.3,
+  "priority_score": 81.8,
   "priority_breakdown": {
     "volume": 40.0,
-    "urgencia": 17.3,
+    "urgencia": 16.9,
     "historico": 25.0,
     "lacuna": 0
   },
-  "feedback_signal": 26,
-  "avg_urgency": 3.46,
+  "feedback_signal": 27,
+  "avg_urgency": 3.37,
   "historical_cvr_pct": 8.42,
-  "generated_at": "2026-07-27T10:36:41Z",
+  "generated_at": "2026-08-24T07:07:36Z",
   "generated_by": "gemini-2.5-flash",
   "incomplete": false,
-  "angle": "Este anúncio foca-se em resolver as frustrações comuns de agendamento que levam a erros e perda de tempo, oferecendo uma solução fiável.",
-  "headline": "Marcações sem erros, sempre.",
-  "primary_text": "Perdeste uma reunião porque o aviso não chegou a horas? As marcações desaparecem do calendário ou os clientes recebem a hora errada? Remarcar não devia ser um pesadelo. Resolve esses problemas e garante que as tuas marcações são sempre precisas.",
+  "angle": "Este anúncio resolve as dores de cabeça com agendamentos, como reagendamentos confusos e erros no calendário.",
+  "headline": "Marcações sem stress e sem falhas",
+  "primary_text": "Perdeste uma reunião porque o aviso não chegou a horas? As marcações desaparecem do calendário? Ou pior, o cliente recebe a hora errada? Acaba com a confusão de gerir agendas e reagendar sessões. Tudo fica simples e claro para ti e para o teu cliente.",
   "cta": "Experimentar grátis",
-  "image_prompt": "A close-up shot of a person's hand confidently tapping a 'confirm' button on a sleek, modern tablet displaying a perfectly organized calendar application. The background is a soft-focused, bright office environment, suggesting efficiency and calm. The lighting is natural and inviting, highlighting the user's interaction with the technology. No text on screen.",
-  "why_this_works": "Este anúncio segue o ângulo de pain_resolution, que provou ser o mais eficaz na campanha anterior, e aborda diretamente as dores dos clientes, tal como o criativo com melhor desempenho."
+  "image_prompt": "A close-up shot of a person's hand confidently tapping on a tablet screen, showing a perfectly organized digital calendar with no overlapping appointments. The background is a modern, clean office space, slightly out of focus. The lighting is bright and natural, suggesting clarity and ease. No text on screen.",
+  "why_this_works": "Este anúncio usa o ângulo de resolução de dor, que teve o melhor desempenho na campanha anterior, e aborda diretamente problemas comuns de agendamento usando a linguagem do cliente."
 }
 ---
 
-# Marcações sem erros, sempre.
+# Marcações sem stress e sem falhas
 
-**Ângulo.** Este anúncio foca-se em resolver as frustrações comuns de agendamento que levam a erros e perda de tempo, oferecendo uma solução fiável.
+**Ângulo.** Este anúncio resolve as dores de cabeça com agendamentos, como reagendamentos confusos e erros no calendário.
 
 **Copy.**
 
-Perdeste uma reunião porque o aviso não chegou a horas? As marcações desaparecem do calendário ou os clientes recebem a hora errada? Remarcar não devia ser um pesadelo. Resolve esses problemas e garante que as tuas marcações são sempre precisas.
+Perdeste uma reunião porque o aviso não chegou a horas? As marcações desaparecem do calendário? Ou pior, o cliente recebe a hora errada? Acaba com a confusão de gerir agendas e reagendar sessões. Tudo fica simples e claro para ti e para o teu cliente.
 
 **CTA.** Experimentar grátis
 
 **Prompt de imagem.**
 
 ```
-A close-up shot of a person's hand confidently tapping a 'confirm' button on a sleek, modern tablet displaying a perfectly organized calendar application. The background is a soft-focused, bright office environment, suggesting efficiency and calm. The lighting is natural and inviting, highlighting the user's interaction with the technology. No text on screen.
+A close-up shot of a person's hand confidently tapping on a tablet screen, showing a perfectly organized digital calendar with no overlapping appointments. The background is a modern, clean office space, slightly out of focus. The lighting is bright and natural, suggesting clarity and ease. No text on screen.
 ```
 
-**Porque deve funcionar.** Este anúncio segue o ângulo de pain_resolution, que provou ser o mais eficaz na campanha anterior, e aborda diretamente as dores dos clientes, tal como o criativo com melhor desempenho.
+**Porque deve funcionar.** Este anúncio usa o ângulo de resolução de dor, que teve o melhor desempenho na campanha anterior, e aborda diretamente problemas comuns de agendamento usando a linguagem do cliente.
 
 ## Evidência
 

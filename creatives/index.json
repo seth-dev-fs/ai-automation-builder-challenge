@@ -1,28 +1,28 @@
 {
   "campaign": "next_campaign_q3",
-  "generated_at": "2026-07-27T10:36:45Z",
+  "generated_at": "2026-08-24T07:07:40Z",
   "status": "draft — pendente de aprovação humana no Pull Request",
   "priority_ranking": [
     {
       "theme": "agendamento",
       "angle_type": "pain_resolution",
-      "priority_score": 82.3,
+      "priority_score": 81.8,
       "breakdown": {
         "volume": 40.0,
-        "urgencia": 17.3,
+        "urgencia": 16.9,
         "historico": 25.0,
         "lacuna": 0
       },
-      "feedback_signal": 26,
+      "feedback_signal": 27,
       "historical_cvr_pct": 8.42
     },
     {
       "theme": "estabilidade",
       "angle_type": "pain_resolution",
-      "priority_score": 65.6,
+      "priority_score": 64.3,
       "breakdown": {
-        "volume": 24.6,
-        "urgencia": 18.4,
+        "volume": 23.7,
+        "urgencia": 18.1,
         "historico": 12.5,
         "lacuna": 10
       },
@@ -32,10 +32,10 @@
     {
       "theme": "faturacao",
       "angle_type": "pain_resolution",
-      "priority_score": 63.3,
+      "priority_score": 61.1,
       "breakdown": {
-        "volume": 21.5,
-        "urgencia": 19.3,
+        "volume": 20.7,
+        "urgencia": 17.8,
         "historico": 12.5,
         "lacuna": 10
       },
@@ -53,25 +53,25 @@
       "utm_campaign": "next_campaign_q3",
       "utm_content": "cr_q3_agendamento",
       "utm_medium": "paid_social",
-      "priority_score": 82.3,
+      "priority_score": 81.8,
       "priority_breakdown": {
         "volume": 40.0,
-        "urgencia": 17.3,
+        "urgencia": 16.9,
         "historico": 25.0,
         "lacuna": 0
       },
-      "feedback_signal": 26,
-      "avg_urgency": 3.46,
+      "feedback_signal": 27,
+      "avg_urgency": 3.37,
       "historical_cvr_pct": 8.42,
-      "generated_at": "2026-07-27T10:36:41Z",
+      "generated_at": "2026-08-24T07:07:36Z",
       "generated_by": "gemini-2.5-flash",
       "incomplete": false,
-      "angle": "Este anúncio foca-se em resolver as frustrações comuns de agendamento que levam a erros e perda de tempo, oferecendo uma solução fiável.",
-      "headline": "Marcações sem erros, sempre.",
-      "primary_text": "Perdeste uma reunião porque o aviso não chegou a horas? As marcações desaparecem do calendário ou os clientes recebem a hora errada? Remarcar não devia ser um pesadelo. Resolve esses problemas e garante que as tuas marcações são sempre precisas.",
+      "angle": "Este anúncio resolve as dores de cabeça com agendamentos, como reagendamentos confusos e erros no calendário.",
+      "headline": "Marcações sem stress e sem falhas",
+      "primary_text": "Perdeste uma reunião porque o aviso não chegou a horas? As marcações desaparecem do calendário? Ou pior, o cliente recebe a hora errada? Acaba com a confusão de gerir agendas e reagendar sessões. Tudo fica simples e claro para ti e para o teu cliente.",
       "cta": "Experimentar grátis",
-      "image_prompt": "A close-up shot of a person's hand confidently tapping a 'confirm' button on a sleek, modern tablet displaying a perfectly organized calendar application. The background is a soft-focused, bright office environment, suggesting efficiency and calm. The lighting is natural and inviting, highlighting the user's interaction with the technology. No text on screen.",
-      "why_this_works": "Este anúncio segue o ângulo de pain_resolution, que provou ser o mais eficaz na campanha anterior, e aborda diretamente as dores dos clientes, tal como o criativo com melhor desempenho."
+      "image_prompt": "A close-up shot of a person's hand confidently tapping on a tablet screen, showing a perfectly organized digital calendar with no overlapping appointments. The background is a modern, clean office space, slightly out of focus. The lighting is bright and natural, suggesting clarity and ease. No text on screen.",
+      "why_this_works": "Este anúncio usa o ângulo de resolução de dor, que teve o melhor desempenho na campanha anterior, e aborda diretamente problemas comuns de agendamento usando a linguagem do cliente."
     },
     {
       "creative_id": "cr_q3_estabilidade",
@@ -82,25 +82,25 @@
       "utm_campaign": "next_campaign_q3",
       "utm_content": "cr_q3_estabilidade",
       "utm_medium": "paid_social",
-      "priority_score": 65.6,
+      "priority_score": 64.3,
       "priority_breakdown": {
-        "volume": 24.6,
-        "urgencia": 18.4,
+        "volume": 23.7,
+        "urgencia": 18.1,
         "historico": 12.5,
         "lacuna": 10
       },
       "feedback_signal": 16,
-      "avg_urgency": 3.69,
+      "avg_urgency": 3.62,
       "historical_cvr_pct": null,
-      "generated_at": "2026-07-27T10:36:43Z",
+      "generated_at": "2026-08-24T07:07:38Z",
       "generated_by": "gemini-2.5-flash",
       "incomplete": false,
-      "angle": "Este anúncio foca-se em resolver a frustração e a perda de trabalho causadas por falhas e bugs no software.",
-      "headline": "Não percas mais trabalho",
-      "primary_text": "Cansado de crashes que te fazem perder trabalho? As marcações desaparecem do calendário e os dados de exportação saem incompletos? Chega de stress. O nosso software é estável para que te foques no que realmente importa.",
+      "angle": "O anúncio foca-se em resolver a frustração de perder trabalho e marcações devido a falhas de sistema.",
+      "headline": "Chega de perder trabalho e stress",
+      "primary_text": "Cansado de ver o seu trabalho desaparecer ou marcações sumirem do calendário? Sabemos como é frustrante quando o sistema falha e causa stress. Com a nossa solução, a estabilidade é prioridade para que consiga focar-se no que realmente importa sem preocupações.",
       "cta": "Experimentar grátis",
-      "image_prompt": "Close-up shot of a frustrated person's hands hovering over a laptop keyboard, a blurred screen in the background showing an error message or a blank document. The lighting is dim, emphasizing the user's distress. The composition should convey a sense of lost effort and exasperation. No text on screen or keyboard.",
-      "why_this_works": "Este anúncio aborda diretamente as dores de perda de trabalho e bugs, um ângulo que teve bom desempenho anteriormente."
+      "image_prompt": "Close-up shot of a person's hands hovering over a laptop keyboard, looking visibly frustrated and stressed, with a slightly blurred screen showing a calendar app with missing entries. The lighting is dim, reflecting the mood of the user's pain point. The focus is on the user's hands and facial expression, conveying the emotion of lost work. No text on screen.",
+      "why_this_works": "Este anúncio aborda diretamente a dor do cliente, alinhando-se com o sucesso do ângulo de resolução de dor e o criativo de agendamento da campanha anterior."
     },
     {
       "creative_id": "cr_q3_faturacao",
@@ -111,25 +111,25 @@
       "utm_campaign": "next_campaign_q3",
       "utm_content": "cr_q3_faturacao",
       "utm_medium": "paid_social",
-      "priority_score": 63.3,
+      "priority_score": 61.1,
       "priority_breakdown": {
-        "volume": 21.5,
-        "urgencia": 19.3,
+        "volume": 20.7,
+        "urgencia": 17.8,
         "historico": 12.5,
         "lacuna": 10
       },
       "feedback_signal": 14,
-      "avg_urgency": 3.86,
+      "avg_urgency": 3.57,
       "historical_cvr_pct": null,
-      "generated_at": "2026-07-27T10:36:45Z",
+      "generated_at": "2026-08-24T07:07:40Z",
       "generated_by": "gemini-2.5-flash",
       "incomplete": false,
-      "angle": "Este anúncio resolve as dores de cabeça com faturação e subscrições, mostrando como o produto elimina a confusão e a dificuldade.",
-      "headline": "Faturação dupla? Nunca mais.",
-      "primary_text": "Faturas duplicadas e subscrições impossíveis de cancelar? Sabemos o quão frustrante é. Ninguém quer ser cobrado duas vezes e ter uma odisseia para gerir pagamentos. Simplifique a sua gestão de faturação e subscrições de uma vez por todas.",
+      "angle": "Este anúncio foca-se em resolver a dor de faturação incorreta e falta de transparência que os clientes sentem.",
+      "headline": "Faturas claras. Sem surpresas.",
+      "primary_text": "Fui cobrado duas vezes este mês e ninguém me explica porquê. Se a sua fatura não bate certo com o plano, experimente uma solução que lhe dá clareza total sobre o que paga. Acabe com as dúvidas e a frustração.",
       "cta": "Experimentar grátis",
-      "image_prompt": "A close-up shot of a person's hands calmly interacting with a sleek, modern tablet displaying a clear, organized interface for managing subscriptions and invoices. The background is a soft, out-of-focus office setting with warm, natural light coming from a window. The person's expression is one of relief and control. No text visible on the screen or in the image.",
-      "why_this_works": "O anúncio foca-se diretamente na dor do cliente, como indicado pelo alto desempenho de 'pain_resolution' e a eficácia de criativos que abordam problemas específicos."
+      "image_prompt": "A close-up shot of a person's hand pointing at a clear, digital invoice displayed on a tablet screen, showing a single, correct charge. The background is a slightly out-of-focus modern office desk, with soft, natural light coming from a window. The scene evokes a sense of relief and understanding. No text is visible on the screen or in the background.",
+      "why_this_works": "O anúncio aborda diretamente a dor da faturação errada, ecoando o feedback dos clientes e capitalizando o sucesso anterior do ângulo de resolução de problemas."
     }
   ]
 }
