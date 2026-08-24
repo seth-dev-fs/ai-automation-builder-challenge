@@ -1,6 +1,6 @@
 {
-  "finished_at": "2026-08-17T07:04:46Z",
-  "duration_seconds": 44.1,
+  "finished_at": "2026-08-24T07:07:40Z",
+  "duration_seconds": 59.7,
   "mode": "posthog",
   "model": "gemini-2.5-flash",
   "inputs": {
@@ -22,41 +22,41 @@
         "agent": "feedback_analyst[0:50]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 9.24,
+        "seconds": 9.63,
         "tokens_in": 1586,
-        "tokens_out": 2265
+        "tokens_out": 2204
       },
       {
         "agent": "feedback_analyst[50:100]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 11.93,
+        "seconds": 13.37,
         "tokens_in": 1538,
-        "tokens_out": 3046
+        "tokens_out": 3153
       },
       {
         "agent": "feedback_analyst[100:150]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 9.91,
+        "seconds": 13.65,
         "tokens_in": 1576,
-        "tokens_out": 2401
+        "tokens_out": 3162
       },
       {
         "agent": "feedback_analyst[150:151]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 0.73,
+        "seconds": 0.72,
         "tokens_in": 409,
-        "tokens_out": 43
+        "tokens_out": 44
       },
       {
         "agent": "results_reader",
         "attempt": 1,
         "status": "ok",
-        "seconds": 4.21,
-        "tokens_in": 984,
-        "tokens_out": 738
+        "seconds": 4.25,
+        "tokens_in": 981,
+        "tokens_out": 685
       },
       {
         "agent": "creative_writer[agendamento]",
@@ -64,23 +64,23 @@
         "status": "ok",
         "seconds": 1.99,
         "tokens_in": 608,
-        "tokens_out": 297
+        "tokens_out": 271
       },
       {
         "agent": "creative_writer[estabilidade]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 2.04,
+        "seconds": 1.98,
         "tokens_in": 572,
-        "tokens_out": 270
+        "tokens_out": 276
       },
       {
         "agent": "creative_writer[faturacao]",
         "attempt": 1,
         "status": "ok",
-        "seconds": 1.67,
+        "seconds": 1.98,
         "tokens_in": 591,
-        "tokens_out": 257
+        "tokens_out": 271
       }
     ]
   },

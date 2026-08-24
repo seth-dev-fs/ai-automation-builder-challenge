@@ -377,15 +377,15 @@
         "creative_id": "cr_A",
         "theme": "agendamento",
         "angle_type": "pain_resolution",
-        "feedback_signal": 26,
-        "avg_urgency": 3.46,
+        "feedback_signal": 27,
+        "avg_urgency": 3.37,
         "cvr_pct": 8.42
       },
       {
         "creative_id": "cr_C",
         "theme": "poupanca_tempo",
         "angle_type": "praise_amplification",
-        "feedback_signal": 22,
+        "feedback_signal": 23,
         "avg_urgency": 0.0,
         "cvr_pct": 4.17
       },
@@ -402,14 +402,14 @@
         "theme": "facilidade",
         "angle_type": "praise_amplification",
         "feedback_signal": 22,
-        "avg_urgency": 3.0,
+        "avg_urgency": 0.0,
         "cvr_pct": 2.5
       },
       {
         "creative_id": "cr_E",
         "theme": "relatorios",
         "angle_type": "praise_amplification",
-        "feedback_signal": 12,
+        "feedback_signal": 11,
         "avg_urgency": 0.0,
         "cvr_pct": 2.0
       },
@@ -418,7 +418,7 @@
         "theme": "integracoes",
         "angle_type": "pain_resolution",
         "feedback_signal": 10,
-        "avg_urgency": 3.2,
+        "avg_urgency": 3.1,
         "cvr_pct": 1.67
       }
     ],
@@ -449,8 +449,8 @@
       "theme": "faturacao",
       "label": "Faturação e subscrição",
       "complaints": 14,
-      "avg_pain_urgency": 3.71,
-      "quote": "Sinceramente, Fui cobrado duas vezes este mes e ninguem me explica porque."
+      "avg_pain_urgency": 3.57,
+      "quote": "Honestamente, Fui cobrado duas vezes este mes e ninguem me explica porque."
     }
   ]
 }
